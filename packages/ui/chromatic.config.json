@@ -1,7 +1,9 @@
 {
   "$schema": "https://www.chromatic.com/config-file.schema.json",
   "buildScriptName": "build-storybook",
-  "storybookBaseDir": "packages/ui",
+  "exitZeroOnChanges": true,
   "onlyChanged": true,
-  "exitZeroOnChanges": true
+  "projectId": "Project:6aef2a534639274d04a66f2d",
+  "storybookBaseDir": "packages/ui",
+  "zip": true
 }
