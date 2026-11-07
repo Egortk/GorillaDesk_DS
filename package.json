@@ -1,0 +1,16 @@
+{
+  "name": "gorilladesk-ds",
+  "private": true,
+  "engines": {
+    "node": ">=22.12"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "tokens": "npm run tokens -w @gorilladesk/tokens",
+    "storybook": "npm run storybook -w @gorilladesk/ui",
+    "build": "npm run build -w @gorilladesk/ui",
+    "chromatic": "npm run chromatic -w @gorilladesk/ui"
+  }
+}

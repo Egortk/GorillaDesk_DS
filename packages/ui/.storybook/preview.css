@@ -1,0 +1,7 @@
+@import "../src/styles.css";
+@source "../src";
+
+/* Storybook canvas only: page background and default text follow the theme. */
+body {
+  @apply bg-environment-surface-canvas font-ui text-content-neutral-text-default;
+}

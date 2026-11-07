@@ -1,0 +1,4311 @@
+{
+  "color-content-accent-bg-default": {
+    "type": "color",
+    "light": "#ffbb0029",
+    "dark": "#ffc93329"
+  },
+  "color-content-accent-bg-faint": {
+    "type": "color",
+    "light": "#ffbb0014",
+    "dark": "#ffc93314"
+  },
+  "color-content-accent-bg-muted": {
+    "type": "color",
+    "light": "#ffbb001f",
+    "dark": "#ffc9331f"
+  },
+  "color-content-accent-bg-strong": {
+    "type": "color",
+    "light": "#ffbb003d",
+    "dark": "#ffbb0029"
+  },
+  "color-content-accent-border-default": {
+    "type": "color",
+    "light": "#ffbb0029",
+    "dark": "#ffd66666"
+  },
+  "color-content-accent-border-faint": {
+    "type": "color",
+    "light": "#ffbb0014",
+    "dark": "#ffd6661f"
+  },
+  "color-content-accent-border-muted": {
+    "type": "color",
+    "light": "#ffbb001f",
+    "dark": "#ffd6663d"
+  },
+  "color-content-accent-border-strong": {
+    "type": "color",
+    "light": "#ffbb003d",
+    "dark": "#ffbb00"
+  },
+  "color-content-accent-icon-default": {
+    "type": "color",
+    "light": "#ffbb00b8",
+    "dark": "#fff1ccb8"
+  },
+  "color-content-accent-icon-faint": {
+    "type": "color",
+    "light": "#ffbb0052",
+    "dark": "#fff1cc7a"
+  },
+  "color-content-accent-icon-muted": {
+    "type": "color",
+    "light": "#ffbb00a3",
+    "dark": "#fff1cca3"
+  },
+  "color-content-accent-icon-strong": {
+    "type": "color",
+    "light": "#ffbb00",
+    "dark": "#fff1cc"
+  },
+  "color-content-accent-text-default": {
+    "type": "color",
+    "light": "#ffbb00b8",
+    "dark": "#fff1ccb8"
+  },
+  "color-content-accent-text-faint": {
+    "type": "color",
+    "light": "#ffbb0052",
+    "dark": "#fff1cc7a"
+  },
+  "color-content-accent-text-muted": {
+    "type": "color",
+    "light": "#ffbb008f",
+    "dark": "#fff1cca3"
+  },
+  "color-content-accent-text-strong": {
+    "type": "color",
+    "light": "#ffbb00",
+    "dark": "#fff1cc"
+  },
+  "color-content-danger-bg-default": {
+    "type": "color",
+    "light": "#ee464629",
+    "dark": "#f16b6b29"
+  },
+  "color-content-danger-bg-faint": {
+    "type": "color",
+    "light": "#ee464614",
+    "dark": "#f16b6b14"
+  },
+  "color-content-danger-bg-muted": {
+    "type": "color",
+    "light": "#ee46461f",
+    "dark": "#f16b6b1f"
+  },
+  "color-content-danger-bg-strong": {
+    "type": "color",
+    "light": "#ee46463d",
+    "dark": "#ee464629"
+  },
+  "color-content-danger-border-default": {
+    "type": "color",
+    "light": "#ee464629",
+    "dark": "#f5909066"
+  },
+  "color-content-danger-border-faint": {
+    "type": "color",
+    "light": "#ee464614",
+    "dark": "#f590901f"
+  },
+  "color-content-danger-border-muted": {
+    "type": "color",
+    "light": "#ee46461f",
+    "dark": "#f590903d"
+  },
+  "color-content-danger-border-strong": {
+    "type": "color",
+    "light": "#ee46463d",
+    "dark": "#ee4646"
+  },
+  "color-content-danger-icon-default": {
+    "type": "color",
+    "light": "#ee4646b8",
+    "dark": "#fcdadab8"
+  },
+  "color-content-danger-icon-faint": {
+    "type": "color",
+    "light": "#ee464652",
+    "dark": "#fcdada7a"
+  },
+  "color-content-danger-icon-muted": {
+    "type": "color",
+    "light": "#ee4646a3",
+    "dark": "#fcdadaa3"
+  },
+  "color-content-danger-icon-strong": {
+    "type": "color",
+    "light": "#ee4646",
+    "dark": "#fcdada"
+  },
+  "color-content-danger-text-default": {
+    "type": "color",
+    "light": "#ee4646b8",
+    "dark": "#fcdadab8"
+  },
+  "color-content-danger-text-faint": {
+    "type": "color",
+    "light": "#ee464652",
+    "dark": "#fcdada7a"
+  },
+  "color-content-danger-text-muted": {
+    "type": "color",
+    "light": "#ee46468f",
+    "dark": "#fcdadaa3"
+  },
+  "color-content-danger-text-strong": {
+    "type": "color",
+    "light": "#ee4646",
+    "dark": "#fcdada"
+  },
+  "color-content-inverse-bg-default": {
+    "type": "color",
+    "light": "#ffffff29",
+    "dark": "#00000029"
+  },
+  "color-content-inverse-bg-faint": {
+    "type": "color",
+    "light": "#ffffff14",
+    "dark": "#00000014"
+  },
+  "color-content-inverse-bg-muted": {
+    "type": "color",
+    "light": "#ffffff1f",
+    "dark": "#0000001f"
+  },
+  "color-content-inverse-bg-strong": {
+    "type": "color",
+    "light": "#ffffff3d",
+    "dark": "#00000029"
+  },
+  "color-content-inverse-border-default": {
+    "type": "color",
+    "light": "#ffffff29",
+    "dark": "#00000066"
+  },
+  "color-content-inverse-border-faint": {
+    "type": "color",
+    "light": "#ffffff14",
+    "dark": "#0000001f"
+  },
+  "color-content-inverse-border-muted": {
+    "type": "color",
+    "light": "#ffffff1f",
+    "dark": "#0000003d"
+  },
+  "color-content-inverse-border-strong": {
+    "type": "color",
+    "light": "#ffffff3d",
+    "dark": "#00000066"
+  },
+  "color-content-inverse-icon-default": {
+    "type": "color",
+    "light": "#ffffffcc",
+    "dark": "#191919cc"
+  },
+  "color-content-inverse-icon-faint": {
+    "type": "color",
+    "light": "#ffffff52",
+    "dark": "#1919197a"
+  },
+  "color-content-inverse-icon-muted": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#191919a3"
+  },
+  "color-content-inverse-icon-strong": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#000000"
+  },
+  "color-content-inverse-text-default": {
+    "type": "color",
+    "light": "#ffffffcc",
+    "dark": "#191919cc"
+  },
+  "color-content-inverse-text-faint": {
+    "type": "color",
+    "light": "#ffffff52",
+    "dark": "#1919197a"
+  },
+  "color-content-inverse-text-muted": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#191919a3"
+  },
+  "color-content-inverse-text-strong": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#000000"
+  },
+  "color-content-neutral-bg-default": {
+    "type": "color",
+    "light": "#00000029",
+    "dark": "#ffffff29"
+  },
+  "color-content-neutral-bg-faint": {
+    "type": "color",
+    "light": "#00000014",
+    "dark": "#ffffff14"
+  },
+  "color-content-neutral-bg-muted": {
+    "type": "color",
+    "light": "#0000001f",
+    "dark": "#ffffff1f"
+  },
+  "color-content-neutral-bg-strong": {
+    "type": "color",
+    "light": "#0000003d",
+    "dark": "#00000029"
+  },
+  "color-content-neutral-border-default": {
+    "type": "color",
+    "light": "#00000029",
+    "dark": "#ffffff66"
+  },
+  "color-content-neutral-border-faint": {
+    "type": "color",
+    "light": "#00000014",
+    "dark": "#ffffff1f"
+  },
+  "color-content-neutral-border-muted": {
+    "type": "color",
+    "light": "#0000001f",
+    "dark": "#ffffff3d"
+  },
+  "color-content-neutral-border-strong": {
+    "type": "color",
+    "light": "#0000003d",
+    "dark": "#000000"
+  },
+  "color-content-neutral-icon-default": {
+    "type": "color",
+    "light": "#000000b8",
+    "dark": "#f2f2f2b8"
+  },
+  "color-content-neutral-icon-faint": {
+    "type": "color",
+    "light": "#00000052",
+    "dark": "#f2f2f27a"
+  },
+  "color-content-neutral-icon-muted": {
+    "type": "color",
+    "light": "#000000a3",
+    "dark": "#f2f2f2a3"
+  },
+  "color-content-neutral-icon-strong": {
+    "type": "color",
+    "light": "#000000",
+    "dark": "#ffffff"
+  },
+  "color-content-neutral-text-default": {
+    "type": "color",
+    "light": "#000000b8",
+    "dark": "#f2f2f2b8"
+  },
+  "color-content-neutral-text-faint": {
+    "type": "color",
+    "light": "#00000052",
+    "dark": "#f2f2f27a"
+  },
+  "color-content-neutral-text-muted": {
+    "type": "color",
+    "light": "#0000008f",
+    "dark": "#f2f2f2a3"
+  },
+  "color-content-neutral-text-strong": {
+    "type": "color",
+    "light": "#000000",
+    "dark": "#ffffff"
+  },
+  "color-content-primary-bg-default": {
+    "type": "color",
+    "light": "#8d4afc29",
+    "dark": "#a46efd29"
+  },
+  "color-content-primary-bg-faint": {
+    "type": "color",
+    "light": "#8d4afc14",
+    "dark": "#a46efd14"
+  },
+  "color-content-primary-bg-muted": {
+    "type": "color",
+    "light": "#8d4afc1f",
+    "dark": "#a46efd1f"
+  },
+  "color-content-primary-bg-strong": {
+    "type": "color",
+    "light": "#8d4afc3d",
+    "dark": "#8d4afc29"
+  },
+  "color-content-primary-border-default": {
+    "type": "color",
+    "light": "#8d4afc29",
+    "dark": "#bb92fd66"
+  },
+  "color-content-primary-border-faint": {
+    "type": "color",
+    "light": "#8d4afc14",
+    "dark": "#bb92fd1f"
+  },
+  "color-content-primary-border-muted": {
+    "type": "color",
+    "light": "#8d4afc1f",
+    "dark": "#bb92fd3d"
+  },
+  "color-content-primary-border-strong": {
+    "type": "color",
+    "light": "#8d4afc3d",
+    "dark": "#8d4afc"
+  },
+  "color-content-primary-icon-default": {
+    "type": "color",
+    "light": "#8d4afcb8",
+    "dark": "#e8dbfeb8"
+  },
+  "color-content-primary-icon-faint": {
+    "type": "color",
+    "light": "#8d4afc52",
+    "dark": "#e8dbfe7a"
+  },
+  "color-content-primary-icon-muted": {
+    "type": "color",
+    "light": "#8d4afca3",
+    "dark": "#e8dbfea3"
+  },
+  "color-content-primary-icon-strong": {
+    "type": "color",
+    "light": "#8d4afc",
+    "dark": "#e8dbfe"
+  },
+  "color-content-primary-text-default": {
+    "type": "color",
+    "light": "#8d4afcb8",
+    "dark": "#e8dbfeb8"
+  },
+  "color-content-primary-text-faint": {
+    "type": "color",
+    "light": "#8d4afc52",
+    "dark": "#e8dbfe7a"
+  },
+  "color-content-primary-text-muted": {
+    "type": "color",
+    "light": "#8d4afc8f",
+    "dark": "#e8dbfea3"
+  },
+  "color-content-primary-text-strong": {
+    "type": "color",
+    "light": "#8d4afc",
+    "dark": "#e8dbfe"
+  },
+  "color-content-secondary-bg-default": {
+    "type": "color",
+    "light": "#1e7ef729",
+    "dark": "#4b98f929"
+  },
+  "color-content-secondary-bg-faint": {
+    "type": "color",
+    "light": "#1e7ef714",
+    "dark": "#4b98f914"
+  },
+  "color-content-secondary-bg-muted": {
+    "type": "color",
+    "light": "#1e7ef71f",
+    "dark": "#4b98f91f"
+  },
+  "color-content-secondary-bg-strong": {
+    "type": "color",
+    "light": "#1e7ef73d",
+    "dark": "#1e7ef729"
+  },
+  "color-content-secondary-border-default": {
+    "type": "color",
+    "light": "#1e7ef729",
+    "dark": "#78b2fa66"
+  },
+  "color-content-secondary-border-faint": {
+    "type": "color",
+    "light": "#1e7ef714",
+    "dark": "#78b2fa1f"
+  },
+  "color-content-secondary-border-muted": {
+    "type": "color",
+    "light": "#1e7ef71f",
+    "dark": "#78b2fa3d"
+  },
+  "color-content-secondary-border-strong": {
+    "type": "color",
+    "light": "#1e7ef73d",
+    "dark": "#1e7ef7"
+  },
+  "color-content-secondary-icon-default": {
+    "type": "color",
+    "light": "#1e7ef7b8",
+    "dark": "#d2e5fdb8"
+  },
+  "color-content-secondary-icon-faint": {
+    "type": "color",
+    "light": "#1e7ef752",
+    "dark": "#d2e5fd7a"
+  },
+  "color-content-secondary-icon-muted": {
+    "type": "color",
+    "light": "#1e7ef7a3",
+    "dark": "#d2e5fda3"
+  },
+  "color-content-secondary-icon-strong": {
+    "type": "color",
+    "light": "#1e7ef7",
+    "dark": "#d2e5fd"
+  },
+  "color-content-secondary-text-default": {
+    "type": "color",
+    "light": "#1e7ef7b8",
+    "dark": "#d2e5fdb8"
+  },
+  "color-content-secondary-text-faint": {
+    "type": "color",
+    "light": "#1e7ef752",
+    "dark": "#d2e5fd7a"
+  },
+  "color-content-secondary-text-muted": {
+    "type": "color",
+    "light": "#1e7ef78f",
+    "dark": "#d2e5fda3"
+  },
+  "color-content-secondary-text-strong": {
+    "type": "color",
+    "light": "#1e7ef7",
+    "dark": "#d2e5fd"
+  },
+  "color-content-subsidiary-bg-default": {
+    "type": "color",
+    "light": "#59506729",
+    "dark": "#7a738529"
+  },
+  "color-content-subsidiary-bg-faint": {
+    "type": "color",
+    "light": "#59506714",
+    "dark": "#7a738514"
+  },
+  "color-content-subsidiary-bg-muted": {
+    "type": "color",
+    "light": "#5950671f",
+    "dark": "#7a73851f"
+  },
+  "color-content-subsidiary-bg-strong": {
+    "type": "color",
+    "light": "#5950673d",
+    "dark": "#59506729"
+  },
+  "color-content-subsidiary-border-default": {
+    "type": "color",
+    "light": "#59506729",
+    "dark": "#9b96a466"
+  },
+  "color-content-subsidiary-border-faint": {
+    "type": "color",
+    "light": "#59506714",
+    "dark": "#9b96a41f"
+  },
+  "color-content-subsidiary-border-muted": {
+    "type": "color",
+    "light": "#5950671f",
+    "dark": "#9b96a43d"
+  },
+  "color-content-subsidiary-border-strong": {
+    "type": "color",
+    "light": "#5950673d",
+    "dark": "#595067"
+  },
+  "color-content-subsidiary-icon-default": {
+    "type": "color",
+    "light": "#595067b8",
+    "dark": "#dedce1b8"
+  },
+  "color-content-subsidiary-icon-faint": {
+    "type": "color",
+    "light": "#59506752",
+    "dark": "#dedce17a"
+  },
+  "color-content-subsidiary-icon-muted": {
+    "type": "color",
+    "light": "#595067a3",
+    "dark": "#dedce1a3"
+  },
+  "color-content-subsidiary-icon-strong": {
+    "type": "color",
+    "light": "#595067",
+    "dark": "#dedce1"
+  },
+  "color-content-subsidiary-text-default": {
+    "type": "color",
+    "light": "#595067b8",
+    "dark": "#dedce1b8"
+  },
+  "color-content-subsidiary-text-faint": {
+    "type": "color",
+    "light": "#59506752",
+    "dark": "#dedce17a"
+  },
+  "color-content-subsidiary-text-muted": {
+    "type": "color",
+    "light": "#5950678f",
+    "dark": "#dedce1a3"
+  },
+  "color-content-subsidiary-text-strong": {
+    "type": "color",
+    "light": "#595067",
+    "dark": "#dedce1"
+  },
+  "color-content-success-bg-default": {
+    "type": "color",
+    "light": "#1eaa5c29",
+    "dark": "#4bbb7d29"
+  },
+  "color-content-success-bg-faint": {
+    "type": "color",
+    "light": "#1eaa5c14",
+    "dark": "#4bbb7d14"
+  },
+  "color-content-success-bg-muted": {
+    "type": "color",
+    "light": "#1eaa5c1f",
+    "dark": "#4bbb7d1f"
+  },
+  "color-content-success-bg-strong": {
+    "type": "color",
+    "light": "#1eaa5c3d",
+    "dark": "#1eaa5c29"
+  },
+  "color-content-success-border-default": {
+    "type": "color",
+    "light": "#1eaa5c29",
+    "dark": "#78cc9d66"
+  },
+  "color-content-success-border-faint": {
+    "type": "color",
+    "light": "#1eaa5c14",
+    "dark": "#78cc9d1f"
+  },
+  "color-content-success-border-muted": {
+    "type": "color",
+    "light": "#1eaa5c1f",
+    "dark": "#78cc9d3d"
+  },
+  "color-content-success-border-strong": {
+    "type": "color",
+    "light": "#1eaa5c3d",
+    "dark": "#1eaa5c"
+  },
+  "color-content-success-icon-default": {
+    "type": "color",
+    "light": "#1eaa5cb8",
+    "dark": "#d2eedeb8"
+  },
+  "color-content-success-icon-faint": {
+    "type": "color",
+    "light": "#1eaa5c52",
+    "dark": "#d2eede7a"
+  },
+  "color-content-success-icon-muted": {
+    "type": "color",
+    "light": "#1eaa5ca3",
+    "dark": "#d2eedea3"
+  },
+  "color-content-success-icon-strong": {
+    "type": "color",
+    "light": "#1eaa5c",
+    "dark": "#d2eede"
+  },
+  "color-content-success-text-default": {
+    "type": "color",
+    "light": "#1eaa5cb8",
+    "dark": "#d2eedeb8"
+  },
+  "color-content-success-text-faint": {
+    "type": "color",
+    "light": "#1eaa5c52",
+    "dark": "#d2eede7a"
+  },
+  "color-content-success-text-muted": {
+    "type": "color",
+    "light": "#1eaa5c8f",
+    "dark": "#d2eedea3"
+  },
+  "color-content-success-text-strong": {
+    "type": "color",
+    "light": "#1eaa5c",
+    "dark": "#d2eede"
+  },
+  "color-content-warning-bg-default": {
+    "type": "color",
+    "light": "#ff6e2629",
+    "dark": "#ff8b5129"
+  },
+  "color-content-warning-bg-faint": {
+    "type": "color",
+    "light": "#ff6e2614",
+    "dark": "#ff8b5114"
+  },
+  "color-content-warning-bg-muted": {
+    "type": "color",
+    "light": "#ff6e261f",
+    "dark": "#ff8b511f"
+  },
+  "color-content-warning-bg-strong": {
+    "type": "color",
+    "light": "#ff6e263d",
+    "dark": "#ff6e2629"
+  },
+  "color-content-warning-border-default": {
+    "type": "color",
+    "light": "#ff6e2629",
+    "dark": "#ffa87d66"
+  },
+  "color-content-warning-border-faint": {
+    "type": "color",
+    "light": "#ff6e2614",
+    "dark": "#ffa87d1f"
+  },
+  "color-content-warning-border-muted": {
+    "type": "color",
+    "light": "#ff6e261f",
+    "dark": "#ffa87d3d"
+  },
+  "color-content-warning-border-strong": {
+    "type": "color",
+    "light": "#ff6e263d",
+    "dark": "#ff6e26"
+  },
+  "color-content-warning-icon-default": {
+    "type": "color",
+    "light": "#ff6e26b8",
+    "dark": "#ffe2d4b8"
+  },
+  "color-content-warning-icon-faint": {
+    "type": "color",
+    "light": "#ff6e2652",
+    "dark": "#ffe2d47a"
+  },
+  "color-content-warning-icon-muted": {
+    "type": "color",
+    "light": "#ff6e26a3",
+    "dark": "#ffe2d4a3"
+  },
+  "color-content-warning-icon-strong": {
+    "type": "color",
+    "light": "#ff6e26",
+    "dark": "#ffe2d4"
+  },
+  "color-content-warning-text-default": {
+    "type": "color",
+    "light": "#ff6e26b8",
+    "dark": "#ffe2d4b8"
+  },
+  "color-content-warning-text-faint": {
+    "type": "color",
+    "light": "#ff6e2652",
+    "dark": "#ffe2d47a"
+  },
+  "color-content-warning-text-muted": {
+    "type": "color",
+    "light": "#ff6e268f",
+    "dark": "#ffe2d4a3"
+  },
+  "color-content-warning-text-strong": {
+    "type": "color",
+    "light": "#ff6e26",
+    "dark": "#ffe2d4"
+  },
+  "color-environment-border-default": {
+    "type": "color",
+    "light": "#0000001f",
+    "dark": "#ffffff1f"
+  },
+  "color-environment-border-muted": {
+    "type": "color",
+    "light": "#00000014",
+    "dark": "#ffffff14"
+  },
+  "color-environment-border-strong": {
+    "type": "color",
+    "light": "#0000003d",
+    "dark": "#ffffff3d"
+  },
+  "color-environment-scrim-default": {
+    "type": "color",
+    "light": "#000000b8",
+    "dark": "#000000cc"
+  },
+  "color-environment-scrim-subtle": {
+    "type": "color",
+    "light": "#00000066",
+    "dark": "#000000a3"
+  },
+  "color-environment-shadow-3": {
+    "type": "color",
+    "light": "#00000008",
+    "dark": "#00000014"
+  },
+  "color-environment-shadow-4": {
+    "type": "color",
+    "light": "#0000000a",
+    "dark": "#00000014"
+  },
+  "color-environment-shadow-6": {
+    "type": "color",
+    "light": "#0000000f",
+    "dark": "#0000001f"
+  },
+  "color-environment-shadow-7": {
+    "type": "color",
+    "light": "#00000012",
+    "dark": "#00000029"
+  },
+  "color-environment-shadow-8": {
+    "type": "color",
+    "light": "#00000014",
+    "dark": "#00000029"
+  },
+  "color-environment-shadow-10": {
+    "type": "color",
+    "light": "#0000001a",
+    "dark": "#0000003d"
+  },
+  "color-environment-shadow-12": {
+    "type": "color",
+    "light": "#0000001f",
+    "dark": "#0000003d"
+  },
+  "color-environment-shadow-16": {
+    "type": "color",
+    "light": "#00000029",
+    "dark": "#00000052"
+  },
+  "color-environment-shadow-17": {
+    "type": "color",
+    "light": "#0000002b",
+    "dark": "#00000052"
+  },
+  "color-environment-shadow-24": {
+    "type": "color",
+    "light": "#0000003d",
+    "dark": "#00000066"
+  },
+  "color-environment-surface-canvas": {
+    "type": "color",
+    "light": "#e5e5e5",
+    "dark": "#191919"
+  },
+  "color-environment-surface-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#262626"
+  },
+  "color-environment-surface-inverse": {
+    "type": "color",
+    "light": "#000000a3",
+    "dark": "#ffffffcc"
+  },
+  "color-environment-surface-overlay": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#393939"
+  },
+  "color-environment-surface-raised": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#393939"
+  },
+  "color-environment-surface-sunken": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#000000"
+  },
+  "color-focus-default": {
+    "type": "color",
+    "light": "#5950673d",
+    "dark": "#bdb9c2a3",
+    "description": "Focus ring color for all interactive elements."
+  },
+  "color-focus-invalid": {
+    "type": "color",
+    "light": "#ee46463d",
+    "dark": "#f59090a3",
+    "description": "Focus ring for fields in the invalid state."
+  },
+  "color-interactive-accent-solid-bg-active": {
+    "type": "color",
+    "light": "#997000",
+    "dark": "#ffe499"
+  },
+  "color-interactive-accent-solid-bg-default": {
+    "type": "color",
+    "light": "#ffbb00",
+    "dark": "#ffc933"
+  },
+  "color-interactive-accent-solid-bg-disabled": {
+    "type": "color",
+    "light": "#ffbb008f",
+    "dark": "#ffc9338f"
+  },
+  "color-interactive-accent-solid-bg-hover": {
+    "type": "color",
+    "light": "#cc9600",
+    "dark": "#ffd666"
+  },
+  "color-interactive-accent-solid-bg-selected": {
+    "type": "color",
+    "light": "#997000",
+    "dark": "#ffe499",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-accent-solid-border-active": {
+    "type": "color",
+    "light": "#4d38003d",
+    "dark": "#fff8e53d"
+  },
+  "color-interactive-accent-solid-border-default": {
+    "type": "color",
+    "light": "#4d380029",
+    "dark": "#fff8e51f"
+  },
+  "color-interactive-accent-solid-border-disabled": {
+    "type": "color",
+    "light": "#4d380014",
+    "dark": "#fff8e514"
+  },
+  "color-interactive-accent-solid-border-hover": {
+    "type": "color",
+    "light": "#4d38003d",
+    "dark": "#fff8e529"
+  },
+  "color-interactive-accent-solid-border-selected": {
+    "type": "color",
+    "light": "#4d38003d",
+    "dark": "#fff8e53d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-accent-solid-icon-active": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#191919"
+  },
+  "color-interactive-accent-solid-icon-default": {
+    "type": "color",
+    "light": "#4d4d4d",
+    "dark": "#191919"
+  },
+  "color-interactive-accent-solid-icon-disabled": {
+    "type": "color",
+    "light": "#4d4d4da3",
+    "dark": "#19191966"
+  },
+  "color-interactive-accent-solid-icon-hover": {
+    "type": "color",
+    "light": "#393939",
+    "dark": "#191919"
+  },
+  "color-interactive-accent-solid-icon-selected": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-accent-solid-text-active": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#191919"
+  },
+  "color-interactive-accent-solid-text-default": {
+    "type": "color",
+    "light": "#4d4d4d",
+    "dark": "#191919"
+  },
+  "color-interactive-accent-solid-text-disabled": {
+    "type": "color",
+    "light": "#4d4d4da3",
+    "dark": "#19191966"
+  },
+  "color-interactive-accent-solid-text-hover": {
+    "type": "color",
+    "light": "#393939",
+    "dark": "#191919"
+  },
+  "color-interactive-accent-solid-text-selected": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-accent-subtle-bg-active": {
+    "type": "color",
+    "light": "#fff1cc",
+    "dark": "#4d3800"
+  },
+  "color-interactive-accent-subtle-bg-default": {
+    "type": "color",
+    "light": "#fff8e5",
+    "dark": "#332500"
+  },
+  "color-interactive-accent-subtle-bg-disabled": {
+    "type": "color",
+    "light": "#fff8e5",
+    "dark": "#332500"
+  },
+  "color-interactive-accent-subtle-bg-hover": {
+    "type": "color",
+    "light": "#fff1cc",
+    "dark": "#4d3800"
+  },
+  "color-interactive-accent-subtle-bg-selected": {
+    "type": "color",
+    "light": "#fff1cc",
+    "dark": "#4d3800",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-accent-subtle-border-active": {
+    "type": "color",
+    "light": "#ffd666",
+    "dark": "#997000"
+  },
+  "color-interactive-accent-subtle-border-default": {
+    "type": "color",
+    "light": "#ffe499",
+    "dark": "#735400"
+  },
+  "color-interactive-accent-subtle-border-disabled": {
+    "type": "color",
+    "light": "#fff1cc",
+    "dark": "#4d3800"
+  },
+  "color-interactive-accent-subtle-border-hover": {
+    "type": "color",
+    "light": "#ffd666",
+    "dark": "#997000"
+  },
+  "color-interactive-accent-subtle-border-selected": {
+    "type": "color",
+    "light": "#ffd666",
+    "dark": "#997000",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-accent-subtle-icon-active": {
+    "type": "color",
+    "light": "#997000",
+    "dark": "#ffe499"
+  },
+  "color-interactive-accent-subtle-icon-default": {
+    "type": "color",
+    "light": "#ffbb00",
+    "dark": "#ffd666"
+  },
+  "color-interactive-accent-subtle-icon-disabled": {
+    "type": "color",
+    "light": "#fff1cc",
+    "dark": "#997000"
+  },
+  "color-interactive-accent-subtle-icon-hover": {
+    "type": "color",
+    "light": "#cc9600",
+    "dark": "#ffe499"
+  },
+  "color-interactive-accent-subtle-icon-selected": {
+    "type": "color",
+    "light": "#997000",
+    "dark": "#ffe499",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-accent-subtle-text-active": {
+    "type": "color",
+    "light": "#997000",
+    "dark": "#ffe499"
+  },
+  "color-interactive-accent-subtle-text-default": {
+    "type": "color",
+    "light": "#ffbb00",
+    "dark": "#ffd666"
+  },
+  "color-interactive-accent-subtle-text-disabled": {
+    "type": "color",
+    "light": "#fff1cc",
+    "dark": "#997000"
+  },
+  "color-interactive-accent-subtle-text-hover": {
+    "type": "color",
+    "light": "#cc9600",
+    "dark": "#ffe499"
+  },
+  "color-interactive-accent-subtle-text-selected": {
+    "type": "color",
+    "light": "#997000",
+    "dark": "#ffe499",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-accent-transparent-bg-active": {
+    "type": "color",
+    "light": "#ffbb003d",
+    "dark": "#ffc9333d"
+  },
+  "color-interactive-accent-transparent-bg-default": {
+    "type": "color",
+    "light": "#ffbb0029",
+    "dark": "#ffc9331f"
+  },
+  "color-interactive-accent-transparent-bg-disabled": {
+    "type": "color",
+    "light": "#ffbb0029",
+    "dark": "#ffc93314"
+  },
+  "color-interactive-accent-transparent-bg-hover": {
+    "type": "color",
+    "light": "#ffbb003d",
+    "dark": "#ffc93329"
+  },
+  "color-interactive-accent-transparent-bg-selected": {
+    "type": "color",
+    "light": "#ffbb003d",
+    "dark": "#ffc9333d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-accent-transparent-border-active": {
+    "type": "color",
+    "light": "#ffbb0029",
+    "dark": "#ffd6668f"
+  },
+  "color-interactive-accent-transparent-border-default": {
+    "type": "color",
+    "light": "#ffbb001f",
+    "dark": "#ffd66652"
+  },
+  "color-interactive-accent-transparent-border-disabled": {
+    "type": "color",
+    "light": "#ffbb0014",
+    "dark": "#ffd66614"
+  },
+  "color-interactive-accent-transparent-border-hover": {
+    "type": "color",
+    "light": "#ffbb0029",
+    "dark": "#ffd66666"
+  },
+  "color-interactive-accent-transparent-border-selected": {
+    "type": "color",
+    "light": "#ffbb0029",
+    "dark": "#ffd6668f",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-accent-transparent-icon-active": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#fff8e5"
+  },
+  "color-interactive-accent-transparent-icon-default": {
+    "type": "color",
+    "light": "#4d4d4d",
+    "dark": "#fff1cc"
+  },
+  "color-interactive-accent-transparent-icon-disabled": {
+    "type": "color",
+    "light": "#4d4d4da3",
+    "dark": "#fff1cc66"
+  },
+  "color-interactive-accent-transparent-icon-hover": {
+    "type": "color",
+    "light": "#393939",
+    "dark": "#fff8e5"
+  },
+  "color-interactive-accent-transparent-icon-selected": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#fff8e5",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-accent-transparent-text-active": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#fff8e5"
+  },
+  "color-interactive-accent-transparent-text-default": {
+    "type": "color",
+    "light": "#4d4d4d",
+    "dark": "#fff1cc"
+  },
+  "color-interactive-accent-transparent-text-disabled": {
+    "type": "color",
+    "light": "#4d4d4da3",
+    "dark": "#fff1cc66"
+  },
+  "color-interactive-accent-transparent-text-hover": {
+    "type": "color",
+    "light": "#393939",
+    "dark": "#fff8e5"
+  },
+  "color-interactive-accent-transparent-text-selected": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#fff8e5",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-danger-solid-bg-active": {
+    "type": "color",
+    "light": "#8f2a2a",
+    "dark": "#f8b5b5"
+  },
+  "color-interactive-danger-solid-bg-default": {
+    "type": "color",
+    "light": "#ee4646",
+    "dark": "#f16b6b"
+  },
+  "color-interactive-danger-solid-bg-disabled": {
+    "type": "color",
+    "light": "#ee46468f",
+    "dark": "#f16b6b8f"
+  },
+  "color-interactive-danger-solid-bg-hover": {
+    "type": "color",
+    "light": "#be3838",
+    "dark": "#f59090"
+  },
+  "color-interactive-danger-solid-bg-selected": {
+    "type": "color",
+    "light": "#8f2a2a",
+    "dark": "#f8b5b5",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-danger-solid-border-active": {
+    "type": "color",
+    "light": "#4715153d",
+    "dark": "#fdecec3d"
+  },
+  "color-interactive-danger-solid-border-default": {
+    "type": "color",
+    "light": "#47151529",
+    "dark": "#fdecec1f"
+  },
+  "color-interactive-danger-solid-border-disabled": {
+    "type": "color",
+    "light": "#47151514",
+    "dark": "#fdecec14"
+  },
+  "color-interactive-danger-solid-border-hover": {
+    "type": "color",
+    "light": "#4715153d",
+    "dark": "#fdecec29"
+  },
+  "color-interactive-danger-solid-border-selected": {
+    "type": "color",
+    "light": "#4715153d",
+    "dark": "#fdecec3d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-danger-solid-icon-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-danger-solid-icon-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-danger-solid-icon-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-danger-solid-icon-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-danger-solid-icon-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-danger-solid-text-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-danger-solid-text-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-danger-solid-text-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-danger-solid-text-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-danger-solid-text-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-danger-subtle-bg-active": {
+    "type": "color",
+    "light": "#fcdada",
+    "dark": "#471515"
+  },
+  "color-interactive-danger-subtle-bg-default": {
+    "type": "color",
+    "light": "#fdecec",
+    "dark": "#300e0e"
+  },
+  "color-interactive-danger-subtle-bg-disabled": {
+    "type": "color",
+    "light": "#fdecec",
+    "dark": "#300e0e"
+  },
+  "color-interactive-danger-subtle-bg-hover": {
+    "type": "color",
+    "light": "#fcdada",
+    "dark": "#471515"
+  },
+  "color-interactive-danger-subtle-bg-selected": {
+    "type": "color",
+    "light": "#fcdada",
+    "dark": "#471515",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-danger-subtle-border-active": {
+    "type": "color",
+    "light": "#f59090",
+    "dark": "#8f2a2a"
+  },
+  "color-interactive-danger-subtle-border-default": {
+    "type": "color",
+    "light": "#f8b5b5",
+    "dark": "#6b2020"
+  },
+  "color-interactive-danger-subtle-border-disabled": {
+    "type": "color",
+    "light": "#fcdada",
+    "dark": "#471515"
+  },
+  "color-interactive-danger-subtle-border-hover": {
+    "type": "color",
+    "light": "#f59090",
+    "dark": "#8f2a2a"
+  },
+  "color-interactive-danger-subtle-border-selected": {
+    "type": "color",
+    "light": "#f59090",
+    "dark": "#8f2a2a",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-danger-subtle-icon-active": {
+    "type": "color",
+    "light": "#8f2a2a",
+    "dark": "#f8b5b5"
+  },
+  "color-interactive-danger-subtle-icon-default": {
+    "type": "color",
+    "light": "#ee4646",
+    "dark": "#f59090"
+  },
+  "color-interactive-danger-subtle-icon-disabled": {
+    "type": "color",
+    "light": "#fcdada",
+    "dark": "#8f2a2a"
+  },
+  "color-interactive-danger-subtle-icon-hover": {
+    "type": "color",
+    "light": "#be3838",
+    "dark": "#f8b5b5"
+  },
+  "color-interactive-danger-subtle-icon-selected": {
+    "type": "color",
+    "light": "#8f2a2a",
+    "dark": "#f8b5b5",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-danger-subtle-text-active": {
+    "type": "color",
+    "light": "#8f2a2a",
+    "dark": "#f8b5b5"
+  },
+  "color-interactive-danger-subtle-text-default": {
+    "type": "color",
+    "light": "#ee4646",
+    "dark": "#f59090"
+  },
+  "color-interactive-danger-subtle-text-disabled": {
+    "type": "color",
+    "light": "#fcdada",
+    "dark": "#8f2a2a"
+  },
+  "color-interactive-danger-subtle-text-hover": {
+    "type": "color",
+    "light": "#be3838",
+    "dark": "#f8b5b5"
+  },
+  "color-interactive-danger-subtle-text-selected": {
+    "type": "color",
+    "light": "#8f2a2a",
+    "dark": "#f8b5b5",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-danger-transparent-bg-active": {
+    "type": "color",
+    "light": "#ee46463d",
+    "dark": "#f16b6b3d"
+  },
+  "color-interactive-danger-transparent-bg-default": {
+    "type": "color",
+    "light": "#ee464629",
+    "dark": "#f16b6b1f"
+  },
+  "color-interactive-danger-transparent-bg-disabled": {
+    "type": "color",
+    "light": "#ee464629",
+    "dark": "#f16b6b14"
+  },
+  "color-interactive-danger-transparent-bg-hover": {
+    "type": "color",
+    "light": "#ee46463d",
+    "dark": "#f16b6b29"
+  },
+  "color-interactive-danger-transparent-bg-selected": {
+    "type": "color",
+    "light": "#ee46463d",
+    "dark": "#f16b6b3d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-danger-transparent-border-active": {
+    "type": "color",
+    "light": "#ee464629",
+    "dark": "#f590908f"
+  },
+  "color-interactive-danger-transparent-border-default": {
+    "type": "color",
+    "light": "#ee46461f",
+    "dark": "#f5909052"
+  },
+  "color-interactive-danger-transparent-border-disabled": {
+    "type": "color",
+    "light": "#ee464614",
+    "dark": "#f5909014"
+  },
+  "color-interactive-danger-transparent-border-hover": {
+    "type": "color",
+    "light": "#ee464629",
+    "dark": "#f5909066"
+  },
+  "color-interactive-danger-transparent-border-selected": {
+    "type": "color",
+    "light": "#ee464629",
+    "dark": "#f590908f",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-danger-transparent-icon-active": {
+    "type": "color",
+    "light": "#8f2a2a",
+    "dark": "#fdecec"
+  },
+  "color-interactive-danger-transparent-icon-default": {
+    "type": "color",
+    "light": "#ee4646",
+    "dark": "#fcdada"
+  },
+  "color-interactive-danger-transparent-icon-disabled": {
+    "type": "color",
+    "light": "#ee4646a3",
+    "dark": "#fcdada66"
+  },
+  "color-interactive-danger-transparent-icon-hover": {
+    "type": "color",
+    "light": "#be3838",
+    "dark": "#fdecec"
+  },
+  "color-interactive-danger-transparent-icon-selected": {
+    "type": "color",
+    "light": "#8f2a2a",
+    "dark": "#fdecec",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-danger-transparent-text-active": {
+    "type": "color",
+    "light": "#8f2a2a",
+    "dark": "#fdecec"
+  },
+  "color-interactive-danger-transparent-text-default": {
+    "type": "color",
+    "light": "#ee4646",
+    "dark": "#fcdada"
+  },
+  "color-interactive-danger-transparent-text-disabled": {
+    "type": "color",
+    "light": "#ee4646a3",
+    "dark": "#fcdada66"
+  },
+  "color-interactive-danger-transparent-text-hover": {
+    "type": "color",
+    "light": "#be3838",
+    "dark": "#fdecec"
+  },
+  "color-interactive-danger-transparent-text-selected": {
+    "type": "color",
+    "light": "#8f2a2a",
+    "dark": "#fdecec",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-neutral-solid-bg-active": {
+    "type": "color",
+    "light": "#393939",
+    "dark": "#e5e5e5"
+  },
+  "color-interactive-neutral-solid-bg-default": {
+    "type": "color",
+    "light": "#666666",
+    "dark": "#b2b2b2"
+  },
+  "color-interactive-neutral-solid-bg-disabled": {
+    "type": "color",
+    "light": "#6666668f",
+    "dark": "#b2b2b28f"
+  },
+  "color-interactive-neutral-solid-bg-hover": {
+    "type": "color",
+    "light": "#4d4d4d",
+    "dark": "#cccccc"
+  },
+  "color-interactive-neutral-solid-bg-selected": {
+    "type": "color",
+    "light": "#393939",
+    "dark": "#e5e5e5",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-neutral-solid-border-active": {
+    "type": "color",
+    "light": "#0000003d",
+    "dark": "#f2f2f23d"
+  },
+  "color-interactive-neutral-solid-border-default": {
+    "type": "color",
+    "light": "#00000029",
+    "dark": "#f2f2f21f"
+  },
+  "color-interactive-neutral-solid-border-disabled": {
+    "type": "color",
+    "light": "#00000014",
+    "dark": "#f2f2f214"
+  },
+  "color-interactive-neutral-solid-border-hover": {
+    "type": "color",
+    "light": "#0000003d",
+    "dark": "#f2f2f229"
+  },
+  "color-interactive-neutral-solid-border-selected": {
+    "type": "color",
+    "light": "#0000003d",
+    "dark": "#f2f2f23d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-neutral-solid-icon-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-neutral-solid-icon-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-neutral-solid-icon-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-neutral-solid-icon-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-neutral-solid-icon-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-neutral-solid-text-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-neutral-solid-text-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-neutral-solid-text-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-neutral-solid-text-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-neutral-solid-text-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-neutral-subtle-bg-active": {
+    "type": "color",
+    "light": "#e5e5e5",
+    "dark": "#4d4d4d"
+  },
+  "color-interactive-neutral-subtle-bg-default": {
+    "type": "color",
+    "light": "#f2f2f2",
+    "dark": "#393939"
+  },
+  "color-interactive-neutral-subtle-bg-disabled": {
+    "type": "color",
+    "light": "#7f7f7f",
+    "dark": "#393939"
+  },
+  "color-interactive-neutral-subtle-bg-hover": {
+    "type": "color",
+    "light": "#e5e5e5",
+    "dark": "#4d4d4d"
+  },
+  "color-interactive-neutral-subtle-bg-selected": {
+    "type": "color",
+    "light": "#e5e5e5",
+    "dark": "#4d4d4d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-neutral-subtle-border-active": {
+    "type": "color",
+    "light": "#b2b2b2",
+    "dark": "#999999"
+  },
+  "color-interactive-neutral-subtle-border-default": {
+    "type": "color",
+    "light": "#cccccc",
+    "dark": "#7f7f7f"
+  },
+  "color-interactive-neutral-subtle-border-disabled": {
+    "type": "color",
+    "light": "#e5e5e5",
+    "dark": "#4d4d4d"
+  },
+  "color-interactive-neutral-subtle-border-hover": {
+    "type": "color",
+    "light": "#b2b2b2",
+    "dark": "#999999"
+  },
+  "color-interactive-neutral-subtle-border-selected": {
+    "type": "color",
+    "light": "#b2b2b2",
+    "dark": "#999999",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-neutral-subtle-icon-active": {
+    "type": "color",
+    "light": "#e5e5e5",
+    "dark": "#e5e5e5"
+  },
+  "color-interactive-neutral-subtle-icon-default": {
+    "type": "color",
+    "light": "#4d4d4d",
+    "dark": "#cccccc"
+  },
+  "color-interactive-neutral-subtle-icon-disabled": {
+    "type": "color",
+    "light": "#999999",
+    "dark": "#666666"
+  },
+  "color-interactive-neutral-subtle-icon-hover": {
+    "type": "color",
+    "light": "#e5e5e5",
+    "dark": "#e5e5e5"
+  },
+  "color-interactive-neutral-subtle-icon-selected": {
+    "type": "color",
+    "light": "#e5e5e5",
+    "dark": "#e5e5e5",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-neutral-subtle-text-active": {
+    "type": "color",
+    "light": "#e5e5e5",
+    "dark": "#e5e5e5"
+  },
+  "color-interactive-neutral-subtle-text-default": {
+    "type": "color",
+    "light": "#4d4d4d",
+    "dark": "#cccccc"
+  },
+  "color-interactive-neutral-subtle-text-disabled": {
+    "type": "color",
+    "light": "#999999",
+    "dark": "#666666"
+  },
+  "color-interactive-neutral-subtle-text-hover": {
+    "type": "color",
+    "light": "#e5e5e5",
+    "dark": "#e5e5e5"
+  },
+  "color-interactive-neutral-subtle-text-selected": {
+    "type": "color",
+    "light": "#e5e5e5",
+    "dark": "#e5e5e5",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-neutral-transparent-bg-active": {
+    "type": "color",
+    "light": "#0000001f",
+    "dark": "#ffffff3d"
+  },
+  "color-interactive-neutral-transparent-bg-default": {
+    "type": "color",
+    "light": "#00000014",
+    "dark": "#ffffff1f"
+  },
+  "color-interactive-neutral-transparent-bg-disabled": {
+    "type": "color",
+    "light": "#0000000f",
+    "dark": "#ffffff14"
+  },
+  "color-interactive-neutral-transparent-bg-hover": {
+    "type": "color",
+    "light": "#0000001f",
+    "dark": "#ffffff29"
+  },
+  "color-interactive-neutral-transparent-bg-selected": {
+    "type": "color",
+    "light": "#0000001f",
+    "dark": "#ffffff3d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-neutral-transparent-border-active": {
+    "type": "color",
+    "light": "#00000029",
+    "dark": "#ffffff8f"
+  },
+  "color-interactive-neutral-transparent-border-default": {
+    "type": "color",
+    "light": "#0000001f",
+    "dark": "#ffffff52"
+  },
+  "color-interactive-neutral-transparent-border-disabled": {
+    "type": "color",
+    "light": "#00000014",
+    "dark": "#ffffff14"
+  },
+  "color-interactive-neutral-transparent-border-hover": {
+    "type": "color",
+    "light": "#00000029",
+    "dark": "#ffffff66"
+  },
+  "color-interactive-neutral-transparent-border-selected": {
+    "type": "color",
+    "light": "#00000029",
+    "dark": "#ffffff8f",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-neutral-transparent-icon-active": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#ffffff"
+  },
+  "color-interactive-neutral-transparent-icon-default": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#f2f2f2"
+  },
+  "color-interactive-neutral-transparent-icon-disabled": {
+    "type": "color",
+    "light": "#262626a3",
+    "dark": "#f2f2f266"
+  },
+  "color-interactive-neutral-transparent-icon-hover": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#ffffff"
+  },
+  "color-interactive-neutral-transparent-icon-selected": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#ffffff",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-neutral-transparent-text-active": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#ffffff"
+  },
+  "color-interactive-neutral-transparent-text-default": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#f2f2f2"
+  },
+  "color-interactive-neutral-transparent-text-disabled": {
+    "type": "color",
+    "light": "#262626a3",
+    "dark": "#f2f2f266"
+  },
+  "color-interactive-neutral-transparent-text-hover": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#ffffff"
+  },
+  "color-interactive-neutral-transparent-text-selected": {
+    "type": "color",
+    "light": "#262626",
+    "dark": "#ffffff",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-primary-solid-bg-active": {
+    "type": "color",
+    "light": "#552c97",
+    "dark": "#d1b7fe"
+  },
+  "color-interactive-primary-solid-bg-default": {
+    "type": "color",
+    "light": "#8d4afc",
+    "dark": "#a46efd"
+  },
+  "color-interactive-primary-solid-bg-disabled": {
+    "type": "color",
+    "light": "#8d4afc8f",
+    "dark": "#a46efd8f"
+  },
+  "color-interactive-primary-solid-bg-hover": {
+    "type": "color",
+    "light": "#713bca",
+    "dark": "#bb92fd"
+  },
+  "color-interactive-primary-solid-bg-selected": {
+    "type": "color",
+    "light": "#552c97",
+    "dark": "#d1b7fe",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-primary-solid-border-active": {
+    "type": "color",
+    "light": "#2a164c3d",
+    "dark": "#f4edff3d"
+  },
+  "color-interactive-primary-solid-border-default": {
+    "type": "color",
+    "light": "#2a164c29",
+    "dark": "#f4edff1f"
+  },
+  "color-interactive-primary-solid-border-disabled": {
+    "type": "color",
+    "light": "#2a164c14",
+    "dark": "#f4edff14"
+  },
+  "color-interactive-primary-solid-border-hover": {
+    "type": "color",
+    "light": "#2a164c3d",
+    "dark": "#f4edff29"
+  },
+  "color-interactive-primary-solid-border-selected": {
+    "type": "color",
+    "light": "#2a164c3d",
+    "dark": "#f4edff3d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-primary-solid-icon-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-primary-solid-icon-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-primary-solid-icon-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-primary-solid-icon-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-primary-solid-icon-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-primary-solid-text-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-primary-solid-text-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-primary-solid-text-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-primary-solid-text-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-primary-solid-text-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-primary-subtle-bg-active": {
+    "type": "color",
+    "light": "#e8dbfe",
+    "dark": "#2a164c"
+  },
+  "color-interactive-primary-subtle-bg-default": {
+    "type": "color",
+    "light": "#f4edff",
+    "dark": "#1c0f32"
+  },
+  "color-interactive-primary-subtle-bg-disabled": {
+    "type": "color",
+    "light": "#f4edff",
+    "dark": "#1c0f32"
+  },
+  "color-interactive-primary-subtle-bg-hover": {
+    "type": "color",
+    "light": "#e8dbfe",
+    "dark": "#2a164c"
+  },
+  "color-interactive-primary-subtle-bg-selected": {
+    "type": "color",
+    "light": "#e8dbfe",
+    "dark": "#2a164c",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-primary-subtle-border-active": {
+    "type": "color",
+    "light": "#bb92fd",
+    "dark": "#552c97"
+  },
+  "color-interactive-primary-subtle-border-default": {
+    "type": "color",
+    "light": "#d1b7fe",
+    "dark": "#3f2171"
+  },
+  "color-interactive-primary-subtle-border-disabled": {
+    "type": "color",
+    "light": "#e8dbfe",
+    "dark": "#2a164c"
+  },
+  "color-interactive-primary-subtle-border-hover": {
+    "type": "color",
+    "light": "#bb92fd",
+    "dark": "#552c97"
+  },
+  "color-interactive-primary-subtle-border-selected": {
+    "type": "color",
+    "light": "#bb92fd",
+    "dark": "#552c97",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-primary-subtle-icon-active": {
+    "type": "color",
+    "light": "#552c97",
+    "dark": "#d1b7fe"
+  },
+  "color-interactive-primary-subtle-icon-default": {
+    "type": "color",
+    "light": "#8d4afc",
+    "dark": "#bb92fd"
+  },
+  "color-interactive-primary-subtle-icon-disabled": {
+    "type": "color",
+    "light": "#e8dbfe",
+    "dark": "#552c97"
+  },
+  "color-interactive-primary-subtle-icon-hover": {
+    "type": "color",
+    "light": "#713bca",
+    "dark": "#d1b7fe"
+  },
+  "color-interactive-primary-subtle-icon-selected": {
+    "type": "color",
+    "light": "#552c97",
+    "dark": "#d1b7fe",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-primary-subtle-text-active": {
+    "type": "color",
+    "light": "#552c97",
+    "dark": "#d1b7fe"
+  },
+  "color-interactive-primary-subtle-text-default": {
+    "type": "color",
+    "light": "#8d4afc",
+    "dark": "#bb92fd"
+  },
+  "color-interactive-primary-subtle-text-disabled": {
+    "type": "color",
+    "light": "#e8dbfe",
+    "dark": "#552c97"
+  },
+  "color-interactive-primary-subtle-text-hover": {
+    "type": "color",
+    "light": "#713bca",
+    "dark": "#d1b7fe"
+  },
+  "color-interactive-primary-subtle-text-selected": {
+    "type": "color",
+    "light": "#552c97",
+    "dark": "#d1b7fe",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-primary-transparent-bg-active": {
+    "type": "color",
+    "light": "#8d4afc3d",
+    "dark": "#a46efd3d"
+  },
+  "color-interactive-primary-transparent-bg-default": {
+    "type": "color",
+    "light": "#8d4afc29",
+    "dark": "#a46efd1f"
+  },
+  "color-interactive-primary-transparent-bg-disabled": {
+    "type": "color",
+    "light": "#8d4afc29",
+    "dark": "#a46efd14"
+  },
+  "color-interactive-primary-transparent-bg-hover": {
+    "type": "color",
+    "light": "#8d4afc3d",
+    "dark": "#a46efd29"
+  },
+  "color-interactive-primary-transparent-bg-selected": {
+    "type": "color",
+    "light": "#8d4afc3d",
+    "dark": "#a46efd3d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-primary-transparent-border-active": {
+    "type": "color",
+    "light": "#8d4afc29",
+    "dark": "#bb92fd8f"
+  },
+  "color-interactive-primary-transparent-border-default": {
+    "type": "color",
+    "light": "#8d4afc1f",
+    "dark": "#bb92fd52"
+  },
+  "color-interactive-primary-transparent-border-disabled": {
+    "type": "color",
+    "light": "#8d4afc14",
+    "dark": "#bb92fd14"
+  },
+  "color-interactive-primary-transparent-border-hover": {
+    "type": "color",
+    "light": "#8d4afc29",
+    "dark": "#bb92fd66"
+  },
+  "color-interactive-primary-transparent-border-selected": {
+    "type": "color",
+    "light": "#8d4afc29",
+    "dark": "#bb92fd8f",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-primary-transparent-icon-active": {
+    "type": "color",
+    "light": "#552c97",
+    "dark": "#f4edff"
+  },
+  "color-interactive-primary-transparent-icon-default": {
+    "type": "color",
+    "light": "#8d4afc",
+    "dark": "#e8dbfe"
+  },
+  "color-interactive-primary-transparent-icon-disabled": {
+    "type": "color",
+    "light": "#8d4afca3",
+    "dark": "#e8dbfe66"
+  },
+  "color-interactive-primary-transparent-icon-hover": {
+    "type": "color",
+    "light": "#713bca",
+    "dark": "#f4edff"
+  },
+  "color-interactive-primary-transparent-icon-selected": {
+    "type": "color",
+    "light": "#552c97",
+    "dark": "#f4edff",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-primary-transparent-text-active": {
+    "type": "color",
+    "light": "#552c97",
+    "dark": "#f4edff"
+  },
+  "color-interactive-primary-transparent-text-default": {
+    "type": "color",
+    "light": "#8d4afc",
+    "dark": "#e8dbfe"
+  },
+  "color-interactive-primary-transparent-text-disabled": {
+    "type": "color",
+    "light": "#8d4afca3",
+    "dark": "#e8dbfe66"
+  },
+  "color-interactive-primary-transparent-text-hover": {
+    "type": "color",
+    "light": "#713bca",
+    "dark": "#f4edff"
+  },
+  "color-interactive-primary-transparent-text-selected": {
+    "type": "color",
+    "light": "#552c97",
+    "dark": "#f4edff",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-secondary-solid-bg-active": {
+    "type": "color",
+    "light": "#124c94",
+    "dark": "#a5cbfc"
+  },
+  "color-interactive-secondary-solid-bg-default": {
+    "type": "color",
+    "light": "#1e7ef7",
+    "dark": "#4b98f9"
+  },
+  "color-interactive-secondary-solid-bg-disabled": {
+    "type": "color",
+    "light": "#1e7ef78f",
+    "dark": "#4b98f98f"
+  },
+  "color-interactive-secondary-solid-bg-hover": {
+    "type": "color",
+    "light": "#1865c6",
+    "dark": "#78b2fa"
+  },
+  "color-interactive-secondary-solid-bg-selected": {
+    "type": "color",
+    "light": "#124c94",
+    "dark": "#a5cbfc",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-secondary-solid-border-active": {
+    "type": "color",
+    "light": "#09264a3d",
+    "dark": "#e8f2fe3d"
+  },
+  "color-interactive-secondary-solid-border-default": {
+    "type": "color",
+    "light": "#09264a29",
+    "dark": "#e8f2fe1f"
+  },
+  "color-interactive-secondary-solid-border-disabled": {
+    "type": "color",
+    "light": "#09264a14",
+    "dark": "#e8f2fe14"
+  },
+  "color-interactive-secondary-solid-border-hover": {
+    "type": "color",
+    "light": "#09264a3d",
+    "dark": "#e8f2fe29"
+  },
+  "color-interactive-secondary-solid-border-selected": {
+    "type": "color",
+    "light": "#09264a3d",
+    "dark": "#e8f2fe3d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-secondary-solid-icon-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-secondary-solid-icon-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-secondary-solid-icon-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-secondary-solid-icon-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-secondary-solid-icon-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-secondary-solid-text-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-secondary-solid-text-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-secondary-solid-text-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-secondary-solid-text-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-secondary-solid-text-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-secondary-subtle-bg-active": {
+    "type": "color",
+    "light": "#d2e5fd",
+    "dark": "#09264a"
+  },
+  "color-interactive-secondary-subtle-bg-default": {
+    "type": "color",
+    "light": "#e8f2fe",
+    "dark": "#061931"
+  },
+  "color-interactive-secondary-subtle-bg-disabled": {
+    "type": "color",
+    "light": "#e8f2fe",
+    "dark": "#061931"
+  },
+  "color-interactive-secondary-subtle-bg-hover": {
+    "type": "color",
+    "light": "#d2e5fd",
+    "dark": "#09264a"
+  },
+  "color-interactive-secondary-subtle-bg-selected": {
+    "type": "color",
+    "light": "#d2e5fd",
+    "dark": "#09264a",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-secondary-subtle-border-active": {
+    "type": "color",
+    "light": "#78b2fa",
+    "dark": "#124c94"
+  },
+  "color-interactive-secondary-subtle-border-default": {
+    "type": "color",
+    "light": "#a5cbfc",
+    "dark": "#0e396f"
+  },
+  "color-interactive-secondary-subtle-border-disabled": {
+    "type": "color",
+    "light": "#d2e5fd",
+    "dark": "#09264a"
+  },
+  "color-interactive-secondary-subtle-border-hover": {
+    "type": "color",
+    "light": "#78b2fa",
+    "dark": "#124c94"
+  },
+  "color-interactive-secondary-subtle-border-selected": {
+    "type": "color",
+    "light": "#78b2fa",
+    "dark": "#124c94",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-secondary-subtle-icon-active": {
+    "type": "color",
+    "light": "#124c94",
+    "dark": "#a5cbfc"
+  },
+  "color-interactive-secondary-subtle-icon-default": {
+    "type": "color",
+    "light": "#1e7ef7",
+    "dark": "#78b2fa"
+  },
+  "color-interactive-secondary-subtle-icon-disabled": {
+    "type": "color",
+    "light": "#d2e5fd",
+    "dark": "#124c94"
+  },
+  "color-interactive-secondary-subtle-icon-hover": {
+    "type": "color",
+    "light": "#1865c6",
+    "dark": "#a5cbfc"
+  },
+  "color-interactive-secondary-subtle-icon-selected": {
+    "type": "color",
+    "light": "#124c94",
+    "dark": "#a5cbfc",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-secondary-subtle-text-active": {
+    "type": "color",
+    "light": "#124c94",
+    "dark": "#a5cbfc"
+  },
+  "color-interactive-secondary-subtle-text-default": {
+    "type": "color",
+    "light": "#1e7ef7",
+    "dark": "#78b2fa"
+  },
+  "color-interactive-secondary-subtle-text-disabled": {
+    "type": "color",
+    "light": "#d2e5fd",
+    "dark": "#124c94"
+  },
+  "color-interactive-secondary-subtle-text-hover": {
+    "type": "color",
+    "light": "#1865c6",
+    "dark": "#a5cbfc"
+  },
+  "color-interactive-secondary-subtle-text-selected": {
+    "type": "color",
+    "light": "#124c94",
+    "dark": "#a5cbfc",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-secondary-transparent-bg-active": {
+    "type": "color",
+    "light": "#1e7ef73d",
+    "dark": "#4b98f93d"
+  },
+  "color-interactive-secondary-transparent-bg-default": {
+    "type": "color",
+    "light": "#1e7ef729",
+    "dark": "#4b98f91f"
+  },
+  "color-interactive-secondary-transparent-bg-disabled": {
+    "type": "color",
+    "light": "#1e7ef729",
+    "dark": "#4b98f914"
+  },
+  "color-interactive-secondary-transparent-bg-hover": {
+    "type": "color",
+    "light": "#1e7ef73d",
+    "dark": "#4b98f929"
+  },
+  "color-interactive-secondary-transparent-bg-selected": {
+    "type": "color",
+    "light": "#1e7ef73d",
+    "dark": "#4b98f93d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-secondary-transparent-border-active": {
+    "type": "color",
+    "light": "#1e7ef729",
+    "dark": "#78b2fa8f"
+  },
+  "color-interactive-secondary-transparent-border-default": {
+    "type": "color",
+    "light": "#1e7ef71f",
+    "dark": "#78b2fa52"
+  },
+  "color-interactive-secondary-transparent-border-disabled": {
+    "type": "color",
+    "light": "#1e7ef714",
+    "dark": "#78b2fa14"
+  },
+  "color-interactive-secondary-transparent-border-hover": {
+    "type": "color",
+    "light": "#1e7ef729",
+    "dark": "#78b2fa66"
+  },
+  "color-interactive-secondary-transparent-border-selected": {
+    "type": "color",
+    "light": "#1e7ef729",
+    "dark": "#78b2fa8f",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-secondary-transparent-icon-active": {
+    "type": "color",
+    "light": "#124c94",
+    "dark": "#e8f2fe"
+  },
+  "color-interactive-secondary-transparent-icon-default": {
+    "type": "color",
+    "light": "#1e7ef7",
+    "dark": "#d2e5fd"
+  },
+  "color-interactive-secondary-transparent-icon-disabled": {
+    "type": "color",
+    "light": "#1e7ef7a3",
+    "dark": "#d2e5fd66"
+  },
+  "color-interactive-secondary-transparent-icon-hover": {
+    "type": "color",
+    "light": "#1865c6",
+    "dark": "#e8f2fe"
+  },
+  "color-interactive-secondary-transparent-icon-selected": {
+    "type": "color",
+    "light": "#124c94",
+    "dark": "#e8f2fe",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-secondary-transparent-text-active": {
+    "type": "color",
+    "light": "#124c94",
+    "dark": "#e8f2fe"
+  },
+  "color-interactive-secondary-transparent-text-default": {
+    "type": "color",
+    "light": "#1e7ef7",
+    "dark": "#d2e5fd"
+  },
+  "color-interactive-secondary-transparent-text-disabled": {
+    "type": "color",
+    "light": "#1e7ef7a3",
+    "dark": "#d2e5fd66"
+  },
+  "color-interactive-secondary-transparent-text-hover": {
+    "type": "color",
+    "light": "#1865c6",
+    "dark": "#e8f2fe"
+  },
+  "color-interactive-secondary-transparent-text-selected": {
+    "type": "color",
+    "light": "#124c94",
+    "dark": "#e8f2fe",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-subsidiary-solid-bg-active": {
+    "type": "color",
+    "light": "#35303e",
+    "dark": "#dedce1"
+  },
+  "color-interactive-subsidiary-solid-bg-default": {
+    "type": "color",
+    "light": "#595067",
+    "dark": "#9b96a4"
+  },
+  "color-interactive-subsidiary-solid-bg-disabled": {
+    "type": "color",
+    "light": "#5950678f",
+    "dark": "#9b96a48f"
+  },
+  "color-interactive-subsidiary-solid-bg-hover": {
+    "type": "color",
+    "light": "#474052",
+    "dark": "#bdb9c2"
+  },
+  "color-interactive-subsidiary-solid-bg-selected": {
+    "type": "color",
+    "light": "#35303e",
+    "dark": "#dedce1",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-subsidiary-solid-border-active": {
+    "type": "color",
+    "light": "#1b181f3d",
+    "dark": "#eeedf03d"
+  },
+  "color-interactive-subsidiary-solid-border-default": {
+    "type": "color",
+    "light": "#1b181f29",
+    "dark": "#eeedf01f"
+  },
+  "color-interactive-subsidiary-solid-border-disabled": {
+    "type": "color",
+    "light": "#1b181f14",
+    "dark": "#eeedf014"
+  },
+  "color-interactive-subsidiary-solid-border-hover": {
+    "type": "color",
+    "light": "#1b181f3d",
+    "dark": "#eeedf029"
+  },
+  "color-interactive-subsidiary-solid-border-selected": {
+    "type": "color",
+    "light": "#1b181f3d",
+    "dark": "#eeedf03d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-subsidiary-solid-icon-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-subsidiary-solid-icon-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-subsidiary-solid-icon-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-subsidiary-solid-icon-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-subsidiary-solid-icon-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-subsidiary-solid-text-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-subsidiary-solid-text-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-subsidiary-solid-text-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-subsidiary-solid-text-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-subsidiary-solid-text-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-subsidiary-subtle-bg-active": {
+    "type": "color",
+    "light": "#dedce1",
+    "dark": "#1b181f"
+  },
+  "color-interactive-subsidiary-subtle-bg-default": {
+    "type": "color",
+    "light": "#eeedf0",
+    "dark": "#121015"
+  },
+  "color-interactive-subsidiary-subtle-bg-disabled": {
+    "type": "color",
+    "light": "#eeedf0",
+    "dark": "#121015"
+  },
+  "color-interactive-subsidiary-subtle-bg-hover": {
+    "type": "color",
+    "light": "#dedce1",
+    "dark": "#1b181f"
+  },
+  "color-interactive-subsidiary-subtle-bg-selected": {
+    "type": "color",
+    "light": "#dedce1",
+    "dark": "#1b181f",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-subsidiary-subtle-border-active": {
+    "type": "color",
+    "light": "#9b96a4",
+    "dark": "#35303e"
+  },
+  "color-interactive-subsidiary-subtle-border-default": {
+    "type": "color",
+    "light": "#bdb9c2",
+    "dark": "#28242e"
+  },
+  "color-interactive-subsidiary-subtle-border-disabled": {
+    "type": "color",
+    "light": "#dedce1",
+    "dark": "#1b181f"
+  },
+  "color-interactive-subsidiary-subtle-border-hover": {
+    "type": "color",
+    "light": "#9b96a4",
+    "dark": "#35303e"
+  },
+  "color-interactive-subsidiary-subtle-border-selected": {
+    "type": "color",
+    "light": "#9b96a4",
+    "dark": "#35303e",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-subsidiary-subtle-icon-active": {
+    "type": "color",
+    "light": "#35303e",
+    "dark": "#bdb9c2"
+  },
+  "color-interactive-subsidiary-subtle-icon-default": {
+    "type": "color",
+    "light": "#595067",
+    "dark": "#9b96a4"
+  },
+  "color-interactive-subsidiary-subtle-icon-disabled": {
+    "type": "color",
+    "light": "#dedce1",
+    "dark": "#35303e"
+  },
+  "color-interactive-subsidiary-subtle-icon-hover": {
+    "type": "color",
+    "light": "#474052",
+    "dark": "#bdb9c2"
+  },
+  "color-interactive-subsidiary-subtle-icon-selected": {
+    "type": "color",
+    "light": "#35303e",
+    "dark": "#bdb9c2",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-subsidiary-subtle-text-active": {
+    "type": "color",
+    "light": "#35303e",
+    "dark": "#bdb9c2"
+  },
+  "color-interactive-subsidiary-subtle-text-default": {
+    "type": "color",
+    "light": "#595067",
+    "dark": "#9b96a4"
+  },
+  "color-interactive-subsidiary-subtle-text-disabled": {
+    "type": "color",
+    "light": "#dedce1",
+    "dark": "#35303e"
+  },
+  "color-interactive-subsidiary-subtle-text-hover": {
+    "type": "color",
+    "light": "#474052",
+    "dark": "#bdb9c2"
+  },
+  "color-interactive-subsidiary-subtle-text-selected": {
+    "type": "color",
+    "light": "#35303e",
+    "dark": "#bdb9c2",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-subsidiary-transparent-bg-active": {
+    "type": "color",
+    "light": "#5950673d",
+    "dark": "#7a73853d"
+  },
+  "color-interactive-subsidiary-transparent-bg-default": {
+    "type": "color",
+    "light": "#59506729",
+    "dark": "#7a73851f"
+  },
+  "color-interactive-subsidiary-transparent-bg-disabled": {
+    "type": "color",
+    "light": "#59506729",
+    "dark": "#7a738514"
+  },
+  "color-interactive-subsidiary-transparent-bg-hover": {
+    "type": "color",
+    "light": "#5950673d",
+    "dark": "#7a738529"
+  },
+  "color-interactive-subsidiary-transparent-bg-selected": {
+    "type": "color",
+    "light": "#5950673d",
+    "dark": "#7a73853d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-subsidiary-transparent-border-active": {
+    "type": "color",
+    "light": "#59506729",
+    "dark": "#9b96a48f"
+  },
+  "color-interactive-subsidiary-transparent-border-default": {
+    "type": "color",
+    "light": "#5950671f",
+    "dark": "#9b96a452"
+  },
+  "color-interactive-subsidiary-transparent-border-disabled": {
+    "type": "color",
+    "light": "#59506714",
+    "dark": "#9b96a414"
+  },
+  "color-interactive-subsidiary-transparent-border-hover": {
+    "type": "color",
+    "light": "#59506729",
+    "dark": "#9b96a466"
+  },
+  "color-interactive-subsidiary-transparent-border-selected": {
+    "type": "color",
+    "light": "#59506729",
+    "dark": "#9b96a48f",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-subsidiary-transparent-icon-active": {
+    "type": "color",
+    "light": "#35303e",
+    "dark": "#eeedf0"
+  },
+  "color-interactive-subsidiary-transparent-icon-default": {
+    "type": "color",
+    "light": "#595067",
+    "dark": "#dedce1"
+  },
+  "color-interactive-subsidiary-transparent-icon-disabled": {
+    "type": "color",
+    "light": "#595067a3",
+    "dark": "#dedce166"
+  },
+  "color-interactive-subsidiary-transparent-icon-hover": {
+    "type": "color",
+    "light": "#474052",
+    "dark": "#eeedf0"
+  },
+  "color-interactive-subsidiary-transparent-icon-selected": {
+    "type": "color",
+    "light": "#35303e",
+    "dark": "#eeedf0",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-subsidiary-transparent-text-active": {
+    "type": "color",
+    "light": "#35303e",
+    "dark": "#eeedf0"
+  },
+  "color-interactive-subsidiary-transparent-text-default": {
+    "type": "color",
+    "light": "#595067",
+    "dark": "#dedce1"
+  },
+  "color-interactive-subsidiary-transparent-text-disabled": {
+    "type": "color",
+    "light": "#595067a3",
+    "dark": "#dedce166"
+  },
+  "color-interactive-subsidiary-transparent-text-hover": {
+    "type": "color",
+    "light": "#474052",
+    "dark": "#eeedf0"
+  },
+  "color-interactive-subsidiary-transparent-text-selected": {
+    "type": "color",
+    "light": "#35303e",
+    "dark": "#eeedf0",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-success-solid-bg-active": {
+    "type": "color",
+    "light": "#126637",
+    "dark": "#a5ddbe"
+  },
+  "color-interactive-success-solid-bg-default": {
+    "type": "color",
+    "light": "#1eaa5c",
+    "dark": "#4bbb7d"
+  },
+  "color-interactive-success-solid-bg-disabled": {
+    "type": "color",
+    "light": "#1eaa5c8f",
+    "dark": "#4bbb7d8f"
+  },
+  "color-interactive-success-solid-bg-hover": {
+    "type": "color",
+    "light": "#18884a",
+    "dark": "#78cc9d"
+  },
+  "color-interactive-success-solid-bg-selected": {
+    "type": "color",
+    "light": "#126637",
+    "dark": "#a5ddbe",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-success-solid-border-active": {
+    "type": "color",
+    "light": "#09331c3d",
+    "dark": "#e8f6ef3d"
+  },
+  "color-interactive-success-solid-border-default": {
+    "type": "color",
+    "light": "#09331c29",
+    "dark": "#e8f6ef1f"
+  },
+  "color-interactive-success-solid-border-disabled": {
+    "type": "color",
+    "light": "#09331c14",
+    "dark": "#e8f6ef14"
+  },
+  "color-interactive-success-solid-border-hover": {
+    "type": "color",
+    "light": "#09331c3d",
+    "dark": "#e8f6ef29"
+  },
+  "color-interactive-success-solid-border-selected": {
+    "type": "color",
+    "light": "#09331c3d",
+    "dark": "#e8f6ef3d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-success-solid-icon-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-success-solid-icon-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-success-solid-icon-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-success-solid-icon-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-success-solid-icon-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-success-solid-text-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-success-solid-text-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-success-solid-text-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-success-solid-text-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-success-solid-text-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-success-subtle-bg-active": {
+    "type": "color",
+    "light": "#d2eede",
+    "dark": "#09331c"
+  },
+  "color-interactive-success-subtle-bg-default": {
+    "type": "color",
+    "light": "#e8f6ef",
+    "dark": "#062212"
+  },
+  "color-interactive-success-subtle-bg-disabled": {
+    "type": "color",
+    "light": "#e8f6ef",
+    "dark": "#062212"
+  },
+  "color-interactive-success-subtle-bg-hover": {
+    "type": "color",
+    "light": "#d2eede",
+    "dark": "#09331c"
+  },
+  "color-interactive-success-subtle-bg-selected": {
+    "type": "color",
+    "light": "#d2eede",
+    "dark": "#09331c",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-success-subtle-border-active": {
+    "type": "color",
+    "light": "#78cc9d",
+    "dark": "#126637"
+  },
+  "color-interactive-success-subtle-border-default": {
+    "type": "color",
+    "light": "#a5ddbe",
+    "dark": "#0e4d29"
+  },
+  "color-interactive-success-subtle-border-disabled": {
+    "type": "color",
+    "light": "#d2eede",
+    "dark": "#09331c"
+  },
+  "color-interactive-success-subtle-border-hover": {
+    "type": "color",
+    "light": "#78cc9d",
+    "dark": "#126637"
+  },
+  "color-interactive-success-subtle-border-selected": {
+    "type": "color",
+    "light": "#78cc9d",
+    "dark": "#126637",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-success-subtle-icon-active": {
+    "type": "color",
+    "light": "#126637",
+    "dark": "#a5ddbe"
+  },
+  "color-interactive-success-subtle-icon-default": {
+    "type": "color",
+    "light": "#1eaa5c",
+    "dark": "#78cc9d"
+  },
+  "color-interactive-success-subtle-icon-disabled": {
+    "type": "color",
+    "light": "#d2eede",
+    "dark": "#126637"
+  },
+  "color-interactive-success-subtle-icon-hover": {
+    "type": "color",
+    "light": "#18884a",
+    "dark": "#a5ddbe"
+  },
+  "color-interactive-success-subtle-icon-selected": {
+    "type": "color",
+    "light": "#126637",
+    "dark": "#a5ddbe",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-success-subtle-text-active": {
+    "type": "color",
+    "light": "#126637",
+    "dark": "#a5ddbe"
+  },
+  "color-interactive-success-subtle-text-default": {
+    "type": "color",
+    "light": "#1eaa5c",
+    "dark": "#78cc9d"
+  },
+  "color-interactive-success-subtle-text-disabled": {
+    "type": "color",
+    "light": "#d2eede",
+    "dark": "#126637"
+  },
+  "color-interactive-success-subtle-text-hover": {
+    "type": "color",
+    "light": "#18884a",
+    "dark": "#a5ddbe"
+  },
+  "color-interactive-success-subtle-text-selected": {
+    "type": "color",
+    "light": "#126637",
+    "dark": "#a5ddbe",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-success-transparent-bg-active": {
+    "type": "color",
+    "light": "#1eaa5c3d",
+    "dark": "#4bbb7d3d"
+  },
+  "color-interactive-success-transparent-bg-default": {
+    "type": "color",
+    "light": "#1eaa5c29",
+    "dark": "#4bbb7d1f"
+  },
+  "color-interactive-success-transparent-bg-disabled": {
+    "type": "color",
+    "light": "#1eaa5c29",
+    "dark": "#4bbb7d14"
+  },
+  "color-interactive-success-transparent-bg-hover": {
+    "type": "color",
+    "light": "#1eaa5c3d",
+    "dark": "#4bbb7d29"
+  },
+  "color-interactive-success-transparent-bg-selected": {
+    "type": "color",
+    "light": "#1eaa5c3d",
+    "dark": "#4bbb7d3d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-success-transparent-border-active": {
+    "type": "color",
+    "light": "#1eaa5c29",
+    "dark": "#78cc9d8f"
+  },
+  "color-interactive-success-transparent-border-default": {
+    "type": "color",
+    "light": "#1eaa5c1f",
+    "dark": "#78cc9d52"
+  },
+  "color-interactive-success-transparent-border-disabled": {
+    "type": "color",
+    "light": "#1eaa5c14",
+    "dark": "#78cc9d14"
+  },
+  "color-interactive-success-transparent-border-hover": {
+    "type": "color",
+    "light": "#1eaa5c29",
+    "dark": "#78cc9d66"
+  },
+  "color-interactive-success-transparent-border-selected": {
+    "type": "color",
+    "light": "#1eaa5c29",
+    "dark": "#78cc9d8f",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-success-transparent-icon-active": {
+    "type": "color",
+    "light": "#126637",
+    "dark": "#e8f6ef"
+  },
+  "color-interactive-success-transparent-icon-default": {
+    "type": "color",
+    "light": "#1eaa5c",
+    "dark": "#d2eede"
+  },
+  "color-interactive-success-transparent-icon-disabled": {
+    "type": "color",
+    "light": "#1eaa5ca3",
+    "dark": "#d2eede66"
+  },
+  "color-interactive-success-transparent-icon-hover": {
+    "type": "color",
+    "light": "#18884a",
+    "dark": "#e8f6ef"
+  },
+  "color-interactive-success-transparent-icon-selected": {
+    "type": "color",
+    "light": "#126637",
+    "dark": "#e8f6ef",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-success-transparent-text-active": {
+    "type": "color",
+    "light": "#126637",
+    "dark": "#e8f6ef"
+  },
+  "color-interactive-success-transparent-text-default": {
+    "type": "color",
+    "light": "#1eaa5c",
+    "dark": "#d2eede"
+  },
+  "color-interactive-success-transparent-text-disabled": {
+    "type": "color",
+    "light": "#1eaa5ca3",
+    "dark": "#d2eede66"
+  },
+  "color-interactive-success-transparent-text-hover": {
+    "type": "color",
+    "light": "#18884a",
+    "dark": "#e8f6ef"
+  },
+  "color-interactive-success-transparent-text-selected": {
+    "type": "color",
+    "light": "#126637",
+    "dark": "#e8f6ef",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-warning-solid-bg-active": {
+    "type": "color",
+    "light": "#994217",
+    "dark": "#ffc5a8"
+  },
+  "color-interactive-warning-solid-bg-default": {
+    "type": "color",
+    "light": "#ff6e26",
+    "dark": "#ff8b51"
+  },
+  "color-interactive-warning-solid-bg-disabled": {
+    "type": "color",
+    "light": "#ff6e268f",
+    "dark": "#ff8b518f"
+  },
+  "color-interactive-warning-solid-bg-hover": {
+    "type": "color",
+    "light": "#cc581e",
+    "dark": "#ffa87d"
+  },
+  "color-interactive-warning-solid-bg-selected": {
+    "type": "color",
+    "light": "#994217",
+    "dark": "#ffc5a8",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-warning-solid-border-active": {
+    "type": "color",
+    "light": "#4d210b3d",
+    "dark": "#fff0e93d"
+  },
+  "color-interactive-warning-solid-border-default": {
+    "type": "color",
+    "light": "#4d210b29",
+    "dark": "#fff0e91f"
+  },
+  "color-interactive-warning-solid-border-disabled": {
+    "type": "color",
+    "light": "#4d210b14",
+    "dark": "#fff0e914"
+  },
+  "color-interactive-warning-solid-border-hover": {
+    "type": "color",
+    "light": "#4d210b3d",
+    "dark": "#fff0e929"
+  },
+  "color-interactive-warning-solid-border-selected": {
+    "type": "color",
+    "light": "#4d210b3d",
+    "dark": "#fff0e93d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-warning-solid-icon-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-warning-solid-icon-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-warning-solid-icon-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-warning-solid-icon-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-warning-solid-icon-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-warning-solid-text-active": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-warning-solid-text-default": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-warning-solid-text-disabled": {
+    "type": "color",
+    "light": "#ffffffa3",
+    "dark": "#19191966"
+  },
+  "color-interactive-warning-solid-text-hover": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919"
+  },
+  "color-interactive-warning-solid-text-selected": {
+    "type": "color",
+    "light": "#ffffff",
+    "dark": "#191919",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-warning-subtle-bg-active": {
+    "type": "color",
+    "light": "#ffe2d4",
+    "dark": "#4d210b"
+  },
+  "color-interactive-warning-subtle-bg-default": {
+    "type": "color",
+    "light": "#fff0e9",
+    "dark": "#331608"
+  },
+  "color-interactive-warning-subtle-bg-disabled": {
+    "type": "color",
+    "light": "#fff0e9",
+    "dark": "#331608"
+  },
+  "color-interactive-warning-subtle-bg-hover": {
+    "type": "color",
+    "light": "#ffe2d4",
+    "dark": "#4d210b"
+  },
+  "color-interactive-warning-subtle-bg-selected": {
+    "type": "color",
+    "light": "#ffe2d4",
+    "dark": "#4d210b",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-warning-subtle-border-active": {
+    "type": "color",
+    "light": "#ffa87d",
+    "dark": "#994217"
+  },
+  "color-interactive-warning-subtle-border-default": {
+    "type": "color",
+    "light": "#ffc5a8",
+    "dark": "#733211"
+  },
+  "color-interactive-warning-subtle-border-disabled": {
+    "type": "color",
+    "light": "#ffe2d4",
+    "dark": "#4d210b"
+  },
+  "color-interactive-warning-subtle-border-hover": {
+    "type": "color",
+    "light": "#ffa87d",
+    "dark": "#994217"
+  },
+  "color-interactive-warning-subtle-border-selected": {
+    "type": "color",
+    "light": "#ffa87d",
+    "dark": "#994217",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-warning-subtle-icon-active": {
+    "type": "color",
+    "light": "#994217",
+    "dark": "#ffc5a8"
+  },
+  "color-interactive-warning-subtle-icon-default": {
+    "type": "color",
+    "light": "#ff6e26",
+    "dark": "#ffa87d"
+  },
+  "color-interactive-warning-subtle-icon-disabled": {
+    "type": "color",
+    "light": "#ffe2d4",
+    "dark": "#994217"
+  },
+  "color-interactive-warning-subtle-icon-hover": {
+    "type": "color",
+    "light": "#cc581e",
+    "dark": "#ffc5a8"
+  },
+  "color-interactive-warning-subtle-icon-selected": {
+    "type": "color",
+    "light": "#994217",
+    "dark": "#ffc5a8",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-warning-subtle-text-active": {
+    "type": "color",
+    "light": "#994217",
+    "dark": "#ffc5a8"
+  },
+  "color-interactive-warning-subtle-text-default": {
+    "type": "color",
+    "light": "#ff6e26",
+    "dark": "#ffa87d"
+  },
+  "color-interactive-warning-subtle-text-disabled": {
+    "type": "color",
+    "light": "#ffe2d4",
+    "dark": "#994217"
+  },
+  "color-interactive-warning-subtle-text-hover": {
+    "type": "color",
+    "light": "#cc581e",
+    "dark": "#ffc5a8"
+  },
+  "color-interactive-warning-subtle-text-selected": {
+    "type": "color",
+    "light": "#994217",
+    "dark": "#ffc5a8",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-warning-transparent-bg-active": {
+    "type": "color",
+    "light": "#ff6e263d",
+    "dark": "#ff8b513d"
+  },
+  "color-interactive-warning-transparent-bg-default": {
+    "type": "color",
+    "light": "#ff6e2629",
+    "dark": "#ff8b511f"
+  },
+  "color-interactive-warning-transparent-bg-disabled": {
+    "type": "color",
+    "light": "#ff6e2629",
+    "dark": "#ff8b5114"
+  },
+  "color-interactive-warning-transparent-bg-hover": {
+    "type": "color",
+    "light": "#ff6e263d",
+    "dark": "#ff8b5129"
+  },
+  "color-interactive-warning-transparent-bg-selected": {
+    "type": "color",
+    "light": "#ff6e263d",
+    "dark": "#ff8b513d",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-warning-transparent-border-active": {
+    "type": "color",
+    "light": "#ff6e2629",
+    "dark": "#ffa87d8f"
+  },
+  "color-interactive-warning-transparent-border-default": {
+    "type": "color",
+    "light": "#ff6e261f",
+    "dark": "#ffa87d52"
+  },
+  "color-interactive-warning-transparent-border-disabled": {
+    "type": "color",
+    "light": "#ff6e2614",
+    "dark": "#ffa87d14"
+  },
+  "color-interactive-warning-transparent-border-hover": {
+    "type": "color",
+    "light": "#ff6e2629",
+    "dark": "#ffa87d66"
+  },
+  "color-interactive-warning-transparent-border-selected": {
+    "type": "color",
+    "light": "#ff6e2629",
+    "dark": "#ffa87d8f",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-warning-transparent-icon-active": {
+    "type": "color",
+    "light": "#994217",
+    "dark": "#fff0e9"
+  },
+  "color-interactive-warning-transparent-icon-default": {
+    "type": "color",
+    "light": "#ff6e26",
+    "dark": "#ffe2d4"
+  },
+  "color-interactive-warning-transparent-icon-disabled": {
+    "type": "color",
+    "light": "#ff6e26a3",
+    "dark": "#ffe2d466"
+  },
+  "color-interactive-warning-transparent-icon-hover": {
+    "type": "color",
+    "light": "#cc581e",
+    "dark": "#fff0e9"
+  },
+  "color-interactive-warning-transparent-icon-selected": {
+    "type": "color",
+    "light": "#994217",
+    "dark": "#fff0e9",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-interactive-warning-transparent-text-active": {
+    "type": "color",
+    "light": "#994217",
+    "dark": "#fff0e9"
+  },
+  "color-interactive-warning-transparent-text-default": {
+    "type": "color",
+    "light": "#ff6e26",
+    "dark": "#ffe2d4"
+  },
+  "color-interactive-warning-transparent-text-disabled": {
+    "type": "color",
+    "light": "#ff6e26a3",
+    "dark": "#ffe2d466"
+  },
+  "color-interactive-warning-transparent-text-hover": {
+    "type": "color",
+    "light": "#cc581e",
+    "dark": "#fff0e9"
+  },
+  "color-interactive-warning-transparent-text-selected": {
+    "type": "color",
+    "light": "#994217",
+    "dark": "#fff0e9",
+    "description": "Selected state (tabs, toggles, segmented controls, selected rows). Starts equal to active."
+  },
+  "color-button-default-solid-bg-default": {
+    "type": "color",
+    "light": "var(--color-environment-surface-default)",
+    "dark": "var(--color-environment-surface-default)"
+  },
+  "color-button-default-solid-bg-hover": {
+    "type": "color",
+    "light": "var(--color-environment-surface-default)",
+    "dark": "var(--color-environment-surface-default)"
+  },
+  "color-button-default-solid-bg-active": {
+    "type": "color",
+    "light": "var(--color-environment-surface-default)",
+    "dark": "var(--color-environment-surface-default)"
+  },
+  "color-button-default-solid-bg-disabled": {
+    "type": "color",
+    "light": "var(--color-environment-surface-default)",
+    "dark": "var(--color-environment-surface-default)"
+  },
+  "color-button-default-solid-border-default": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-subtle-border-default)",
+    "dark": "var(--color-interactive-neutral-subtle-border-default)"
+  },
+  "color-button-default-solid-border-hover": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-subtle-border-hover)",
+    "dark": "var(--color-interactive-neutral-subtle-border-hover)"
+  },
+  "color-button-default-solid-border-active": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-subtle-border-active)",
+    "dark": "var(--color-interactive-neutral-subtle-border-active)"
+  },
+  "color-button-default-solid-border-disabled": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-subtle-border-disabled)",
+    "dark": "var(--color-interactive-neutral-subtle-border-disabled)"
+  },
+  "color-button-default-solid-text-default": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-text-default)",
+    "dark": "var(--color-interactive-neutral-transparent-text-default)"
+  },
+  "color-button-default-solid-text-hover": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-text-hover)",
+    "dark": "var(--color-interactive-neutral-transparent-text-hover)"
+  },
+  "color-button-default-solid-text-active": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-text-active)",
+    "dark": "var(--color-interactive-neutral-transparent-text-active)"
+  },
+  "color-button-default-solid-text-disabled": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-text-disabled)",
+    "dark": "var(--color-interactive-neutral-transparent-text-disabled)"
+  },
+  "color-button-default-solid-icon-default": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-icon-default)",
+    "dark": "var(--color-interactive-neutral-transparent-icon-default)"
+  },
+  "color-button-default-solid-icon-hover": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-icon-hover)",
+    "dark": "var(--color-interactive-neutral-transparent-icon-hover)"
+  },
+  "color-button-default-solid-icon-active": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-icon-active)",
+    "dark": "var(--color-interactive-neutral-transparent-icon-active)"
+  },
+  "color-button-default-solid-icon-disabled": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-icon-disabled)",
+    "dark": "var(--color-interactive-neutral-transparent-icon-disabled)"
+  },
+  "color-link-default": {
+    "type": "color",
+    "light": "var(--color-interactive-primary-transparent-text-default)",
+    "dark": "var(--color-interactive-primary-transparent-text-default)"
+  },
+  "color-link-hover": {
+    "type": "color",
+    "light": "var(--color-interactive-primary-transparent-text-hover)",
+    "dark": "var(--color-interactive-primary-transparent-text-hover)"
+  },
+  "color-link-active": {
+    "type": "color",
+    "light": "var(--color-interactive-primary-transparent-text-active)",
+    "dark": "var(--color-interactive-primary-transparent-text-active)"
+  },
+  "color-link-visited": {
+    "type": "color",
+    "light": "var(--color-interactive-primary-transparent-text-active)",
+    "dark": "var(--color-interactive-primary-transparent-text-active)"
+  },
+  "color-link-disabled": {
+    "type": "color",
+    "light": "var(--color-interactive-primary-transparent-text-disabled)",
+    "dark": "var(--color-interactive-primary-transparent-text-disabled)"
+  },
+  "color-input-bg-default": {
+    "type": "color",
+    "light": "var(--color-environment-surface-default)",
+    "dark": "var(--color-environment-surface-default)"
+  },
+  "color-input-bg-focus": {
+    "type": "color",
+    "light": "var(--color-environment-surface-default)",
+    "dark": "var(--color-environment-surface-default)"
+  },
+  "color-input-bg-hover": {
+    "type": "color",
+    "light": "var(--color-environment-surface-default)",
+    "dark": "var(--color-environment-surface-default)"
+  },
+  "color-input-bg-disabled": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-subtle-bg-default)",
+    "dark": "var(--color-interactive-neutral-subtle-bg-default)"
+  },
+  "color-input-bg-readonly": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-subtle-bg-default)",
+    "dark": "var(--color-interactive-neutral-subtle-bg-default)"
+  },
+  "color-input-bg-invalid": {
+    "type": "color",
+    "light": "var(--color-interactive-danger-subtle-bg-default)",
+    "dark": "var(--color-interactive-danger-subtle-bg-default)"
+  },
+  "color-input-bg-invalid-hover": {
+    "type": "color",
+    "light": "var(--color-interactive-danger-subtle-bg-hover)",
+    "dark": "var(--color-interactive-danger-subtle-bg-hover)"
+  },
+  "color-input-bg-invalid-focus": {
+    "type": "color",
+    "light": "var(--color-interactive-danger-subtle-bg-active)",
+    "dark": "var(--color-interactive-danger-subtle-bg-active)"
+  },
+  "color-input-border-default": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-subtle-border-default)",
+    "dark": "var(--color-interactive-neutral-subtle-border-default)"
+  },
+  "color-input-border-hover": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-subtle-border-hover)",
+    "dark": "var(--color-interactive-neutral-subtle-border-hover)"
+  },
+  "color-input-border-focus": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-subtle-border-disabled)",
+    "dark": "var(--color-interactive-neutral-subtle-border-disabled)"
+  },
+  "color-input-border-disabled": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-solid-border-disabled)",
+    "dark": "var(--color-interactive-neutral-solid-border-disabled)"
+  },
+  "color-input-border-readonly": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-solid-border-disabled)",
+    "dark": "var(--color-interactive-neutral-solid-border-disabled)"
+  },
+  "color-input-border-invalid": {
+    "type": "color",
+    "light": "var(--color-content-danger-border-strong)",
+    "dark": "var(--color-content-danger-border-strong)"
+  },
+  "color-input-border-invalid-hover": {
+    "type": "color",
+    "light": "var(--color-content-danger-border-default)",
+    "dark": "var(--color-content-danger-border-default)"
+  },
+  "color-input-border-invalid-focus": {
+    "type": "color",
+    "light": "var(--color-content-danger-border-strong)",
+    "dark": "var(--color-content-danger-border-strong)"
+  },
+  "color-input-icon-default": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-icon-default)",
+    "dark": "var(--color-interactive-neutral-transparent-icon-default)"
+  },
+  "color-input-icon-hover": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-icon-hover)",
+    "dark": "var(--color-interactive-neutral-transparent-icon-hover)"
+  },
+  "color-input-icon-focus": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-icon-active)",
+    "dark": "var(--color-interactive-neutral-transparent-icon-active)"
+  },
+  "color-input-icon-disabled": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-icon-disabled)",
+    "dark": "var(--color-interactive-neutral-transparent-icon-disabled)"
+  },
+  "color-input-icon-readonly": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-transparent-icon-default)",
+    "dark": "var(--color-interactive-neutral-transparent-icon-default)"
+  },
+  "color-input-icon-invalid": {
+    "type": "color",
+    "light": "var(--color-interactive-danger-transparent-icon-default)",
+    "dark": "var(--color-interactive-danger-transparent-icon-default)"
+  },
+  "color-input-icon-invalid-hover": {
+    "type": "color",
+    "light": "var(--color-interactive-danger-transparent-icon-hover)",
+    "dark": "var(--color-interactive-danger-transparent-icon-hover)"
+  },
+  "color-input-icon-invalid-focus": {
+    "type": "color",
+    "light": "var(--color-interactive-danger-transparent-icon-active)",
+    "dark": "var(--color-interactive-danger-transparent-icon-active)"
+  },
+  "color-input-text-value": {
+    "type": "color",
+    "light": "var(--color-content-neutral-text-strong)",
+    "dark": "var(--color-content-neutral-text-strong)"
+  },
+  "color-input-text-placeholder": {
+    "type": "color",
+    "light": "var(--color-content-neutral-text-faint)",
+    "dark": "var(--color-content-neutral-text-faint)"
+  },
+  "color-input-text-disabled": {
+    "type": "color",
+    "light": "var(--color-content-neutral-text-muted)",
+    "dark": "var(--color-content-neutral-text-muted)"
+  },
+  "color-input-text-readonly": {
+    "type": "color",
+    "light": "var(--color-content-neutral-text-strong)",
+    "dark": "var(--color-content-neutral-text-strong)"
+  },
+  "color-input-addon-text-default": {
+    "type": "color",
+    "light": "var(--color-content-neutral-text-strong)",
+    "dark": "var(--color-content-neutral-text-strong)"
+  },
+  "color-input-addon-text-invalid": {
+    "type": "color",
+    "light": "var(--color-content-danger-text-strong)",
+    "dark": "var(--color-content-danger-text-strong)"
+  },
+  "color-input-addon-bg-default": {
+    "type": "color",
+    "light": "var(--color-content-neutral-bg-faint)",
+    "dark": "var(--color-content-neutral-bg-faint)"
+  },
+  "color-input-addon-bg-invalid": {
+    "type": "color",
+    "light": "var(--color-content-danger-bg-faint)",
+    "dark": "var(--color-content-danger-bg-faint)"
+  },
+  "color-input-addon-border-default": {
+    "type": "color",
+    "light": "var(--color-interactive-neutral-solid-border-default)",
+    "dark": "var(--color-interactive-neutral-solid-border-default)"
+  },
+  "color-input-addon-border-invalid": {
+    "type": "color",
+    "light": "var(--color-content-danger-border-default)",
+    "dark": "var(--color-content-danger-border-default)"
+  },
+  "color-field-label-default": {
+    "type": "color",
+    "light": "var(--color-content-neutral-text-default)",
+    "dark": "var(--color-content-neutral-text-default)"
+  },
+  "color-field-label-disabled": {
+    "type": "color",
+    "light": "var(--color-content-neutral-text-faint)",
+    "dark": "var(--color-content-neutral-text-faint)"
+  },
+  "color-field-label-invalid": {
+    "type": "color",
+    "light": "var(--color-interactive-danger-transparent-text-default)",
+    "dark": "var(--color-interactive-danger-transparent-text-default)"
+  },
+  "color-field-required-default": {
+    "type": "color",
+    "light": "var(--color-interactive-danger-solid-bg-default)",
+    "dark": "var(--color-interactive-danger-solid-bg-default)"
+  },
+  "color-field-required-disabled": {
+    "type": "color",
+    "light": "var(--color-interactive-danger-solid-bg-disabled)",
+    "dark": "var(--color-interactive-danger-solid-bg-disabled)"
+  },
+  "color-field-helper-default": {
+    "type": "color",
+    "light": "var(--color-content-neutral-text-default)",
+    "dark": "var(--color-content-neutral-text-default)"
+  },
+  "color-field-helper-disabled": {
+    "type": "color",
+    "light": "var(--color-content-neutral-text-faint)",
+    "dark": "var(--color-content-neutral-text-faint)"
+  },
+  "color-field-helper-invalid": {
+    "type": "color",
+    "light": "var(--color-content-danger-text-strong)",
+    "dark": "var(--color-content-danger-text-strong)"
+  },
+  "font-ui": {
+    "type": "fontFamily",
+    "light": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "dark": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "description": "CSS stack: Inter, system-ui, -apple-system, Segoe UI, sans-serif. Code adds the fallbacks; Figma keeps one family."
+  },
+  "font-code": {
+    "type": "fontFamily",
+    "light": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "dark": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+    "description": "Placeholder: same as UI font. Replace with a monospace family."
+  },
+  "duration-instant": {
+    "type": "duration",
+    "light": "0ms",
+    "dark": "0ms",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "duration-fast": {
+    "type": "duration",
+    "light": "100ms",
+    "dark": "100ms",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "duration-normal": {
+    "type": "duration",
+    "light": "200ms",
+    "dark": "200ms",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "duration-slow": {
+    "type": "duration",
+    "light": "300ms",
+    "dark": "300ms",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "spacing-control-md": {
+    "type": "dimension",
+    "light": "2rem",
+    "dark": "2rem"
+  },
+  "spacing-control-sm": {
+    "type": "dimension",
+    "light": "1.5rem",
+    "dark": "1.5rem"
+  },
+  "spacing-control-xs": {
+    "type": "dimension",
+    "light": "1.25rem",
+    "dark": "1.25rem"
+  },
+  "spacing-control-2xs": {
+    "type": "dimension",
+    "light": "1rem",
+    "dark": "1rem"
+  },
+  "spacing-control-lg": {
+    "type": "dimension",
+    "light": "2.5rem",
+    "dark": "2.5rem"
+  },
+  "spacing-control-xl": {
+    "type": "dimension",
+    "light": "3rem",
+    "dark": "3rem"
+  },
+  "spacing-control-2xl": {
+    "type": "dimension",
+    "light": "3.5rem",
+    "dark": "3.5rem"
+  },
+  "spacing-icon-md": {
+    "type": "dimension",
+    "light": "1.5rem",
+    "dark": "1.5rem"
+  },
+  "spacing-icon-sm": {
+    "type": "dimension",
+    "light": "1.25rem",
+    "dark": "1.25rem"
+  },
+  "spacing-icon-xs": {
+    "type": "dimension",
+    "light": "1rem",
+    "dark": "1rem"
+  },
+  "spacing-icon-lg": {
+    "type": "dimension",
+    "light": "2rem",
+    "dark": "2rem"
+  },
+  "spacing-icon-xl": {
+    "type": "dimension",
+    "light": "2.5rem",
+    "dark": "2.5rem"
+  },
+  "spacing-icon-2xl": {
+    "type": "dimension",
+    "light": "3rem",
+    "dark": "3rem"
+  },
+  "spacing-icon-2xs": {
+    "type": "dimension",
+    "light": "0.75rem",
+    "dark": "0.75rem"
+  },
+  "radius-md": {
+    "type": "dimension",
+    "light": "0.25rem",
+    "dark": "0.25rem"
+  },
+  "radius-sm": {
+    "type": "dimension",
+    "light": "0.125rem",
+    "dark": "0.125rem"
+  },
+  "radius-xs": {
+    "type": "dimension",
+    "light": "0.0625rem",
+    "dark": "0.0625rem"
+  },
+  "radius-none": {
+    "type": "dimension",
+    "light": "0",
+    "dark": "0"
+  },
+  "radius-lg": {
+    "type": "dimension",
+    "light": "0.375rem",
+    "dark": "0.375rem"
+  },
+  "radius-xl": {
+    "type": "dimension",
+    "light": "0.5rem",
+    "dark": "0.5rem"
+  },
+  "radius-2xl": {
+    "type": "dimension",
+    "light": "0.75rem",
+    "dark": "0.75rem"
+  },
+  "radius-3xl": {
+    "type": "dimension",
+    "light": "1rem",
+    "dark": "1rem"
+  },
+  "radius-full": {
+    "type": "dimension",
+    "light": "9999px",
+    "dark": "9999px"
+  },
+  "border-width-lg": {
+    "type": "dimension",
+    "light": "2px",
+    "dark": "2px"
+  },
+  "border-width-md": {
+    "type": "dimension",
+    "light": "1px",
+    "dark": "1px"
+  },
+  "border-width-none": {
+    "type": "dimension",
+    "light": "0",
+    "dark": "0"
+  },
+  "border-width-xl": {
+    "type": "dimension",
+    "light": "4px",
+    "dark": "4px"
+  },
+  "border-width-focus": {
+    "type": "dimension",
+    "light": "3px",
+    "dark": "3px",
+    "description": "Focus ring width. Value taken from the current focus style (3px spread)."
+  },
+  "space-md": {
+    "type": "dimension",
+    "light": "0.5rem",
+    "dark": "0.5rem"
+  },
+  "space-sm": {
+    "type": "dimension",
+    "light": "0.375rem",
+    "dark": "0.375rem"
+  },
+  "space-xs": {
+    "type": "dimension",
+    "light": "0.25rem",
+    "dark": "0.25rem"
+  },
+  "space-2xs": {
+    "type": "dimension",
+    "light": "0.125rem",
+    "dark": "0.125rem"
+  },
+  "space-lg": {
+    "type": "dimension",
+    "light": "0.75rem",
+    "dark": "0.75rem"
+  },
+  "space-xl": {
+    "type": "dimension",
+    "light": "1rem",
+    "dark": "1rem"
+  },
+  "space-section-md": {
+    "type": "dimension",
+    "light": "1.5rem",
+    "dark": "1.5rem"
+  },
+  "space-section-sm": {
+    "type": "dimension",
+    "light": "1rem",
+    "dark": "1rem"
+  },
+  "space-section-lg": {
+    "type": "dimension",
+    "light": "2rem",
+    "dark": "2rem"
+  },
+  "space-section-xl": {
+    "type": "dimension",
+    "light": "2.5rem",
+    "dark": "2.5rem"
+  },
+  "space-section-xs": {
+    "type": "dimension",
+    "light": "0.5rem",
+    "dark": "0.5rem"
+  },
+  "space-2xl": {
+    "type": "dimension",
+    "light": "1.25rem",
+    "dark": "1.25rem"
+  },
+  "space-3xl": {
+    "type": "dimension",
+    "light": "1.5rem",
+    "dark": "1.5rem"
+  },
+  "space-3xs": {
+    "type": "dimension",
+    "light": "0.0625rem",
+    "dark": "0.0625rem"
+  },
+  "space-none": {
+    "type": "dimension",
+    "light": "0",
+    "dark": "0"
+  },
+  "space-overlap-md": {
+    "type": "dimension",
+    "light": "-1px",
+    "dark": "-1px",
+    "description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative."
+  },
+  "space-button-label-inset-sm": {
+    "type": "dimension",
+    "light": "var(--space-xs)",
+    "dark": "var(--space-xs)"
+  },
+  "space-button-label-inset-md": {
+    "type": "dimension",
+    "light": "var(--space-sm)",
+    "dark": "var(--space-sm)"
+  },
+  "space-button-label-inset-lg": {
+    "type": "dimension",
+    "light": "var(--space-md)",
+    "dark": "var(--space-md)"
+  },
+  "space-button-padding-x-sm": {
+    "type": "dimension",
+    "light": "var(--space-none)",
+    "dark": "var(--space-none)"
+  },
+  "space-button-padding-x-md": {
+    "type": "dimension",
+    "light": "var(--space-xs)",
+    "dark": "var(--space-xs)"
+  },
+  "space-button-padding-x-lg": {
+    "type": "dimension",
+    "light": "var(--space-md)",
+    "dark": "var(--space-md)"
+  },
+  "space-input-padding-x": {
+    "type": "dimension",
+    "light": "var(--space-xs)",
+    "dark": "var(--space-xs)"
+  },
+  "space-input-gap": {
+    "type": "dimension",
+    "light": "var(--space-xs)",
+    "dark": "var(--space-xs)"
+  },
+  "space-input-label-inset": {
+    "type": "dimension",
+    "light": "var(--space-xs)",
+    "dark": "var(--space-xs)"
+  },
+  "font-weight-normal": {
+    "type": "fontWeight",
+    "light": "400",
+    "dark": "400"
+  },
+  "font-weight-light": {
+    "type": "fontWeight",
+    "light": "300",
+    "dark": "300"
+  },
+  "font-weight-medium": {
+    "type": "fontWeight",
+    "light": "500",
+    "dark": "500"
+  },
+  "font-weight-bold": {
+    "type": "fontWeight",
+    "light": "700",
+    "dark": "700"
+  },
+  "text-heading-md": {
+    "type": "dimension",
+    "light": "0.875rem",
+    "dark": "0.875rem"
+  },
+  "text-heading-sm": {
+    "type": "dimension",
+    "light": "0.8125rem",
+    "dark": "0.8125rem"
+  },
+  "text-heading-lg": {
+    "type": "dimension",
+    "light": "0.9375rem",
+    "dark": "0.9375rem"
+  },
+  "text-heading-xl": {
+    "type": "dimension",
+    "light": "1rem",
+    "dark": "1rem"
+  },
+  "text-heading-2xl": {
+    "type": "dimension",
+    "light": "1.125rem",
+    "dark": "1.125rem"
+  },
+  "text-heading-md--line-height": {
+    "type": "dimension",
+    "light": "1rem",
+    "dark": "1rem"
+  },
+  "text-heading-sm--line-height": {
+    "type": "dimension",
+    "light": "0.9375rem",
+    "dark": "0.9375rem"
+  },
+  "text-heading-lg--line-height": {
+    "type": "dimension",
+    "light": "1.0625rem",
+    "dark": "1.0625rem"
+  },
+  "text-heading-xl--line-height": {
+    "type": "dimension",
+    "light": "1.125rem",
+    "dark": "1.125rem"
+  },
+  "text-heading-2xl--line-height": {
+    "type": "dimension",
+    "light": "1.1875rem",
+    "dark": "1.1875rem"
+  },
+  "text-heading-md--letter-spacing": {
+    "type": "dimension",
+    "light": "0.02rem",
+    "dark": "0.02rem"
+  },
+  "text-heading-sm--letter-spacing": {
+    "type": "dimension",
+    "light": "0.0187rem",
+    "dark": "0.0187rem"
+  },
+  "text-heading-lg--letter-spacing": {
+    "type": "dimension",
+    "light": "0.0238rem",
+    "dark": "0.0238rem"
+  },
+  "text-heading-xl--letter-spacing": {
+    "type": "dimension",
+    "light": "0.025rem",
+    "dark": "0.025rem"
+  },
+  "text-heading-2xl--letter-spacing": {
+    "type": "dimension",
+    "light": "0.025rem",
+    "dark": "0.025rem"
+  },
+  "text-heading-sm--font-weight": {
+    "type": "fontWeight",
+    "light": "500",
+    "dark": "500"
+  },
+  "text-body-md": {
+    "type": "dimension",
+    "light": "0.875rem",
+    "dark": "0.875rem"
+  },
+  "text-body-sm": {
+    "type": "dimension",
+    "light": "0.8125rem",
+    "dark": "0.8125rem"
+  },
+  "text-body-xs": {
+    "type": "dimension",
+    "light": "0.6875rem",
+    "dark": "0.6875rem"
+  },
+  "text-body-lg": {
+    "type": "dimension",
+    "light": "0.9375rem",
+    "dark": "0.9375rem"
+  },
+  "text-body-md--line-height": {
+    "type": "dimension",
+    "light": "1rem",
+    "dark": "1rem"
+  },
+  "text-body-sm--line-height": {
+    "type": "dimension",
+    "light": "0.9375rem",
+    "dark": "0.9375rem"
+  },
+  "text-body-xs--line-height": {
+    "type": "dimension",
+    "light": "0.8125rem",
+    "dark": "0.8125rem"
+  },
+  "text-body-lg--line-height": {
+    "type": "dimension",
+    "light": "1.0625rem",
+    "dark": "1.0625rem"
+  },
+  "text-body-md--letter-spacing": {
+    "type": "dimension",
+    "light": "0.02rem",
+    "dark": "0.02rem"
+  },
+  "text-body-sm--letter-spacing": {
+    "type": "dimension",
+    "light": "0.0187rem",
+    "dark": "0.0187rem"
+  },
+  "text-body-xs--letter-spacing": {
+    "type": "dimension",
+    "light": "0",
+    "dark": "0"
+  },
+  "text-body-lg--letter-spacing": {
+    "type": "dimension",
+    "light": "0.0238rem",
+    "dark": "0.0238rem"
+  },
+  "text-label-md": {
+    "type": "dimension",
+    "light": "0.875rem",
+    "dark": "0.875rem"
+  },
+  "text-label-md--font-weight": {
+    "type": "fontWeight",
+    "light": "500",
+    "dark": "500"
+  },
+  "text-label-sm": {
+    "type": "dimension",
+    "light": "0.8125rem",
+    "dark": "0.8125rem"
+  },
+  "text-label-lg": {
+    "type": "dimension",
+    "light": "0.9375rem",
+    "dark": "0.9375rem"
+  },
+  "text-label-md--line-height": {
+    "type": "dimension",
+    "light": "1rem",
+    "dark": "1rem"
+  },
+  "text-label-sm--line-height": {
+    "type": "dimension",
+    "light": "0.9375rem",
+    "dark": "0.9375rem"
+  },
+  "text-label-lg--line-height": {
+    "type": "dimension",
+    "light": "1.0625rem",
+    "dark": "1.0625rem"
+  },
+  "text-label-md--letter-spacing": {
+    "type": "dimension",
+    "light": "0.02rem",
+    "dark": "0.02rem"
+  },
+  "text-label-sm--letter-spacing": {
+    "type": "dimension",
+    "light": "0.0187rem",
+    "dark": "0.0187rem"
+  },
+  "text-label-lg--letter-spacing": {
+    "type": "dimension",
+    "light": "0.0238rem",
+    "dark": "0.0238rem"
+  },
+  "text-heading-md--font-weight": {
+    "type": "fontWeight",
+    "light": "500",
+    "dark": "500"
+  },
+  "text-heading-lg--font-weight": {
+    "type": "fontWeight",
+    "light": "500",
+    "dark": "500"
+  },
+  "text-heading-xl--font-weight": {
+    "type": "fontWeight",
+    "light": "700",
+    "dark": "700"
+  },
+  "text-heading-2xl--font-weight": {
+    "type": "fontWeight",
+    "light": "700",
+    "dark": "700"
+  },
+  "text-label-sm--font-weight": {
+    "type": "fontWeight",
+    "light": "500",
+    "dark": "500"
+  },
+  "text-label-lg--font-weight": {
+    "type": "fontWeight",
+    "light": "500",
+    "dark": "500"
+  },
+  "ease-standard": {
+    "type": "cubicBezier",
+    "light": "cubic-bezier(0.2, 0, 0, 1)",
+    "dark": "cubic-bezier(0.2, 0, 0, 1)",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "ease-in": {
+    "type": "cubicBezier",
+    "light": "cubic-bezier(0.4, 0, 1, 1)",
+    "dark": "cubic-bezier(0.4, 0, 1, 1)",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "ease-out": {
+    "type": "cubicBezier",
+    "light": "cubic-bezier(0, 0, 0.2, 1)",
+    "dark": "cubic-bezier(0, 0, 0.2, 1)",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "ease-in-out": {
+    "type": "cubicBezier",
+    "light": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "dark": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "z-index-base": {
+    "type": "number",
+    "light": "0",
+    "dark": "0",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "z-index-raised": {
+    "type": "number",
+    "light": "10",
+    "dark": "10",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "z-index-dropdown": {
+    "type": "number",
+    "light": "1000",
+    "dark": "1000",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "z-index-sticky": {
+    "type": "number",
+    "light": "1100",
+    "dark": "1100",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "z-index-overlay": {
+    "type": "number",
+    "light": "1200",
+    "dark": "1200",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "z-index-modal": {
+    "type": "number",
+    "light": "1300",
+    "dark": "1300",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "z-index-popover": {
+    "type": "number",
+    "light": "1400",
+    "dark": "1400",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "z-index-toast": {
+    "type": "number",
+    "light": "1500",
+    "dark": "1500",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "z-index-tooltip": {
+    "type": "number",
+    "light": "1600",
+    "dark": "1600",
+    "description": "Starting value, not taken from the old library. Review before release."
+  },
+  "shadow-container": {
+    "type": "shadow",
+    "light": "0 0 1px 0 var(--color-environment-shadow-8), 0 0 2px 0 var(--color-environment-shadow-4), 0 0 3px 0 var(--color-environment-shadow-6)",
+    "dark": "0 0 1px 0 var(--color-environment-shadow-8), 0 0 2px 0 var(--color-environment-shadow-4), 0 0 3px 0 var(--color-environment-shadow-6)"
+  },
+  "shadow-elevation": {
+    "type": "shadow",
+    "light": "0 10px 49px 0 var(--color-environment-shadow-7), 0 8px 24px 0 var(--color-environment-shadow-3), 0 3px 8px 0 var(--color-environment-shadow-8), 0 2px 2px 0 var(--color-environment-shadow-4), 0 0 1px 0 var(--color-environment-shadow-17)",
+    "dark": "0 10px 49px 0 var(--color-environment-shadow-7), 0 8px 24px 0 var(--color-environment-shadow-3), 0 3px 8px 0 var(--color-environment-shadow-8), 0 2px 2px 0 var(--color-environment-shadow-4), 0 0 1px 0 var(--color-environment-shadow-17)"
+  },
+  "shadow-interactive-default": {
+    "type": "shadow",
+    "light": "0 0 1px 0 var(--color-environment-shadow-8), 0 1px 2px 0 var(--color-environment-shadow-4), 0 1px 3px 0 var(--color-environment-shadow-6)",
+    "dark": "0 0 1px 0 var(--color-environment-shadow-8), 0 1px 2px 0 var(--color-environment-shadow-4), 0 1px 3px 0 var(--color-environment-shadow-6)"
+  },
+  "shadow-interactive-hover": {
+    "type": "shadow",
+    "light": "0 0 1px 0 var(--color-environment-shadow-8), 0 1px 2px 0 var(--color-environment-shadow-4), 0 1px 3px 0 var(--color-environment-shadow-6)",
+    "dark": "0 0 1px 0 var(--color-environment-shadow-8), 0 1px 2px 0 var(--color-environment-shadow-4), 0 1px 3px 0 var(--color-environment-shadow-6)"
+  },
+  "shadow-interactive-focus": {
+    "type": "shadow",
+    "light": "0 0 0 var(--border-width-focus) var(--color-focus-default), 0 0 1px 0 var(--color-environment-shadow-16), 0 2px 2px 0 var(--color-environment-shadow-4), 0 2px 5px 0 var(--color-environment-shadow-10)",
+    "dark": "0 0 0 var(--border-width-focus) var(--color-focus-default), 0 0 1px 0 var(--color-environment-shadow-16), 0 2px 2px 0 var(--color-environment-shadow-4), 0 2px 5px 0 var(--color-environment-shadow-10)"
+  },
+  "shadow-icon-surface": {
+    "type": "shadow",
+    "light": "0 0 1px 0 var(--color-environment-shadow-8), 0 1px 2px 0 var(--color-environment-shadow-4), 0 1px 3px 0 var(--color-environment-shadow-6)",
+    "dark": "0 0 1px 0 var(--color-environment-shadow-8), 0 1px 2px 0 var(--color-environment-shadow-4), 0 1px 3px 0 var(--color-environment-shadow-6)"
+  },
+  "shadow-interactive-focus-invalid": {
+    "type": "shadow",
+    "light": "0 0 0 var(--border-width-focus) var(--color-focus-invalid), 0 0 1px 0 var(--color-environment-shadow-16), 0 2px 2px 0 var(--color-environment-shadow-4), 0 2px 5px 0 var(--color-environment-shadow-10)",
+    "dark": "0 0 0 var(--border-width-focus) var(--color-focus-invalid), 0 0 1px 0 var(--color-environment-shadow-16), 0 2px 2px 0 var(--color-environment-shadow-4), 0 2px 5px 0 var(--color-environment-shadow-10)"
+  },
+  "inset-shadow-interactive-active": {
+    "type": "shadow",
+    "light": "inset 0 0 2px 0 var(--color-environment-shadow-24), inset 0 2px 6px 0 var(--color-environment-shadow-12), inset 0 2px 12px 0 var(--color-environment-shadow-6)",
+    "dark": "inset 0 0 2px 0 var(--color-environment-shadow-24), inset 0 2px 6px 0 var(--color-environment-shadow-12), inset 0 2px 12px 0 var(--color-environment-shadow-6)"
+  }
+}

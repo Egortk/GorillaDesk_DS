@@ -1,0 +1,86 @@
+{
+  "duration": {
+    "instant": {
+      "$type": "duration",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/motion"
+        }
+      },
+      "$value": "{duration.0}"
+    },
+    "fast": {
+      "$type": "duration",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/motion"
+        }
+      },
+      "$value": "{duration.100}"
+    },
+    "normal": {
+      "$type": "duration",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/motion"
+        }
+      },
+      "$value": "{duration.200}"
+    },
+    "slow": {
+      "$type": "duration",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/motion"
+        }
+      },
+      "$value": "{duration.300}"
+    }
+  },
+  "ease": {
+    "standard": {
+      "$type": "cubicBezier",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/motion"
+        }
+      },
+      "$value": "{easing.standard}"
+    },
+    "in": {
+      "$type": "cubicBezier",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/motion"
+        }
+      },
+      "$value": "{easing.in}"
+    },
+    "out": {
+      "$type": "cubicBezier",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/motion"
+        }
+      },
+      "$value": "{easing.out}"
+    },
+    "in-out": {
+      "$type": "cubicBezier",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/motion"
+        }
+      },
+      "$value": "{easing.in-out}"
+    }
+  }
+}

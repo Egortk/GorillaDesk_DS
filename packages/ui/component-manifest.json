@@ -1,0 +1,402 @@
+{
+  "version": 1,
+  "generated": "2026-11-07",
+  "notes": "Keys, node ids and property names come from Figma Components. 'prop: null' = not passed to code (CSS state, default, or Figma-only axis). 'enabledBy' = the Figma boolean that shows the slot; in code the slot shows when its prop is passed. 'status' tracks the code: draft until the component passes the definition of done in docs/components.md.",
+  "components": {
+    "Button": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "621f72ed909052f7690ee02a9872ab6431a29ed8",
+        "nodeId": "22:2020",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "Button",
+        "source": "packages/ui/src/components/Button/Button.tsx"
+      },
+      "props": {
+        "variant": {
+          "prop": "variant"
+        },
+        "size": {
+          "prop": "size"
+        },
+        "label": {
+          "prop": "children"
+        },
+        "hasStartIcon": {
+          "prop": null,
+          "controls": "startIcon"
+        },
+        "startIcon": {
+          "prop": "startIcon",
+          "enabledBy": "hasStartIcon"
+        },
+        "hasEndIcon": {
+          "prop": null,
+          "controls": "endIcon"
+        },
+        "endIcon": {
+          "prop": "endIcon",
+          "enabledBy": "hasEndIcon"
+        },
+        "state": {
+          "map": {
+            "default": null,
+            "hover": null,
+            "active": null,
+            "focused": null,
+            "disabled": {
+              "prop": "isDisabled",
+              "value": true
+            },
+            "loading": {
+              "prop": "isPending",
+              "value": true
+            }
+          }
+        }
+      }
+    },
+    "IconButton": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "652361d9d58a23ba4d022388d1a6dea39278a39b",
+        "nodeId": "23:6385",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "IconButton",
+        "source": "packages/ui/src/components/IconButton/IconButton.tsx"
+      },
+      "required": [
+        "aria-label"
+      ],
+      "props": {
+        "icon": {
+          "prop": "icon"
+        },
+        "variant": {
+          "prop": "variant"
+        },
+        "size": {
+          "prop": "size"
+        },
+        "state": {
+          "map": {
+            "default": null,
+            "hover": null,
+            "active": null,
+            "focused": null,
+            "disabled": {
+              "prop": "isDisabled",
+              "value": true
+            },
+            "loading": {
+              "prop": "isPending",
+              "value": true
+            }
+          }
+        }
+      }
+    },
+    "Spinner": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "c69597bdbf1a0114d1a6613fc908eaad07f9093a",
+        "nodeId": "22:2139",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "Spinner",
+        "source": "packages/ui/src/components/Spinner/Spinner.tsx"
+      },
+      "props": {
+        "variant": {
+          "prop": "variant"
+        },
+        "size": {
+          "prop": "size"
+        }
+      }
+    },
+    "Badge": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "be01e66f514899f2bf5759548279ba567883ca0c",
+        "nodeId": "35:8483",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "Badge",
+        "source": "packages/ui/src/components/Badge/Badge.tsx"
+      },
+      "props": {
+        "variant": {
+          "prop": "variant"
+        },
+        "intent": {
+          "prop": "intent"
+        },
+        "emphasis": {
+          "prop": "emphasis"
+        },
+        "count": {
+          "prop": "children",
+          "note": "Not rendered when variant=dot."
+        }
+      }
+    },
+    "DismissButton": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "f51bae8840f20de6614739e158c3c71d03cafe84",
+        "nodeId": "45:10314",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "DismissButton",
+        "source": "packages/ui/src/components/DismissButton/DismissButton.tsx"
+      },
+      "required": [
+        "aria-label"
+      ],
+      "props": {
+        "shape": {
+          "prop": "shape"
+        },
+        "size": {
+          "prop": "size"
+        },
+        "state": {
+          "map": {
+            "default": null,
+            "hover": null,
+            "active": null,
+            "focused": null,
+            "disabled": {
+              "prop": "isDisabled",
+              "value": true
+            }
+          }
+        }
+      }
+    },
+    "Lozenge": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "813c7a6ee49ae6c3e1ff1c14739560dc18e94155",
+        "nodeId": "44:8566",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "Lozenge",
+        "source": "packages/ui/src/components/Lozenge/Lozenge.tsx"
+      },
+      "props": {
+        "intent": {
+          "prop": "intent"
+        },
+        "emphasis": {
+          "prop": "emphasis"
+        },
+        "size": {
+          "prop": "size"
+        },
+        "label": {
+          "prop": "children"
+        }
+      }
+    },
+    "Tag": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "1c59b3af6bfe0a91d9e28088417a2a40efad2b40",
+        "nodeId": "50:10801",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "Tag",
+        "source": "packages/ui/src/components/Tag/Tag.tsx"
+      },
+      "props": {
+        "intent": {
+          "prop": "intent"
+        },
+        "emphasis": {
+          "prop": "emphasis"
+        },
+        "size": {
+          "prop": "size"
+        },
+        "label": {
+          "prop": "children"
+        },
+        "hasIcon": {
+          "prop": null,
+          "controls": "icon"
+        },
+        "icon": {
+          "prop": "icon",
+          "enabledBy": "hasIcon"
+        },
+        "removable": {
+          "prop": "onRemove",
+          "note": "true = pass an onRemove handler; renders DismissButton (aria-label required)."
+        },
+        "interactive": {
+          "prop": null,
+          "todo": "Decide: derived from selection/onRemove (React Aria TagGroup) or an explicit prop. interactive=false has only state=default."
+        },
+        "state": {
+          "map": {
+            "default": null,
+            "hover": null,
+            "active": null,
+            "focused": null,
+            "disabled": {
+              "prop": "isDisabled",
+              "value": true
+            }
+          }
+        }
+      }
+    },
+    "Input": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "223a1d3563df4b7321180b1e777bca3b901a2ace",
+        "nodeId": "104:149",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "Input",
+        "source": "packages/ui/src/components/Input/Input.tsx"
+      },
+      "props": {
+        "variant": {
+          "prop": "variant"
+        },
+        "value": {
+          "prop": "value"
+        },
+        "hasPlaceholder": {
+          "prop": null,
+          "controls": "placeholder"
+        },
+        "placeholder": {
+          "prop": "placeholder",
+          "enabledBy": "hasPlaceholder"
+        },
+        "hasIcon": {
+          "prop": null,
+          "controls": "icon"
+        },
+        "icon": {
+          "prop": "icon",
+          "enabledBy": "hasIcon"
+        },
+        "hasStartAddon": {
+          "prop": "startAddon",
+          "note": "Content comes from the nested _addon label."
+        },
+        "hasEndAddon": {
+          "prop": "endAddon",
+          "note": "Content comes from the nested _addon label."
+        },
+        "filled": {
+          "prop": null,
+          "note": "Figma-only axis: in code it follows whether value is empty."
+        },
+        "state": {
+          "map": {
+            "default": null,
+            "hover": null,
+            "focused": null,
+            "disabled": {
+              "prop": "isDisabled",
+              "value": true
+            },
+            "readonly": {
+              "prop": "isReadOnly",
+              "value": true
+            },
+            "invalid": {
+              "prop": "isInvalid",
+              "value": true
+            },
+            "invalid-hover": {
+              "prop": "isInvalid",
+              "value": true
+            },
+            "invalid-focused": {
+              "prop": "isInvalid",
+              "value": true
+            }
+          }
+        }
+      }
+    },
+    "_addon": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "53eb339a096078c0479e5cb3875f60329fd32961",
+        "nodeId": "104:31"
+      },
+      "code": {
+        "import": null,
+        "name": "InputAddon",
+        "source": "packages/ui/src/components/Input/InputAddon.tsx",
+        "exported": false
+      },
+      "props": {
+        "label": {
+          "prop": "children"
+        },
+        "variant": {
+          "prop": null,
+          "note": "Inherited from the parent Input variant."
+        },
+        "position": {
+          "prop": null,
+          "note": "start or end slot of the Input."
+        },
+        "state": {
+          "map": {
+            "default": null,
+            "invalid": {
+              "prop": null,
+              "note": "Inherited from the parent Input isInvalid."
+            }
+          }
+        }
+      }
+    }
+  }
+}

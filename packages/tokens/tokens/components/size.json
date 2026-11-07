@@ -1,0 +1,93 @@
+{
+  "space": {
+    "button": {
+      "label-inset": {
+        "sm": {
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.xs}"
+        },
+        "md": {
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.sm}"
+        },
+        "lg": {
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.md}"
+        }
+      },
+      "padding-x": {
+        "sm": {
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.none}"
+        },
+        "md": {
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.xs}"
+        },
+        "lg": {
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.md}"
+        }
+      }
+    },
+    "input": {
+      "padding-x": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "components/size"
+          }
+        },
+        "$value": "{space.xs}"
+      },
+      "gap": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "components/size"
+          }
+        },
+        "$value": "{space.xs}"
+      },
+      "label-inset": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "components/size"
+          }
+        },
+        "$value": "{space.xs}"
+      }
+    }
+  }
+}

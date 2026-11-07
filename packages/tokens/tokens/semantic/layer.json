@@ -1,0 +1,94 @@
+{
+  "z-index": {
+    "base": {
+      "$type": "number",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/layer"
+        }
+      },
+      "$value": "{layer.0}"
+    },
+    "raised": {
+      "$type": "number",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/layer"
+        }
+      },
+      "$value": "{layer.10}"
+    },
+    "dropdown": {
+      "$type": "number",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/layer"
+        }
+      },
+      "$value": "{layer.1000}"
+    },
+    "sticky": {
+      "$type": "number",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/layer"
+        }
+      },
+      "$value": "{layer.1100}"
+    },
+    "overlay": {
+      "$type": "number",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/layer"
+        }
+      },
+      "$value": "{layer.1200}"
+    },
+    "modal": {
+      "$type": "number",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/layer"
+        }
+      },
+      "$value": "{layer.1300}"
+    },
+    "popover": {
+      "$type": "number",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/layer"
+        }
+      },
+      "$value": "{layer.1400}"
+    },
+    "toast": {
+      "$type": "number",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/layer"
+        }
+      },
+      "$value": "{layer.1500}"
+    },
+    "tooltip": {
+      "$type": "number",
+      "$description": "Starting value, not taken from the old library. Review before release.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/layer"
+        }
+      },
+      "$value": "{layer.1600}"
+    }
+  }
+}

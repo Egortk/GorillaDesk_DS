@@ -1,0 +1,460 @@
+{
+  "font": {
+    "ui": {
+      "$type": "fontFamily",
+      "$description": "CSS stack: Inter, system-ui, -apple-system, Segoe UI, sans-serif. Code adds the fallbacks; Figma keeps one family.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.family.sans}"
+    },
+    "code": {
+      "$type": "fontFamily",
+      "$description": "Placeholder: same as UI font. Replace with a monospace family.",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.family.sans}"
+    }
+  },
+  "font-weight": {
+    "normal": {
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.weight.400}"
+    },
+    "light": {
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.weight.300}"
+    },
+    "medium": {
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.weight.500}"
+    },
+    "bold": {
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.weight.700}"
+    }
+  },
+  "text": {
+    "heading-md": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.size.14}"
+    },
+    "heading-sm": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.size.13}"
+    },
+    "heading-lg": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.size.15}"
+    },
+    "heading-xl": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.size.16}"
+    },
+    "heading-2xl": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.size.18}"
+    },
+    "heading-md--line-height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.line-height.16}"
+    },
+    "heading-sm--line-height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.line-height.15}"
+    },
+    "heading-lg--line-height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.line-height.17}"
+    },
+    "heading-xl--line-height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.line-height.18}"
+    },
+    "heading-2xl--line-height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.line-height.19}"
+    },
+    "heading-md--letter-spacing": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.letter-spacing.0-32}"
+    },
+    "heading-sm--letter-spacing": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.letter-spacing.0-3}"
+    },
+    "heading-lg--letter-spacing": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.letter-spacing.0-38}"
+    },
+    "heading-xl--letter-spacing": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.letter-spacing.0-4}"
+    },
+    "heading-2xl--letter-spacing": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.letter-spacing.0-4}"
+    },
+    "heading-sm--font-weight": {
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.weight.500}"
+    },
+    "body-md": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.size.14}"
+    },
+    "body-sm": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.size.13}"
+    },
+    "body-xs": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.size.11}"
+    },
+    "body-lg": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.size.15}"
+    },
+    "body-md--line-height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.line-height.16}"
+    },
+    "body-sm--line-height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.line-height.15}"
+    },
+    "body-xs--line-height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.line-height.13}"
+    },
+    "body-lg--line-height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.line-height.17}"
+    },
+    "body-md--letter-spacing": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.letter-spacing.0-32}"
+    },
+    "body-sm--letter-spacing": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.letter-spacing.0-3}"
+    },
+    "body-xs--letter-spacing": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.letter-spacing.0}"
+    },
+    "body-lg--letter-spacing": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.letter-spacing.0-38}"
+    },
+    "label-md": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.size.14}"
+    },
+    "label-md--font-weight": {
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.weight.500}"
+    },
+    "label-sm": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.size.13}"
+    },
+    "label-lg": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.size.15}"
+    },
+    "label-md--line-height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.line-height.16}"
+    },
+    "label-sm--line-height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.line-height.15}"
+    },
+    "label-lg--line-height": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.line-height.17}"
+    },
+    "label-md--letter-spacing": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.letter-spacing.0-32}"
+    },
+    "label-sm--letter-spacing": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.letter-spacing.0-3}"
+    },
+    "label-lg--letter-spacing": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.letter-spacing.0-38}"
+    },
+    "heading-md--font-weight": {
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.weight.500}"
+    },
+    "heading-lg--font-weight": {
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.weight.500}"
+    },
+    "heading-xl--font-weight": {
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.weight.700}"
+    },
+    "heading-2xl--font-weight": {
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.weight.700}"
+    },
+    "label-sm--font-weight": {
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.weight.500}"
+    },
+    "label-lg--font-weight": {
+      "$type": "fontWeight",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/font"
+        }
+      },
+      "$value": "{font.weight.500}"
+    }
+  }
+}

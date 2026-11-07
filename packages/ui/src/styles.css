@@ -1,0 +1,3 @@
+/* Tailwind v4 + GorillaDesk tokens. Import once in the app (or Storybook preview). */
+@import "tailwindcss";
+@import "@gorilladesk/tokens/tailwind.css";

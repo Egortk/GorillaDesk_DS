@@ -1,0 +1,416 @@
+{
+  "spacing": {
+    "control": {
+      "md": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.32}"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.24}"
+      },
+      "xs": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.20}"
+      },
+      "2xs": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.16}"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.40}"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.48}"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.56}"
+      }
+    },
+    "icon": {
+      "md": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.24}"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.20}"
+      },
+      "xs": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.16}"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.32}"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.40}"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.48}"
+      },
+      "2xs": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.12}"
+      }
+    }
+  },
+  "radius": {
+    "md": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.4}"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.2}"
+    },
+    "xs": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.1}"
+    },
+    "none": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.0}"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.6}"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.8}"
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.12}"
+    },
+    "3xl": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.16}"
+    },
+    "full": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.full}"
+    }
+  },
+  "border-width": {
+    "lg": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.2}"
+    },
+    "md": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.1}"
+    },
+    "none": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.0}"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.4}"
+    },
+    "focus": {
+      "$type": "dimension",
+      "$description": "Focus ring width. Value taken from the current focus style (3px spread).",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.3}"
+    }
+  },
+  "space": {
+    "md": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.8}"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.6}"
+    },
+    "xs": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.4}"
+    },
+    "2xs": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.2}"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.12}"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.16}"
+    },
+    "section": {
+      "md": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.24}"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.16}"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.32}"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.40}"
+      },
+      "xs": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.8}"
+      }
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.20}"
+    },
+    "3xl": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.24}"
+    },
+    "3xs": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.1}"
+    },
+    "none": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "semantic/size"
+        }
+      },
+      "$value": "{dimension.0}"
+    },
+    "overlap": {
+      "md": {
+        "$type": "dimension",
+        "$description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative.",
+        "$extensions": {
+          "com.figma": {
+            "collection": "semantic/size"
+          }
+        },
+        "$value": "{dimension.-1}"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="out.css"></head>
+<body class="bg-environment-surface-canvas font-ui text-content-neutral-text-default p-(--space-section-md)">
+<main class="max-w-md flex flex-col gap-(--space-xl)">
+ <section data-theme="light" class="bg-environment-surface-default rounded-xl shadow-container p-(--space-xl) flex flex-col gap-(--space-md)">
+  <h2 class="text-heading-md text-content-neutral-text-strong">Light</h2>
+  <p class="text-body-md font-normal text-content-neutral-text-muted">Body md normal · muted</p>
+  <div class="flex gap-(--space-md)">
+   <button class="h-control-md px-(--space-lg) rounded-md text-label-md bg-interactive-primary-solid-bg-default hover:bg-interactive-primary-solid-bg-hover text-interactive-primary-solid-text-default shadow-interactive-default">Primary</button>
+   <button class="h-control-md px-(--space-lg) rounded-md text-label-md bg-interactive-primary-subtle-bg-default text-interactive-primary-subtle-text-default border-(length:--border-width-md) border-interactive-primary-subtle-border-default">Subtle</button>
+   <button class="h-control-md px-(--space-lg) rounded-md text-label-md bg-button-default-solid-bg-default text-button-default-solid-text-default border-(length:--border-width-md) border-button-default-solid-border-default shadow-interactive-focus">Default·focus</button>
+   <span class="size-icon-sm rounded-full bg-interactive-danger-solid-bg-default"></span>
+  </div>
+  <input class="h-control-md px-(--space-md) rounded-md bg-input-bg-invalid border-(length:--border-width-md) border-input-border-invalid text-input-text-value placeholder:text-input-text-placeholder" placeholder="Invalid field">
+ </section>
+ <section data-theme="dark" class="bg-environment-surface-default rounded-xl shadow-container p-(--space-xl) flex flex-col gap-(--space-md) text-content-neutral-text-default">
+  <h2 class="text-heading-md text-content-neutral-text-strong">Dark (subtree)</h2>
+  <p class="text-body-md font-normal text-content-neutral-text-muted">Body md normal · muted</p>
+  <div class="flex gap-(--space-md)">
+   <button class="h-control-md px-(--space-lg) rounded-md text-label-md bg-interactive-primary-solid-bg-default text-interactive-primary-solid-text-default shadow-interactive-default">Primary</button>
+   <button class="h-control-md px-(--space-lg) rounded-md text-label-md bg-interactive-primary-subtle-bg-default text-interactive-primary-subtle-text-default border-(length:--border-width-md) border-interactive-primary-subtle-border-default">Subtle</button>
+   <button class="h-control-md px-(--space-lg) rounded-md text-label-md bg-button-default-solid-bg-default text-button-default-solid-text-default border-(length:--border-width-md) border-button-default-solid-border-default shadow-interactive-focus">Default·focus</button>
+   <span class="size-icon-sm rounded-full bg-interactive-danger-solid-bg-default dark:outline-2"></span>
+  </div>
+  <input class="h-control-md px-(--space-md) rounded-md bg-input-bg-invalid border-(length:--border-width-md) border-input-border-invalid text-input-text-value placeholder:text-input-text-placeholder" placeholder="Invalid field">
+ </section>
+ <p class="leading-none ease-standard duration-(--duration-fast) z-(--z-index-modal) inset-shadow-interactive-active font-bold text-body-xs">utility probes</p>
+</main></body></html>

@@ -1,0 +1,29 @@
+{
+  "name": "@gorilladesk/tokens",
+  "version": "0.1.0",
+  "description": "GorillaDesk design tokens: Figma export -> DTCG 2025.10 -> CSS variables and Tailwind v4 theme",
+  "scripts": {
+    "test": "tailwindcss -i test/input.css -o test/out.css",
+    "convert": "node scripts/figma-to-dtcg.mjs",
+    "lint": "node scripts/lint.mjs",
+    "build": "node scripts/build.mjs",
+    "tokens": "npm run convert && npm run lint && npm run build && npm run test"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "style-dictionary": "^5.8.0",
+    "tailwindcss": "^4.3.5"
+  },
+  "private": true,
+  "exports": {
+    "./tokens.css": "./dist/tokens.css",
+    "./tailwind.css": "./dist/tailwind.css",
+    "./tokens.flat.json": "./dist/tokens.flat.json",
+    "./text-styles.json": "./dist/text-styles.json"
+  },
+  "files": [
+    "dist",
+    "tokens"
+  ]
+}

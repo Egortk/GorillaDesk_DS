@@ -1,0 +1,19 @@
+node_modules/
+.DS_Store
+packages/tokens/test/out.css
+storybook-static/
+packages/ui/dist/
+dist-storybook/
+
+# Local env and secrets (Chromatic token etc.)
+.env
+.env.*
+!.env.example
+
+# Claude Code local permissions
+.claude/settings.local.json
+
+# Chromatic / Storybook logs
+build-storybook.log
+chromatic-*.log
+chromatic-diagnostics.json
