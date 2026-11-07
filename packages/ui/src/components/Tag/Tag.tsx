@@ -105,6 +105,8 @@ export function Tag({
             isDisabled={isDisabled}
             aria-label={removeLabel ?? (typeof children === 'string' ? `Remove ${children}` : 'Remove')}
             colorClassName={iconColor}
+            // Figma: while the tag is hovered or pressed, the dismiss button shows its hover fill.
+            className="group-data-hovered:not-data-pressed:bg-interactive-neutral-transparent-bg-hover group-data-pressed:not-data-pressed:bg-interactive-neutral-transparent-bg-hover"
           />
         </span>
       )}
