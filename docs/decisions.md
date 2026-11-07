@@ -5,6 +5,8 @@ Entries dated 2026-11-05 to 2026-11-07 were reconstructed from the setup session
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-11-07 | Token sync from Figma: `interactive/neutral/subtle/bg/disabled` Light `neutral/500` → `neutral/50` (fixes the known issue); Input addon colours move to opaque `interactive/*/subtle` tokens; `input/border/focus` → `subtle/border/default`; `input/border/invalid-focus` → `danger/solid/border/default` (open question in known-issues). | Synced at the designer's request. The one semantic Light change still needs product team sign-off before the package ships. |
+| 2026-11-07 | Storybook has a **Tokens** section (colours, size, typography, effects and motion) rendered from `tokens.flat.json` and `text-styles.json`. Colour pages show Light and Dark side by side; text and icon colours are drawn on the bg token of the same group. | The pages update with every token sync without hand edits, and Chromatic catches visual token changes. |
 | 2026-11-07 | Chromatic for visual tests: CLI `chromatic` + `@chromatic-com/storybook` addon, config in `packages/ui/chromatic.config.json` with TurboSnap. Token only via `CHROMATIC_PROJECT_TOKEN`. | Visual review of every story without our own screenshot infra; the addon lets the designer run tests from Storybook without a token. |
 | 2026-11-07 | Git initialised on `main`; generated token files are committed. | Token syncs are reviewed as diffs of `tokens/` and `dist/` (workflow step 4). |
 | 2026-11-07 | Figma access goes through the claude.ai Figma connector (OAuth), not a personal access token. | Already signed in with the GorillaDesk Pro seat; no secret to store. |

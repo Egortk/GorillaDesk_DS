@@ -16,7 +16,7 @@ React 19 · TypeScript 7 · Vite 8 (library mode) · Storybook 10 (`@storybook/r
 src/index.ts                          public exports
 src/styles.css                        Tailwind + tokens; consumers import "@gorilladesk/ui/styles.css"
 src/components/<Name>/<Name>.tsx      one folder per component, story next to it
-src/foundations/Setup.stories.tsx     toolchain smoke test; delete once real stories exist
+src/docs/tokens/                      Storybook "Tokens" pages, generated from @gorilladesk/tokens dist (not exported)
 .storybook/                           main.ts, preview.tsx (data-theme switcher), preview.css
 ```
 

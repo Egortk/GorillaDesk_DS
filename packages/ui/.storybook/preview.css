@@ -1,5 +1,7 @@
 @import "../src/styles.css";
 @source "../src";
+/* Text-style class lists used by the Tokens/Typography page. */
+@source "../../tokens/dist/text-styles.json";
 
 /* Storybook canvas only: page background and default text follow the theme. */
 body {
