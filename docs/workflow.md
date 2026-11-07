@@ -52,6 +52,12 @@ Skill: `implement-component` (`skills/implement-component/SKILL.md`). Order:
 
 - Publish the Tokens library with a named version (e.g. `tokens 1.3.0 — focus invalid style`). Use the same number for `@gorilladesk/tokens`.
 - Prototypes and the product use the same package. There are no prototype-only components.
+- Versions and changelogs: [Changesets](https://github.com/changesets/changesets). A PR that changes what a package ships adds a changeset (`npx changeset`): package, bump, one changelog line.
+  - **patch**: fixes and visual corrections that keep the API.
+  - **minor**: new components, new props, new tokens.
+  - **major**: removed or renamed props, components or tokens; any change that needs product code to change.
+- On every push to `main`, `.github/workflows/release.yml` opens or updates a **Version packages** PR (bumped versions + `CHANGELOG.md`). Merging it publishes to **GitHub Packages** (`npm.pkg.github.com`), tags the release and creates a GitHub release.
+- Packages stay `"private": true` until the registry owner is settled: GitHub Packages requires the package scope to equal the repository owner, and `@gorilladesk` is not the owner yet (repo is under `Egortk`; the GitHub name `gorilladesk` is a personal account). While private, versions, changelogs and tags still update; nothing is published. To start publishing: move the repo to the owner that matches the scope (or rename the scope to the owner), then remove `"private": true` from `packages/tokens` and `packages/ui`.
 
 ## Visual tests (Chromatic)
 

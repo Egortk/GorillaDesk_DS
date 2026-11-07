@@ -2,6 +2,15 @@
   "name": "@gorilladesk/ui",
   "version": "0.1.0",
   "description": "GorillaDesk design system React components (React Aria + Tailwind v4)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Egortk/GorillaDesk_DS.git",
+    "directory": "packages/ui"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
   "private": true,
   "type": "module",
   "sideEffects": [
