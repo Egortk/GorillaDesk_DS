@@ -5,6 +5,7 @@ Entries dated 2026-11-05 to 2026-11-07 were reconstructed from the setup session
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-11-07 | Figma corrected to the token grammar (Button success/disabled, Tag secondary hover/active, Tag sm hover padding, Badge/Lozenge subsidiary/subtle, DismissButton icon token, `_addon` invalid fill). Tag `xs` has no icon slot (sm only). `input/border/invalid-focus` and the 6 px Badge dot stay as they are for now. | Designer's review of the component deviations; code already matched the grammar, so no code change. Remaining Figma item: Button primary-subtle hover surface layer. |
 | 2026-11-07 | Components follow the token grammar `interactive/{intent}/{tone}/{property}/{state}` where Figma deviates from it; deviations are listed in known-issues for the designer to fix in Figma. | Designer's choice: consistent code, Figma gets corrected instead of copying mistakes. |
 | 2026-11-07 | Tag is interactive (Figma `interactive=true`) when `onPress` is passed; there is no `interactive` prop. Removable = `onRemove`, its accessible name `removeLabel`. | Like `has*` slots: no tag with hover states but no action. |
 | 2026-11-07 | Palette classes (intent × tone × state) are composed at runtime in `src/lib/palette.ts` and listed for Tailwind with `@source inline(...)` in `src/styles.css`. All other classes are written out in full. | One rule instead of hundreds of hand-written class names; Tailwind cannot see template strings, so the safelist and palette.ts must stay in sync. |
