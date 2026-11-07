@@ -275,7 +275,7 @@ C;alpha/environment/border/muted;F;@opacity/8|@opacity/8;
 C;alpha/environment/border/strong;F;@opacity/24|@opacity/24;
 C;alpha/environment/scrim/default;F;@opacity/72|@opacity/80;
 C;alpha/environment/scrim/subtle;F;@opacity/40|@opacity/64;
-F;font/ui;S;@font/family/sans;CSS stack: Inter, system-ui, -apple-system, Segoe UI, sans-serif. Code adds the fallbacks; Figma keeps one family.
+F;font/ui;S;@font/family/sans;CSS stack: Inter, system-ui, -apple-system, Segoe UI, sans-serif. Code adds the fallbacks  Figma keeps one family.
 F;font/code;S;@font/family/sans;Placeholder: same as UI font. Replace with a monospace family.
 F;font-weight/normal;F;@font/weight/400;
 F;font-weight/light;F;@font/weight/300;
@@ -382,12 +382,12 @@ CC;color/input/bg/invalid-hover;C;@color/interactive/danger/subtle/bg/hover;
 CC;color/input/bg/invalid-focus;C;@color/interactive/danger/subtle/bg/active;
 CC;color/input/border/default;C;@color/interactive/neutral/subtle/border/default;
 CC;color/input/border/hover;C;@color/interactive/neutral/subtle/border/hover;
-CC;color/input/border/focus;C;@color/interactive/neutral/subtle/border/disabled;
+CC;color/input/border/focus;C;@color/interactive/neutral/subtle/border/default;
 CC;color/input/border/disabled;C;@color/interactive/neutral/solid/border/disabled;
 CC;color/input/border/readonly;C;@color/interactive/neutral/solid/border/disabled;
 CC;color/input/border/invalid;C;@color/content/danger/border/strong;
 CC;color/input/border/invalid-hover;C;@color/content/danger/border/default;
-CC;color/input/border/invalid-focus;C;@color/content/danger/border/strong;
+CC;color/input/border/invalid-focus;C;@color/interactive/danger/solid/border/default;
 CC;color/input/icon/default;C;@color/interactive/neutral/transparent/icon/default;
 CC;color/input/icon/hover;C;@color/interactive/neutral/transparent/icon/hover;
 CC;color/input/icon/focus;C;@color/interactive/neutral/transparent/icon/active;
@@ -401,8 +401,8 @@ CC;color/input/text/placeholder;C;@color/content/neutral/text/faint;
 CC;color/input/text/disabled;C;@color/content/neutral/text/muted;
 CC;color/input/text/readonly;C;@color/content/neutral/text/strong;
 CC;color/input/addon/text/default;C;@color/content/neutral/text/strong;
-CC;color/input/addon/bg/default;C;@color/content/neutral/bg/faint;
-CC;color/input/addon/border/default;C;@color/interactive/neutral/solid/border/default;
+CC;color/input/addon/bg/default;C;@color/interactive/neutral/subtle/bg/default;
+CC;color/input/addon/border/default;C;@color/interactive/neutral/subtle/border/default;
 CC;color/field/label/default;C;@color/content/neutral/text/default;
 CC;color/field/label/disabled;C;@color/content/neutral/text/faint;
 CC;color/field/label/invalid;C;@color/interactive/danger/transparent/text/default;
@@ -415,8 +415,8 @@ CS;space/input/padding-x;F;@space/xs;
 CS;space/input/gap;F;@space/xs;
 CS;space/input/label-inset;F;@space/xs;
 CC;color/input/addon/text/invalid;C;@color/content/danger/text/strong;
-CC;color/input/addon/bg/invalid;C;@color/content/danger/bg/faint;
-CC;color/input/addon/border/invalid;C;@color/content/danger/border/default;
+CC;color/input/addon/bg/invalid;C;@color/interactive/danger/subtle/bg/default;
+CC;color/input/addon/border/invalid;C;@color/content/danger/border/strong;
 C;alpha/content/base/border/strong;F;@opacity/24|@opacity/100;
 C;alpha/content/base/bg/strong;F;@opacity/24|@opacity/16;
 C;alpha/content/inverse/border/strong;F;@opacity/24|@opacity/40;
@@ -488,6 +488,8 @@ C;alpha/interactive/base/transparent/text/selected;F;@opacity/100|@opacity/100;
 C;alpha/interactive/base/transparent/icon/selected;F;@opacity/100|@opacity/100;
 C;alpha/interactive/neutral/transparent/bg/selected;F;@opacity/12|@opacity/24;
 C;alpha/focus/invalid;F;@opacity/24|@opacity/64;
+P;dimension/-1;F;-1;
+S;space/overlap/md;F;@dimension/-1;Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative.
 E;shadow/container;d,0,0,1,0,@color/environment/shadow/8,|d,0,0,2,0,@color/environment/shadow/4,|d,0,0,3,0,@color/environment/shadow/6,
 E;shadow/elevation;d,0,10,49,0,@color/environment/shadow/7,|d,0,8,24,0,@color/environment/shadow/3,|d,0,3,8,0,@color/environment/shadow/8,|d,0,2,2,0,@color/environment/shadow/4,|d,0,0,1,0,@color/environment/shadow/17,
 E;shadow/interactive-default;d,0,0,1,0,@color/environment/shadow/8,|d,0,1,2,0,@color/environment/shadow/4,|d,0,1,3,0,@color/environment/shadow/6,
@@ -495,6 +497,7 @@ E;shadow/interactive-hover;d,0,0,1,0,@color/environment/shadow/8,|d,0,1,2,0,@col
 E;inset-shadow/interactive-active;i,0,0,2,0,@color/environment/shadow/24,|i,0,2,6,0,@color/environment/shadow/12,|i,0,2,12,0,@color/environment/shadow/6,
 E;shadow/interactive-focus;d,0,0,0,3,@color/focus/default,@border-width/focus|d,0,0,1,0,@color/environment/shadow/16,|d,0,2,2,0,@color/environment/shadow/4,|d,0,2,5,0,@color/environment/shadow/10,
 E;shadow/icon-surface;d,0,0,1,0,@color/environment/shadow/8,|d,0,1,2,0,@color/environment/shadow/4,|d,0,1,3,0,@color/environment/shadow/6,
+E;shadow/interactive-focus-invalid;d,0,0,0,3,@color/focus/invalid,@border-width/focus|d,0,0,1,0,@color/environment/shadow/16,|d,0,2,2,0,@color/environment/shadow/4,|d,0,2,5,0,@color/environment/shadow/10,
 T;heading/2xl;@font/ui|@text/heading-2xl|@text/heading-2xl--line-height|@text/heading-2xl--letter-spacing|@text/heading-2xl--font-weight
 T;heading/xl;@font/ui|@text/heading-xl|@text/heading-xl--line-height|@text/heading-xl--letter-spacing|@text/heading-xl--font-weight
 T;heading/lg;@font/ui|@text/heading-lg|@text/heading-lg--line-height|@text/heading-lg--letter-spacing|@text/heading-lg--font-weight
@@ -519,6 +522,3 @@ T;body/xs/bold;@font/ui|@text/body-xs|@text/body-xs--line-height|@text/body-xs--
 T;label/lg;@font/ui|@text/label-lg|@text/label-lg--line-height|@text/label-lg--letter-spacing|@text/label-lg--font-weight
 T;label/md;@font/ui|@text/label-md|@text/label-md--line-height|@text/label-md--letter-spacing|@text/label-md--font-weight
 T;label/sm;@font/ui|@text/label-sm|@text/label-sm--line-height|@text/label-sm--letter-spacing|@text/label-sm--font-weight
-E;shadow/interactive-focus-invalid;d,0,0,0,3,@color/focus/invalid,@border-width/focus|d,0,0,1,0,@color/environment/shadow/16,|d,0,2,2,0,@color/environment/shadow/4,|d,0,2,5,0,@color/environment/shadow/10,
-P;dimension/-1;F;-1;
-S;space/overlap/md;F;@dimension/-1;Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative.

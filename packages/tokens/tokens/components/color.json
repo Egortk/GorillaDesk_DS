@@ -306,7 +306,7 @@
               "collection": "components/color"
             }
           },
-          "$value": "{color.interactive.neutral.subtle.border.disabled}"
+          "$value": "{color.interactive.neutral.subtle.border.default}"
         },
         "disabled": {
           "$type": "color",
@@ -351,7 +351,7 @@
               "collection": "components/color"
             }
           },
-          "$value": "{color.content.danger.border.strong}"
+          "$value": "{color.interactive.danger.solid.border.default}"
         }
       },
       "icon": {
@@ -495,7 +495,7 @@
                 "collection": "components/color"
               }
             },
-            "$value": "{color.content.neutral.bg.faint}"
+            "$value": "{color.interactive.neutral.subtle.bg.default}"
           },
           "invalid": {
             "$type": "color",
@@ -504,7 +504,7 @@
                 "collection": "components/color"
               }
             },
-            "$value": "{color.content.danger.bg.faint}"
+            "$value": "{color.interactive.danger.subtle.bg.default}"
           }
         },
         "border": {
@@ -515,7 +515,7 @@
                 "collection": "components/color"
               }
             },
-            "$value": "{color.interactive.neutral.solid.border.default}"
+            "$value": "{color.interactive.neutral.subtle.border.default}"
           },
           "invalid": {
             "$type": "color",
@@ -524,7 +524,7 @@
                 "collection": "components/color"
               }
             },
-            "$value": "{color.content.danger.border.default}"
+            "$value": "{color.content.danger.border.strong}"
           }
         }
       }

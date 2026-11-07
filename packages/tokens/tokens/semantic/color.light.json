@@ -6111,7 +6111,7 @@
                   "collection": "semantic/color"
                 }
               },
-              "$value": "{color.neutral.500}"
+              "$value": "{color.neutral.50}"
             },
             "hover": {
               "$type": "color",

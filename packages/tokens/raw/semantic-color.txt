@@ -307,7 +307,7 @@ interactive/neutral/solid/text/hover;@~neutral/0^@alpha/interactive/base/solid/t
 interactive/neutral/solid/text/selected;@~neutral/0^@alpha/interactive/base/solid/text/selected|@~neutral/950^@alpha/interactive/base/solid/text/selected
 interactive/neutral/subtle/bg/active;@~neutral/100|@~neutral/700
 interactive/neutral/subtle/bg/default;@~neutral/50|@~neutral/800
-interactive/neutral/subtle/bg/disabled;@~neutral/500|@~neutral/800
+interactive/neutral/subtle/bg/disabled;@~neutral/50|@~neutral/800
 interactive/neutral/subtle/bg/hover;@~neutral/100|@~neutral/700
 interactive/neutral/subtle/bg/selected;@~neutral/100|@~neutral/700
 interactive/neutral/subtle/border/active;@~neutral/300|@~neutral/400

@@ -1576,7 +1576,7 @@
   },
   "color-interactive-neutral-subtle-bg-disabled": {
     "type": "color",
-    "light": "#7f7f7f",
+    "light": "#f2f2f2",
     "dark": "#393939"
   },
   "color-interactive-neutral-subtle-bg-hover": {
@@ -3489,8 +3489,8 @@
   },
   "color-input-border-focus": {
     "type": "color",
-    "light": "var(--color-interactive-neutral-subtle-border-disabled)",
-    "dark": "var(--color-interactive-neutral-subtle-border-disabled)"
+    "light": "var(--color-interactive-neutral-subtle-border-default)",
+    "dark": "var(--color-interactive-neutral-subtle-border-default)"
   },
   "color-input-border-disabled": {
     "type": "color",
@@ -3514,8 +3514,8 @@
   },
   "color-input-border-invalid-focus": {
     "type": "color",
-    "light": "var(--color-content-danger-border-strong)",
-    "dark": "var(--color-content-danger-border-strong)"
+    "light": "var(--color-interactive-danger-solid-border-default)",
+    "dark": "var(--color-interactive-danger-solid-border-default)"
   },
   "color-input-icon-default": {
     "type": "color",
@@ -3589,23 +3589,23 @@
   },
   "color-input-addon-bg-default": {
     "type": "color",
-    "light": "var(--color-content-neutral-bg-faint)",
-    "dark": "var(--color-content-neutral-bg-faint)"
+    "light": "var(--color-interactive-neutral-subtle-bg-default)",
+    "dark": "var(--color-interactive-neutral-subtle-bg-default)"
   },
   "color-input-addon-bg-invalid": {
     "type": "color",
-    "light": "var(--color-content-danger-bg-faint)",
-    "dark": "var(--color-content-danger-bg-faint)"
+    "light": "var(--color-interactive-danger-subtle-bg-default)",
+    "dark": "var(--color-interactive-danger-subtle-bg-default)"
   },
   "color-input-addon-border-default": {
     "type": "color",
-    "light": "var(--color-interactive-neutral-solid-border-default)",
-    "dark": "var(--color-interactive-neutral-solid-border-default)"
+    "light": "var(--color-interactive-neutral-subtle-border-default)",
+    "dark": "var(--color-interactive-neutral-subtle-border-default)"
   },
   "color-input-addon-border-invalid": {
     "type": "color",
-    "light": "var(--color-content-danger-border-default)",
-    "dark": "var(--color-content-danger-border-default)"
+    "light": "var(--color-content-danger-border-strong)",
+    "dark": "var(--color-content-danger-border-strong)"
   },
   "color-field-label-default": {
     "type": "color",
@@ -3651,7 +3651,7 @@
     "type": "fontFamily",
     "light": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
     "dark": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
-    "description": "CSS stack: Inter, system-ui, -apple-system, Segoe UI, sans-serif. Code adds the fallbacks; Figma keeps one family."
+    "description": "CSS stack: Inter, system-ui, -apple-system, Segoe UI, sans-serif. Code adds the fallbacks  Figma keeps one family."
   },
   "font-code": {
     "type": "fontFamily",

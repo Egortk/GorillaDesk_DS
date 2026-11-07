@@ -2,7 +2,7 @@
   "font": {
     "ui": {
       "$type": "fontFamily",
-      "$description": "CSS stack: Inter, system-ui, -apple-system, Segoe UI, sans-serif. Code adds the fallbacks; Figma keeps one family.",
+      "$description": "CSS stack: Inter, system-ui, -apple-system, Segoe UI, sans-serif. Code adds the fallbacks  Figma keeps one family.",
       "$extensions": {
         "com.figma": {
           "collection": "semantic/font"
