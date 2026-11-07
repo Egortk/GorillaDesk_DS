@@ -3,7 +3,8 @@
 /* Text-style class lists used by the Tokens/Typography page. */
 @source "../../tokens/dist/text-styles.json";
 
-/* Storybook canvas only: page background and default text follow the theme. */
+/* Storybook canvas only: page background and default text follow the theme.
+   surface/default, the background Figma shows the components on, so stories compare 1:1. */
 body {
-  @apply bg-environment-surface-canvas font-ui text-content-neutral-text-default;
+  @apply bg-environment-surface-default font-ui text-content-neutral-text-default;
 }

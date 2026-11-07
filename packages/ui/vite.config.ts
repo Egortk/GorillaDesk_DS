@@ -13,7 +13,7 @@ export default defineConfig({
       fileName: 'index',
     },
     rollupOptions: {
-      external: [/^react($|\/)/, /^react-dom($|\/)/, /^react-aria-components($|\/)/],
+      external: [/^react($|\/)/, /^react-dom($|\/)/, /^react-aria($|\/)/, /^react-aria-components($|\/)/],
     },
     sourcemap: true,
   },

@@ -1,3 +1,22 @@
-/* Tailwind v4 + GorillaDesk tokens. Import once in the app (or Storybook preview). */
+/* Tailwind v4 + GorillaDesk tokens + component classes. Import once in the app (or Storybook preview). */
 @import "tailwindcss";
 @import "@gorilladesk/tokens/tailwind.css";
+
+/* Built component code, so an app's Tailwind build sees the classes our components use. */
+@source "../dist";
+
+/* A colour layered over the background colour (Figma: a fill stacked on surface/default). */
+@utility bg-over-* {
+  background-image: linear-gradient(--value(--color-*), --value(--color-*));
+}
+
+/*
+ * Palette classes composed at runtime by src/lib/palette.ts (intent × emphasis × state).
+ * Tailwind cannot see template strings, so the combinations are listed here. Keep in sync with palette.ts.
+ */
+@source inline("{,data-hovered:,data-pressed:,data-disabled:}{bg,bg-over}-interactive-{primary,secondary,subsidiary,accent,success,warning,danger,neutral}-{solid,transparent}-bg-{default,hover,active,disabled}");
+@source inline("{,data-hovered:,data-pressed:,data-disabled:}inset-ring-interactive-{primary,secondary,subsidiary,accent,success,warning,danger,neutral}-{solid,transparent}-border-{default,hover,active,disabled}");
+@source inline("{,data-hovered:,data-pressed:,data-disabled:}text-interactive-{primary,secondary,subsidiary,accent,success,warning,danger,neutral}-{solid,transparent}-text-{default,hover,active,disabled}");
+@source inline("{,data-hovered:,data-pressed:,data-disabled:,group-data-hovered:,group-data-pressed:,group-data-disabled:}text-interactive-{primary,secondary,subsidiary,accent,success,warning,danger,neutral}-{solid,transparent}-icon-{default,hover,active,disabled}");
+@source inline("data-pending:bg-interactive-{primary,secondary,subsidiary,accent,success,warning,danger,neutral}-{solid,transparent}-bg-default");
+@source inline("data-pending:inset-ring-interactive-{primary,secondary,subsidiary,accent,success,warning,danger,neutral}-{solid,transparent}-border-default");
