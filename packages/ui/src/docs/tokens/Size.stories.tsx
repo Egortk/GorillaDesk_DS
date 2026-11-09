@@ -27,7 +27,7 @@ export const Space: Story = {
       <Section title="Inside components">
         <Table
           head={['Token', 'Usage', 'Value', '']}
-          rows={sortBySize(byPrefix('space-').filter((t) => !/^space-(section|overlap|button|input)/.test(t.name))).map((t) => [
+          rows={sortBySize(byPrefix('space-').filter((t) => !/^space-(section|overlap|button|input|avatar)/.test(t.name))).map((t) => [
             <Code>--{t.name}</Code>,
             <Code>p-(--{t.name})</Code>,
             value(t),
@@ -47,7 +47,7 @@ export const Space: Story = {
       <Section title="Component space">
         <Table
           head={['Token', 'Alias', 'Value']}
-          rows={[...byPrefix('space-button-'), ...byPrefix('space-input-')].map((t) => [<Code>--{t.name}</Code>, <Code>{t.light}</Code>, value(t)])}
+          rows={[...byPrefix('space-button-'), ...byPrefix('space-input-'), ...byPrefix('space-avatar')].map((t) => [<Code>--{t.name}</Code>, <Code>{t.light}</Code>, value(t)])}
         />
       </Section>
     </Page>
