@@ -8,8 +8,8 @@ A component set marked **Ready for dev** in Figma is finished and may be impleme
 
 When a ready component changes, Figma marks it **Changed**. Use Dev Mode → *Compare changes* to see the diff, update code and the manifest, then the designer marks it ready again.
 
-Ready for dev today (2026-11-07): Button, IconButton, Spinner, Badge, DismissButton, Lozenge, Tag, Input, `_addon` (internal part of Input).
-Not ready: Avatar (Customer / User / Branch / Counter), Avatar Group, Button Group.
+Ready for dev today (2026-11-09): Button, IconButton, Spinner, Badge, DismissButton, Lozenge, Tag, Input, `_addon` (internal part of Input), CustomerAvatar, UserAvatar, BranchAvatar, AvatarGroup, `_avatarCounter` (internal part of AvatarGroup).
+Not ready: Button Group.
 
 All ready sets are implemented in `packages/ui/src/components` (status `draft` in the manifest until the definition of done passes; open items in `docs/known-issues.md`).
 
@@ -96,3 +96,7 @@ Code: <Component prop="value">…</Component>
 | **Tag** | `50:10801`, 192 of 320 combinations | `interactive=false` has only `state=default` (intentional). `removable` → shows DismissButton; in code `onRemove`. Open: does `size=sm` support an icon (see known issues). |
 | **Input** | `104:149`, 32 variants | `variant`: `box` (standalone) or `inline` (table cell, input-group item: no radius, no shadow). `filled` is a Figma-only axis: in code it follows the value. Addons come from `_addon`. |
 | `_addon` (internal) | `104:31`, 8 variants | `variant` `box`/`inline`, `position` `start`/`end`, `state` `default`/`invalid`. Has a border only on the side facing the field. |
+| **CustomerAvatar** | `70:6001`, 5 sizes | Initials from `name` on `secondary` solid; size `xs` shows one letter. |
+| **UserAvatar** | `70:6008`, 5 sizes | Photo `src`; without it, or when it fails, SystemAvatar `variant=default` (PNG exported from Figma, inlined in the bundle). |
+| **BranchAvatar** | `70:6069`, 5 sizes | Logo `src` with `object-contain` on `surface/default`; without it, initials on `primary` solid. |
+| **AvatarGroup** | `187:12378`, 5 sizes | Avatars overlap by `space/avatar-group/overlap/*` (start margin on every item but the first); every avatar takes the group size and gets the ring (`space/avatar/ring`, colour from `background`). `max` adds the counter (`_avatarCounter` `70:6166`, internal): `+N`, `N` in size xs. |
