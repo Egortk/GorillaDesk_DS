@@ -65,7 +65,8 @@ StyleDictionary.registerTransform({
     const v = String(t.$value); const m = v.match(/^(-?[\d.]+)px$/);
     if (!m) return v;
     const n = Number(m[1]);
-    if (cfg.pxKeep.some((p) => t.path.join('.').startsWith(p)) || n === 0 || n >= 9999) return n === 0 ? '0' : n >= 9999 ? '9999px' : v;
+    const keepPx = cfg.pxKeep.some((p) => t.path.join('.').startsWith(p)) && !(cfg.pxKeepExcept ?? []).some((p) => t.path.join('.').startsWith(p));
+    if (keepPx || n === 0 || n >= 9999) return n === 0 ? '0' : n >= 9999 ? '9999px' : v;
     return +(n / 16).toFixed(4) + 'rem';
   },
 });

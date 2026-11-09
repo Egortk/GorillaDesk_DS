@@ -6,6 +6,7 @@
     "lightScope": "[data-theme=\"light\"]" },
   "hiddenPrefixes": ["primitives", "alpha."],
   "pxKeep": ["border-width", "space.overlap"],
+  "pxKeepExcept": ["space.overlap.stack"],
   "tailwindTheme": ["color", "spacing", "radius", "text", "font", "font-weight", "ease", "shadow", "inset-shadow"],
   "tailwindResets": ["color", "font", "font-weight", "radius", "text", "ease", "shadow", "inset-shadow"]
 }

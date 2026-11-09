@@ -2119,6 +2119,66 @@
         "value": -1,
         "unit": "px"
       }
+    },
+    "-4": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "primitives"
+        }
+      },
+      "$value": {
+        "value": -4,
+        "unit": "px"
+      }
+    },
+    "-6": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "primitives"
+        }
+      },
+      "$value": {
+        "value": -6,
+        "unit": "px"
+      }
+    },
+    "-8": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "primitives"
+        }
+      },
+      "$value": {
+        "value": -8,
+        "unit": "px"
+      }
+    },
+    "-10": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "primitives"
+        }
+      },
+      "$value": {
+        "value": -10,
+        "unit": "px"
+      }
+    },
+    "-12": {
+      "$type": "dimension",
+      "$extensions": {
+        "com.figma": {
+          "collection": "primitives"
+        }
+      },
+      "$value": {
+        "value": -12,
+        "unit": "px"
+      }
     }
   },
   "font": {
