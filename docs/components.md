@@ -8,8 +8,10 @@ A component set marked **Ready for dev** in Figma is finished and may be impleme
 
 When a ready component changes, Figma marks it **Changed**. Use Dev Mode → *Compare changes* to see the diff, update code and the manifest, then the designer marks it ready again.
 
-Ready for dev today (2026-11-07): Button, IconButton, Spinner, Badge, DismissButton, Lozenge, Tag, Input.
-Not ready: Avatar (Customer / User / Branch / Counter), Avatar Group, Button Group, `_addon` (internal part of Input).
+Ready for dev today (2026-11-07): Button, IconButton, Spinner, Badge, DismissButton, Lozenge, Tag, Input, `_addon` (internal part of Input).
+Not ready: Avatar (Customer / User / Branch / Counter), Avatar Group, Button Group.
+
+All ready sets are implemented in `packages/ui/src/components` (status `draft` in the manifest until the definition of done passes; open items in `docs/known-issues.md`).
 
 ## Conventions
 

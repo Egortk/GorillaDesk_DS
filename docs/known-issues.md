@@ -7,12 +7,12 @@ Things that look wrong on purpose, or are wrong and already known. Check here be
 | Area | Issue | Impact | Owner / next step |
 |---|---|---|---|
 | Tokens, Light | `color/interactive/neutral/subtle/{text,icon}/{hover,active,selected}` = `neutral/100` on a `neutral/100` background (invisible). | Lint warns (6 warnings). Avoid `neutral` + `subtle` with text in these states. | Product team: Light values are frozen. |
-| Tokens, Input | Since the 2026-11-07 sync `color/input/border/invalid-focus` aliases `interactive/danger/solid/border/default` = dark red at 16 % in Light (`#47151529`), 12 % in Dark. The invalid focused field loses its red border. Before: `content/danger/border/strong`. | Input is not built yet, so nothing renders it today. | Designer: confirm or change in Figma before Input is implemented. |
+| Tokens, Input | `color/input/border/invalid-focus` aliases `interactive/danger/solid/border/default` = dark red at 16 % in Light (`#47151529`), 12 % in Dark, so the invalid focused field loses its red border (the red focus ring still shows). | Input renders it as in Figma. | Designer: kept for now (2026-11-07), will revise later. |
+| Tokens, Light contrast | axe `color-contrast` fails (< 4.5 : 1 for 11–14 px text) on: white text on `success` (3.0), `danger` (3.75), `secondary` (3.9) solid; intent text on `*-subtle` / transparent backgrounds (`primary` 3.7, `secondary` 3.2, `success` 2.5, `warning` 2.4, `danger` 3.0); `accent` hover/active text (4.4 / 3.4); `input/addon/text/invalid` on `input/addon/bg/invalid` (3.3). Dark passes. | Button, IconButton, Badge (subtle), Input addon fail WCAG AA in Light. Components use the tokens correctly. | Product team: Light values are frozen; decide whether to darken. |
+| Components vs Figma | Audit 2026-11-07 (every variant, Light and Dark, Figma bindings vs computed styles in Storybook): IconButton `success` disabled icon still uses `…/icon/default` (Button was fixed); `primary-subtle` stacks `surface/default` under the fill in Button hover and IconButton hover + active (code: fill alone). No visual effect: Button/IconButton `success` and `danger` hover/active text and icon bind `…/default` (same values as hover/active). Lozenge `sm` is 1.7 px narrower in the browser (text rendering; size, line height, weight and tracking match). | Small differences only. | Designer: fix IconButton success/disabled icon and the primary-subtle surface layer. |
+| Badge | `variant=dot` is 6 × 6 px; no size token that small (`spacing/icon/2xs` = 12 px), and no obvious place for one in the size grammar. Code uses Tailwind `size-1.5`. Badge border is a centre stroke in Figma; code draws it inside (≤ 0.5 px difference). | Raw size in one place. | Designer: left as is for now (2026-11-07). |
 | Icon library | Icon layers bind stroke widths to `stroke/stroke/regular` and `stroke/stroke/secondary`, and `more-verticale` uses fill style `LIGHT/neutral/neutral-70`, all from an old library not available in Components. The `dissmiss` icon name has a typo. | No visual effect today; Dev Mode shows old names. | Fix in the icon library (rebind or remove). |
 | Input | In `focused` / `invalid-focused` the caret sits 10 px after the text, and after the placeholder in empty fields. | Mockup only; the browser draws the caret. | Designer. |
-| Input | Effect style `shadow/interactive-focus-invalid` exists but is not applied to `invalid-focused`. | Invalid fields show the neutral focus ring. | Product decision (Light visual change). |
-| `_addon` | Not marked Ready for dev. | Input depends on it. | Designer. |
-| Tag | Open question: does `size=sm` support an icon? `hasIcon` currently does nothing at that size. | API ambiguity. | Designer. |
 | Button group | Solid groups: the divider is the button's own border (subtle). A stronger divider needs a `color/button-group/divider/{intent}` token. | Visual decision. | Designer. |
 | Tokens | `duration/*`, `ease/*`, `z-index/*` are starting values. `font/code` equals the UI font. | Review before release. | Designer + developers. |
 | Tokens | Data-visualisation palette not defined yet. | Charts have no tokens. | Planned. |
@@ -20,6 +20,7 @@ Things that look wrong on purpose, or are wrong and already known. Check here be
 
 ## Not bugs
 
+- **Tag** `size=xs` has no icon slot; only `size=sm` takes an icon (designer decision 2026-11-07). In code `icon` is ignored at xs.
 - **Spinner** `spin` layers have black strokes without a token. The stroke is the arc's geometry inside a boolean shape; the colour comes from the boolean fill. Removing it makes the spinner disappear.
 - **Tag** has 192 of 320 variant combinations: `interactive=false` has only `state=default`.
 - **Button / IconButton** `variant` lists are uneven on purpose (not every intent has every emphasis).

@@ -60,6 +60,11 @@ Skill: `implement-component` (`skills/implement-component/SKILL.md`). Order:
 - Run: `CHROMATIC_PROJECT_TOKEN=… npm run chromatic`. Or from Storybook: the **Visual tests** panel (`@chromatic-com/storybook`) signs in with your Chromatic account, no token needed.
 - Accepting a change in Chromatic makes it the new baseline. A change to a Light visual needs product team approval first.
 
+## Published Storybook
+
+- https://egortk.github.io/GorillaDesk_DS/ — public, no sign-in. Share this link with the team.
+- `.github/workflows/storybook-pages.yml` rebuilds it on every push to `main` and pushes the build to the `gh-pages` branch, which GitHub Pages serves. It can also be run by hand (Actions → Storybook on GitHub Pages → Run workflow).
+
 ## Git
 
 - Repository: `github.com/Egortk/GorillaDesk_DS`. Branch `main`; work goes through pull requests from feature branches.
