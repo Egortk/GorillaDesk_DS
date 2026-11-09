@@ -2,6 +2,15 @@
   "name": "@gorilladesk/tokens",
   "version": "0.1.0",
   "description": "GorillaDesk design tokens: Figma export -> DTCG 2025.10 -> CSS variables and Tailwind v4 theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Egortk/GorillaDesk_DS.git",
+    "directory": "packages/tokens"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
   "scripts": {
     "test": "tailwindcss -i test/input.css -o test/out.css",
     "convert": "node scripts/figma-to-dtcg.mjs",

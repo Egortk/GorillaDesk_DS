@@ -11,6 +11,12 @@
     "tokens": "npm run tokens -w @gorilladesk/tokens",
     "storybook": "npm run storybook -w @gorilladesk/ui",
     "build": "npm run build -w @gorilladesk/ui",
-    "chromatic": "npm run chromatic -w @gorilladesk/ui"
+    "chromatic": "npm run chromatic -w @gorilladesk/ui",
+    "changeset": "changeset",
+    "version-packages": "changeset version && npm install --package-lock-only",
+    "release": "npm run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3"
   }
 }
