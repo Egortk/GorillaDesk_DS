@@ -259,15 +259,17 @@
         },
         "icon": {
           "prop": "icon",
-          "enabledBy": "hasIcon"
+          "enabledBy": "hasIcon",
+          "note": "Figma has the icon slot in size=sm only; size=xs ignores it."
         },
         "removable": {
           "prop": "onRemove",
-          "note": "true = pass an onRemove handler; renders DismissButton (aria-label required)."
+          "note": "true = pass onRemove; renders DismissButton. Its accessible name is removeLabel (default \"Remove {label}\")."
         },
         "interactive": {
           "prop": null,
-          "todo": "Decide: derived from selection/onRemove (React Aria TagGroup) or an explicit prop. interactive=false has only state=default."
+          "derivedFrom": "onPress",
+          "note": "interactive=true when onPress is passed (border, shadow, hover/pressed/focus states); without it the tag is a static label. Decided 2026-11-07."
         },
         "state": {
           "map": {
@@ -322,11 +324,11 @@
         },
         "hasStartAddon": {
           "prop": "startAddon",
-          "note": "Content comes from the nested _addon label."
+          "note": "Slot: the addon shows when startAddon is passed. Content is the nested _addon label."
         },
         "hasEndAddon": {
           "prop": "endAddon",
-          "note": "Content comes from the nested _addon label."
+          "note": "Slot: the addon shows when endAddon is passed. Content is the nested _addon label."
         },
         "filled": {
           "prop": null,
@@ -367,12 +369,13 @@
       "figma": {
         "fileKey": "ZGgeVYWW1borOyeuljsfS4",
         "key": "53eb339a096078c0479e5cb3875f60329fd32961",
-        "nodeId": "104:31"
+        "nodeId": "104:31",
+        "devStatus": "READY_FOR_DEV"
       },
       "code": {
         "import": null,
-        "name": "InputAddon",
-        "source": "packages/ui/src/components/Input/InputAddon.tsx",
+        "name": "Addon (internal)",
+        "source": "packages/ui/src/components/Input/Input.tsx",
         "exported": false
       },
       "props": {
