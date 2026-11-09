@@ -89,9 +89,10 @@ for (const theme of ['light', 'dark']) {
     if (!/^(control|icon)\//.test(n.slice(8))) warn(`${n}: spacing/* is reserved for element sizes (control, icon)`);
   }
 
-  // overlap gaps must cancel exactly one border: space/overlap/X == -border-width/X
+  // border overlaps must cancel exactly one border: space/overlap/X == -border-width/X.
+  // Subgroups (space/overlap/stack/*: avatars overlapping by part of their size) have no such link.
   const num = (n) => { let v = all.get(n)?.$value; while (typeof v === 'string') v = all.get(v.slice(1, -1).split('.').join('/'))?.$value; return v?.value; };
-  for (const n of all.keys()) if (n.startsWith('space/overlap/')) {
+  for (const n of all.keys()) if (/^space\/overlap\/[^/]+$/.test(n)) {
     const size = n.split('/')[2];
     if (num(n) !== -num('border-width/' + size)) err(`${n} (${num(n)}) must equal minus border-width/${size} (${num('border-width/' + size)})`);
   }

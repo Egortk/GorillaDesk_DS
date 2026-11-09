@@ -410,6 +410,58 @@
           }
         },
         "$value": "{dimension.-1}"
+      },
+      "stack": {
+        "xs": {
+          "$type": "dimension",
+          "$description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "semantic/size"
+            }
+          },
+          "$value": "{dimension.-4}"
+        },
+        "sm": {
+          "$type": "dimension",
+          "$description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "semantic/size"
+            }
+          },
+          "$value": "{dimension.-6}"
+        },
+        "md": {
+          "$type": "dimension",
+          "$description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "semantic/size"
+            }
+          },
+          "$value": "{dimension.-8}"
+        },
+        "lg": {
+          "$type": "dimension",
+          "$description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "semantic/size"
+            }
+          },
+          "$value": "{dimension.-10}"
+        },
+        "xl": {
+          "$type": "dimension",
+          "$description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "semantic/size"
+            }
+          },
+          "$value": "{dimension.-12}"
+        }
       }
     }
   }

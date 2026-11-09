@@ -13,7 +13,7 @@ The Figma file **Tokens** (`MQgY3hAxEgE9YUItxgUx6w`) is the source. It also carr
 | `semantic/motion` | Default | 8 | Yes |
 | `semantic/layer` | Default | 9 | Yes |
 | `components/color` | Default | 65 | Yes |
-| `components/size` | Default | 10 | Yes |
+| `components/size` | Default | 15 | Yes |
 
 Effect styles (8) and text styles (24) are built from these variables.
 
@@ -59,6 +59,7 @@ Many semantic colours are a primitive colour plus an opacity taken from a hidden
 | `space/{2xs…3xl}` | padding, gap inside components | outside theme: `p-(--space-md)`, `gap-(--space-xl)` |
 | `space/section/{xs…xl}` | gaps between sections and blocks | outside theme: `gap-(--space-section-md)` |
 | `space/overlap/md` | −1 px: joins borders of group items | outside theme, px: `ms-(--space-overlap-md)` on every item but the first |
+| `space/overlap/stack/{xs…xl}` | −4 … −12 px: items that overlap by part of their size (avatar group) | outside theme, rem: through a component token, e.g. `ms-(--space-avatar-group-overlap-md)` |
 | `spacing/control/{2xs…2xl}` | control heights (16–56 px) | theme: `h-control-md` |
 | `spacing/icon/{2xs…2xl}` | icon sizes (12–48 px) | theme: `size-icon-md` |
 | `radius/{none,xs…3xl,full}` | corner radius | theme: `rounded-md` |
@@ -66,9 +67,9 @@ Many semantic colours are a primitive colour plus an opacity taken from a hidden
 
 Why `space` and `spacing` are separate: Tailwind v4 reads named `--spacing-*` keys for `max-w-*` and `leading-*` too, so `--spacing-md` would silently change `max-w-md` (tailwindlabs/tailwindcss#18042, #19722). Only sizes that cannot collide (`control-*`, `icon-*`) live in the theme.
 
-`space/overlap/md` must always equal −`border-width/md` (lint). CSS `gap` cannot be negative, so in code it becomes a margin on every item but the first.
+`space/overlap/md` must always equal −`border-width/md` (lint); `space/overlap/stack/*` has no such link. CSS `gap` cannot be negative, so in code it becomes a margin on every item but the first.
 
-Units: px in Figma; rem (base 16) in CSS, except `border-width/*` and `space/overlap/*` (px, so borders and overlaps never drift apart at another root font size) and `radius/full` (9999px).
+Units: px in Figma; rem (base 16) in CSS, except `border-width/*` and `space/overlap/*` without `stack` (px, so borders and overlaps never drift apart at another root font size) and `radius/full` (9999px).
 
 ## Typography
 

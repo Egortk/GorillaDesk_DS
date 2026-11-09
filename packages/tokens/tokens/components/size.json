@@ -99,6 +99,55 @@
         },
         "$value": "{border-width.md}"
       }
+    },
+    "avatar-group": {
+      "overlap": {
+        "xl": {
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.overlap.stack.xl}"
+        },
+        "lg": {
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.overlap.stack.lg}"
+        },
+        "md": {
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.overlap.stack.md}"
+        },
+        "sm": {
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.overlap.stack.sm}"
+        },
+        "xs": {
+          "$type": "dimension",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.overlap.stack.xs}"
+        }
+      }
     }
   }
 }

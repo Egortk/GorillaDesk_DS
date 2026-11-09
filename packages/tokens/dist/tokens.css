@@ -763,6 +763,11 @@
   --space-3xs: 0.0625rem;
   --space-none: 0;
   --space-overlap-md: -1px;
+  --space-overlap-stack-xs: -0.25rem;
+  --space-overlap-stack-sm: -0.375rem;
+  --space-overlap-stack-md: -0.5rem;
+  --space-overlap-stack-lg: -0.625rem;
+  --space-overlap-stack-xl: -0.75rem;
   --space-button-label-inset-sm: var(--space-xs);
   --space-button-label-inset-md: var(--space-sm);
   --space-button-label-inset-lg: var(--space-md);
@@ -773,6 +778,11 @@
   --space-input-gap: var(--space-xs);
   --space-input-label-inset: var(--space-xs);
   --space-avatar-ring: var(--border-width-md);
+  --space-avatar-group-overlap-xl: var(--space-overlap-stack-xl);
+  --space-avatar-group-overlap-lg: var(--space-overlap-stack-lg);
+  --space-avatar-group-overlap-md: var(--space-overlap-stack-md);
+  --space-avatar-group-overlap-sm: var(--space-overlap-stack-sm);
+  --space-avatar-group-overlap-xs: var(--space-overlap-stack-xs);
   --font-weight-normal: 400;
   --font-weight-light: 300;
   --font-weight-medium: 500;
