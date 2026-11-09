@@ -400,6 +400,173 @@
           }
         }
       }
+    },
+    "CustomerAvatar": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "ebafdc0fc196384c681bbe792526fca1c1e0447e",
+        "nodeId": "70:6001",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "CustomerAvatar",
+        "source": "packages/ui/src/components/Avatar/CustomerAvatar.tsx"
+      },
+      "props": {
+        "size": {
+          "prop": "size",
+          "note": "Inside AvatarGroup the group size wins."
+        },
+        "initials": {
+          "prop": "name",
+          "note": "Initials are derived from name (first + last word; one letter in size xs). name is also the accessible name."
+        },
+        "ring": {
+          "prop": null,
+          "setBy": "AvatarGroup",
+          "note": "Every avatar inside AvatarGroup gets the ring; its colour comes from AvatarGroup background (default | canvas)."
+        }
+      }
+    },
+    "UserAvatar": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "87518580599b35f8267ad6ca8328547f236e7749",
+        "nodeId": "70:6008",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "UserAvatar",
+        "source": "packages/ui/src/components/Avatar/UserAvatar.tsx"
+      },
+      "props": {
+        "size": {
+          "prop": "size",
+          "note": "Inside AvatarGroup the group size wins."
+        },
+        "hasPicture": {
+          "prop": null,
+          "controls": "picture"
+        },
+        "picture": {
+          "prop": "src",
+          "enabledBy": "hasPicture",
+          "note": "Photo URL. No src or a broken image shows SystemAvatar variant=default (inlined PNG)."
+        },
+        "ring": {
+          "prop": null,
+          "setBy": "AvatarGroup",
+          "note": "Every avatar inside AvatarGroup gets the ring; its colour comes from AvatarGroup background (default | canvas)."
+        }
+      },
+      "extraProps": {
+        "name": "Accessible name (Figma has no text property)."
+      }
+    },
+    "BranchAvatar": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "bea03c194ea6e35cd16db6cc1fcf5dea3151c702",
+        "nodeId": "70:6069",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "BranchAvatar",
+        "source": "packages/ui/src/components/Avatar/BranchAvatar.tsx"
+      },
+      "props": {
+        "size": {
+          "prop": "size",
+          "note": "Inside AvatarGroup the group size wins."
+        },
+        "initials": {
+          "prop": "name",
+          "note": "Shown when there is no logo; one letter in size xs. name is also the accessible name."
+        },
+        "hasPicture": {
+          "prop": null,
+          "controls": "picture"
+        },
+        "picture": {
+          "prop": "src",
+          "enabledBy": "hasPicture",
+          "note": "Logo URL, drawn with object-contain on surface/default. No src or a broken image shows the initials."
+        },
+        "ring": {
+          "prop": null,
+          "setBy": "AvatarGroup",
+          "note": "Every avatar inside AvatarGroup gets the ring; its colour comes from AvatarGroup background (default | canvas)."
+        }
+      }
+    },
+    "AvatarGroup": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "9d7a6153df5222cd63b14e2776e1d10317cda325",
+        "nodeId": "187:12378",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "AvatarGroup",
+        "source": "packages/ui/src/components/AvatarGroup/AvatarGroup.tsx"
+      },
+      "props": {
+        "size": {
+          "prop": "size",
+          "note": "Passed to every avatar inside."
+        },
+        "list": {
+          "prop": "children",
+          "note": "Figma SLOT: avatar instances."
+        }
+      },
+      "extraProps": {
+        "max": "How many avatars show before the counter (code-only).",
+        "background": "default | canvas: ring colour (code-only, decided 2026-11-09).",
+        "counterLabel": "Accessible name of the counter, default \"{count} more\"."
+      }
+    },
+    "_avatarCounter": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "5b6a558f6ece18de440bce8d058a6d5b55f985a0",
+        "nodeId": "70:6166",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": null,
+        "name": "AvatarCounter (internal)",
+        "source": "packages/ui/src/components/AvatarGroup/AvatarGroup.tsx"
+      },
+      "props": {
+        "size": {
+          "prop": null,
+          "setBy": "AvatarGroup"
+        },
+        "count": {
+          "prop": null,
+          "derivedFrom": "AvatarGroup children and max",
+          "note": "\"+N\"; size xs shows \"N\"."
+        },
+        "ring": {
+          "prop": null,
+          "setBy": "AvatarGroup"
+        }
+      }
     }
   }
 }
