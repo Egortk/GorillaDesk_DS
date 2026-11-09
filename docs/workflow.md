@@ -62,7 +62,9 @@ Skill: `implement-component` (`skills/implement-component/SKILL.md`). Order:
 
 ## Git
 
-- Branch `main`. Commit messages for token syncs carry the Figma version name.
+- Repository: `github.com/Egortk/GorillaDesk_DS`. Branch `main`; work goes through pull requests from feature branches.
+- Commit messages for token syncs carry the Figma version name.
+- CI (`.github/workflows/ci.yml`) runs on every PR and on `main`: tokens rebuilt from `raw/` must equal the committed files, then typecheck, package build and Storybook build. A second job runs Chromatic when the repository secret `CHROMATIC_PROJECT_TOKEN` is set (otherwise it is skipped with a notice).
 - Not committed: `node_modules`, `storybook-static`, `packages/ui/dist`, `.env*`, `.claude/settings.local.json`. Generated `packages/tokens/{tokens,dist}` are committed so diffs show token changes.
 
 ## Figma rules for agents
