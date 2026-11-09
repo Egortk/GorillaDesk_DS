@@ -41,7 +41,7 @@ export function DismissButtonBase({
     <Button
       {...props}
       className={cx(
-        'inline-flex shrink-0 cursor-default items-center justify-center outline-none',
+        'inline-flex shrink-0 cursor-pointer data-disabled:cursor-default items-center justify-center outline-none',
         SIZE[size],
         SHAPE[shape],
         stateful('bg', 'neutral', 'transparent', 'bg'),

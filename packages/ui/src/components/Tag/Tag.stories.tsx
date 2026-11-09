@@ -14,7 +14,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Playground: Story = { args: { icon: <AccountIcon /> } };
+// `icon` is a key of iconControl.mapping (not JSX): JSX in args turns into {} when Controls change it.
+export const Playground: Story = { args: { icon: 'account' } };
 
 const STATES = ['default', 'hover', 'active', 'focused', 'disabled'] as const;
 

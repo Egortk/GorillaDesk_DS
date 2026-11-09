@@ -6,7 +6,8 @@ import { IconButton } from './IconButton';
 const meta = {
   title: 'Components/IconButton',
   component: IconButton,
-  args: { icon: <PlusIcon />, variant: 'default', size: 'md', 'aria-label': 'Add', isDisabled: false, isPending: false },
+  // `icon` is a key of iconControl.mapping (not JSX): JSX in args turns into {} when Controls change it.
+  args: { icon: 'plus', variant: 'default', size: 'md', 'aria-label': 'Add', isDisabled: false, isPending: false },
   argTypes: { variant: { control: 'select', options: VARIANTS }, icon: iconControl },
 } satisfies Meta<typeof IconButton>;
 

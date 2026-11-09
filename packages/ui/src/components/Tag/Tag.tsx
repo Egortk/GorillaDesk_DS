@@ -89,7 +89,7 @@ export function Tag({
           onPressChange={setPressed}
           onFocusChange={setFocused}
           isDisabled={isDisabled}
-          className="flex cursor-default items-center self-stretch outline-none"
+          className="flex cursor-pointer data-disabled:cursor-default items-center self-stretch outline-none"
         >
           {content}
         </RACButton>

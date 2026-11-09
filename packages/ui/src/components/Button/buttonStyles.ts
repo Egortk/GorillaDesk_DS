@@ -108,7 +108,8 @@ export function buttonLook(variant: ButtonVariant): Look {
 }
 
 /** Root classes shared by both buttons, before size. */
-export const BUTTON_BASE = 'group relative inline-flex shrink-0 cursor-default items-center rounded-md whitespace-nowrap outline-none select-none';
+export const BUTTON_BASE =
+  'group relative inline-flex shrink-0 cursor-pointer data-disabled:cursor-default data-pending:cursor-default items-center rounded-md whitespace-nowrap outline-none select-none';
 
 /** Spinner box per button size: md → 24 px, sm → 20 px. */
 export const SPINNER_SIZE = { md: 'sm', sm: 'xs' } as const;

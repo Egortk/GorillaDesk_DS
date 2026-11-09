@@ -5,6 +5,7 @@ Entries dated 2026-11-05 to 2026-11-07 were reconstructed from the setup session
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-11-07 | Clickable components (Button, IconButton, DismissButton, interactive Tag) use `cursor: pointer`; disabled and pending ones use the default cursor. Text fields keep the text cursor. | Designer's request: a pointer signals what can be clicked. React Aria leaves the browser default (arrow) for buttons. |
 | 2026-11-07 | Storybook is published to GitHub Pages (`gh-pages` branch) and rebuilt from `main` on every push. The workflow lands with the components PR. | One public link for the team without accounts; landing it with the components keeps a Storybook without components from replacing the current one. |
 | 2026-11-07 | Figma corrected to the token grammar (Button success/disabled, Tag secondary hover/active, Tag sm hover padding, Badge/Lozenge subsidiary/subtle, DismissButton icon token, `_addon` invalid fill). Tag `xs` has no icon slot (sm only). `input/border/invalid-focus` and the 6 px Badge dot stay as they are for now. | Designer's review of the component deviations; code already matched the grammar, so no code change. Remaining Figma item: Button primary-subtle hover surface layer. |
 | 2026-11-07 | Components follow the token grammar `interactive/{intent}/{tone}/{property}/{state}` where Figma deviates from it; deviations are listed in known-issues for the designer to fix in Figma. | Designer's choice: consistent code, Figma gets corrected instead of copying mistakes. |
