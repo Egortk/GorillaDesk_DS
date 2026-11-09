@@ -1,0 +1,18 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";import{a as n,c as r,i,l as a,s as o,t as s}from"./cx-CXv78kTN.js";import{a as c,n as l}from"./styles-DlkLNiWT.js";import{n as u,t as d}from"./Button-BVr0RqDi.js";import{n as f,r as p}from"./Spinner-BL_Cdzaj.js";import{a as m,i as h,n as g,o as _,r as v,t as y}from"./buttonStyles-C0B3YDqR.js";function b({icon:e,variant:t=`default`,size:n=`md`,isPending:r,className:i,...a}){let o=m(t);return(0,x.jsxs)(d,{...a,isPending:r,className:s(y,S[n],o.root,i),children:[(0,x.jsx)(`span`,{"aria-hidden":!0,className:s(l,o.icon,`group-data-pending:opacity-0`),children:e}),r&&(0,x.jsx)(`span`,{className:`absolute inset-0 flex items-center justify-center`,children:(0,x.jsx)(f,{size:h[n],className:o.spinner})})]})}var x,S;function C(){return(C=e((()=>{u(),c(),_(),p(),x=t(),S={md:`size-control-md justify-center`,sm:`size-control-sm justify-center`},b.__docgenInfo={description:`Triggers an action using an icon without a visible label.`,methods:[],displayName:`IconButton`,props:{icon:{required:!0,tsType:{name:`ReactNode`},description:`24 px icon, coloured with currentColor.`},variant:{required:!1,tsType:{name:`union`,raw:`| 'default'
+| 'default-subtle'
+| 'primary'
+| 'primary-subtle'
+| 'secondary'
+| 'secondary-subtle'
+| 'subsidiary-subtle'
+| 'accent'
+| 'success'
+| 'danger'
+| 'danger-subtle'`,elements:[{name:`literal`,value:`'default'`},{name:`literal`,value:`'default-subtle'`},{name:`literal`,value:`'primary'`},{name:`literal`,value:`'primary-subtle'`},{name:`literal`,value:`'secondary'`},{name:`literal`,value:`'secondary-subtle'`},{name:`literal`,value:`'subsidiary-subtle'`},{name:`literal`,value:`'accent'`},{name:`literal`,value:`'success'`},{name:`literal`,value:`'danger'`},{name:`literal`,value:`'danger-subtle'`}]},description:``,defaultValue:{value:`'default'`,computed:!1}},size:{required:!1,tsType:{name:`union`,raw:`'md' | 'sm'`,elements:[{name:`literal`,value:`'md'`},{name:`literal`,value:`'sm'`}]},description:`md = 32 × 32 px, sm = 24 × 24 px.`,defaultValue:{value:`'md'`,computed:!1}},"aria-label":{required:!0,tsType:{name:`string`},description:`Required: the button has no visible text.`},className:{required:!1,tsType:{name:`string`},description:``}},composes:[`Omit`]}})))()}var w,T,E,D,O;function k(){return(k=e((()=>{a(),_(),C(),w=t(),T={title:`Components/IconButton`,component:b,args:{icon:`plus`,variant:`default`,size:`md`,"aria-label":`Add`,isDisabled:!1,isPending:!1},argTypes:{variant:{control:`select`,options:v},icon:r}},E={},D={render:()=>(0,w.jsx)(n,{rows:v,cols:g.flatMap(e=>[`${e} / md`,`${e} / sm`]),render:(e,t)=>{let[n,r]=t.split(` / `);return(0,w.jsx)(i,{state:n===`disabled`||n===`loading`?`default`:n,children:(0,w.jsx)(b,{icon:(0,w.jsx)(o,{}),"aria-label":`Add`,variant:e,size:r,isDisabled:n===`disabled`,isPending:n===`loading`})})}})},O=[`Playground`,`States`],E.parameters={...E.parameters,docs:{...E.parameters?.docs,source:{originalSource:`{}`,...E.parameters?.docs?.source}}},D.parameters={...D.parameters,docs:{...D.parameters?.docs,source:{originalSource:`{
+  render: () => <Matrix rows={VARIANTS} cols={STATES.flatMap(s => [\`\${s} / md\`, \`\${s} / sm\`])} render={(variant, col) => {
+    const [state, size] = col.split(' / ') as [(typeof STATES)[number], 'md' | 'sm'];
+    return <Force state={state === 'disabled' || state === 'loading' ? 'default' : state}>
+            <IconButton icon={<PlusIcon />} aria-label="Add" variant={variant} size={size} isDisabled={state === 'disabled'} isPending={state === 'loading'} />
+          </Force>;
+  }} />
+}`,...D.parameters?.docs?.source}}}})))()}k();export{E as Playground,D as States,O as __namedExportsOrder,T as default};

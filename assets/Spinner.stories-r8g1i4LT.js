@@ -1,0 +1,6 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";import{a as n,l as r}from"./cx-CXv78kTN.js";import{r as i,t as a}from"./Spinner-BL_Cdzaj.js";var o,s,c,l,u;function d(){return(d=e((()=>{r(),i(),o=t(),s={title:`Components/Spinner`,component:a,args:{variant:`neutral`,size:`sm`}},c={},l={name:`All variants`,render:()=>(0,o.jsx)(n,{rows:[`on-solid`,`on-subtle`,`neutral`],cols:[`sm`,`xs`],render:(e,t)=>(0,o.jsx)(`span`,{className:e===`on-solid`?`inline-flex rounded-md bg-interactive-primary-solid-bg-default`:`inline-flex`,children:(0,o.jsx)(a,{variant:e,size:t})})})},u=[`Playground`,`AllVariants`],c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{}`,...c.parameters?.docs?.source}}},l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+  name: 'All variants',
+  render: () => <Matrix rows={['on-solid', 'on-subtle', 'neutral'] as const} cols={['sm', 'xs'] as const} render={(variant, size) => <span className={variant === 'on-solid' ? 'inline-flex rounded-md bg-interactive-primary-solid-bg-default' : 'inline-flex'}>
+          <Spinner variant={variant} size={size} />
+        </span>} />
+}`,...l.parameters?.docs?.source}}}})))()}d();export{l as AllVariants,c as Playground,u as __namedExportsOrder,s as default};

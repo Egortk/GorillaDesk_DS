@@ -1,0 +1,8 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";import{a as n,i as r,l as i}from"./cx-CXv78kTN.js";import{r as a,t as o}from"./DismissButton-Cq9JEk0v.js";var s,c,l,u,d,f;function p(){return(p=e((()=>{i(),a(),s=t(),c={title:`Components/DismissButton`,component:o,args:{shape:`square`,size:`sm`,"aria-label":`Close`,isDisabled:!1}},l={},u=[`default`,`hover`,`active`,`focused`,`disabled`],d={render:()=>(0,s.jsx)(n,{rows:[`square / sm`,`square / xs`,`circle / sm`,`circle / xs`],cols:u,render:(e,t)=>{let[n,i]=e.split(` / `);return(0,s.jsx)(r,{state:t===`disabled`?`default`:t,children:(0,s.jsx)(o,{shape:n,size:i,"aria-label":`Close`,isDisabled:t===`disabled`})})}})},f=[`Playground`,`States`],l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{}`,...l.parameters?.docs?.source}}},d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
+  render: () => <Matrix rows={['square / sm', 'square / xs', 'circle / sm', 'circle / xs'] as const} cols={STATES} render={(row, state) => {
+    const [shape, size] = row.split(' / ') as ['square' | 'circle', 'sm' | 'xs'];
+    return <Force state={state === 'disabled' ? 'default' : state}>
+            <DismissButton shape={shape} size={size} aria-label="Close" isDisabled={state === 'disabled'} />
+          </Force>;
+  }} />
+}`,...d.parameters?.docs?.source}}}})))()}p();export{l as Playground,d as States,f as __namedExportsOrder,c as default};
