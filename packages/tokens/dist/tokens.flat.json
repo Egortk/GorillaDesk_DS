@@ -3647,6 +3647,16 @@
     "light": "var(--color-content-danger-text-strong)",
     "dark": "var(--color-content-danger-text-strong)"
   },
+  "color-avatar-ring-default": {
+    "type": "color",
+    "light": "var(--color-environment-surface-default)",
+    "dark": "var(--color-environment-surface-default)"
+  },
+  "color-avatar-ring-canvas": {
+    "type": "color",
+    "light": "var(--color-environment-surface-canvas)",
+    "dark": "var(--color-environment-surface-canvas)"
+  },
   "font-ui": {
     "type": "fontFamily",
     "light": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
@@ -3905,6 +3915,36 @@
     "dark": "-1px",
     "description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative."
   },
+  "space-overlap-stack-xs": {
+    "type": "dimension",
+    "light": "-0.25rem",
+    "dark": "-0.25rem",
+    "description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative."
+  },
+  "space-overlap-stack-sm": {
+    "type": "dimension",
+    "light": "-0.375rem",
+    "dark": "-0.375rem",
+    "description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative."
+  },
+  "space-overlap-stack-md": {
+    "type": "dimension",
+    "light": "-0.5rem",
+    "dark": "-0.5rem",
+    "description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative."
+  },
+  "space-overlap-stack-lg": {
+    "type": "dimension",
+    "light": "-0.625rem",
+    "dark": "-0.625rem",
+    "description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative."
+  },
+  "space-overlap-stack-xl": {
+    "type": "dimension",
+    "light": "-0.75rem",
+    "dark": "-0.75rem",
+    "description": "Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative."
+  },
   "space-button-label-inset-sm": {
     "type": "dimension",
     "light": "var(--space-xs)",
@@ -3949,6 +3989,36 @@
     "type": "dimension",
     "light": "var(--space-xs)",
     "dark": "var(--space-xs)"
+  },
+  "space-avatar-ring": {
+    "type": "dimension",
+    "light": "var(--border-width-md)",
+    "dark": "var(--border-width-md)"
+  },
+  "space-avatar-group-overlap-xl": {
+    "type": "dimension",
+    "light": "var(--space-overlap-stack-xl)",
+    "dark": "var(--space-overlap-stack-xl)"
+  },
+  "space-avatar-group-overlap-lg": {
+    "type": "dimension",
+    "light": "var(--space-overlap-stack-lg)",
+    "dark": "var(--space-overlap-stack-lg)"
+  },
+  "space-avatar-group-overlap-md": {
+    "type": "dimension",
+    "light": "var(--space-overlap-stack-md)",
+    "dark": "var(--space-overlap-stack-md)"
+  },
+  "space-avatar-group-overlap-sm": {
+    "type": "dimension",
+    "light": "var(--space-overlap-stack-sm)",
+    "dark": "var(--space-overlap-stack-sm)"
+  },
+  "space-avatar-group-overlap-xs": {
+    "type": "dimension",
+    "light": "var(--space-overlap-stack-xs)",
+    "dark": "var(--space-overlap-stack-xs)"
   },
   "font-weight-normal": {
     "type": "fontWeight",
