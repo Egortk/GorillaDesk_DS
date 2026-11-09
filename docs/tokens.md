@@ -12,8 +12,8 @@ The Figma file **Tokens** (`MQgY3hAxEgE9YUItxgUx6w`) is the source. It also carr
 | `semantic/font` | Desktop | 50 | Yes |
 | `semantic/motion` | Default | 8 | Yes |
 | `semantic/layer` | Default | 9 | Yes |
-| `components/color` | Default | 63 | Yes |
-| `components/size` | Default | 9 | Yes |
+| `components/color` | Default | 65 | Yes |
+| `components/size` | Default | 10 | Yes |
 
 Effect styles (8) and text styles (24) are built from these variables.
 
@@ -39,7 +39,7 @@ primitives ──► semantic ──► components
 | | `color/environment/scrim/*` | `default` `subtle` |
 | | `color/environment/shadow/{N}` | shadow layer colours at fixed opacity steps |
 | Focus | `color/focus/{default\|invalid}` | focus ring colours |
-| Components | `color/{component}/…` | `button`, `link`, `input`, `field` today |
+| Components | `color/{component}/…` | `button`, `link`, `input`, `field`, `avatar` today |
 
 The interactive and content matrices are complete (lint checks every combination). `selected` starts equal to `active`.
 

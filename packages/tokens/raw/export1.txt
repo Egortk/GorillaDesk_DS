@@ -490,6 +490,9 @@ C;alpha/interactive/neutral/transparent/bg/selected;F;@opacity/12|@opacity/24;
 C;alpha/focus/invalid;F;@opacity/24|@opacity/64;
 P;dimension/-1;F;-1;
 S;space/overlap/md;F;@dimension/-1;Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative.
+CC;color/avatar/ring/default;C;@color/environment/surface/default;
+CC;color/avatar/ring/canvas;C;@color/environment/surface/canvas;
+CS;space/avatar/ring;F;@border-width/md;
 E;shadow/container;d,0,0,1,0,@color/environment/shadow/8,|d,0,0,2,0,@color/environment/shadow/4,|d,0,0,3,0,@color/environment/shadow/6,
 E;shadow/elevation;d,0,10,49,0,@color/environment/shadow/7,|d,0,8,24,0,@color/environment/shadow/3,|d,0,3,8,0,@color/environment/shadow/8,|d,0,2,2,0,@color/environment/shadow/4,|d,0,0,1,0,@color/environment/shadow/17,
 E;shadow/interactive-default;d,0,0,1,0,@color/environment/shadow/8,|d,0,1,2,0,@color/environment/shadow/4,|d,0,1,3,0,@color/environment/shadow/6,

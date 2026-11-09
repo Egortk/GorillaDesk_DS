@@ -56,7 +56,8 @@ for (const theme of ['light', 'dark']) {
     new RegExp(`^color/content/(${[...INTENTS.filter((i) => i !== 'neutral'), 'neutral', 'inverse'].join('|')})/(${PROP.join('|')})/(${LEVEL.join('|')})$`),
     /^color\/environment\/(surface\/(canvas|sunken|default|raised|overlay|inverse)|border\/(default|muted|strong)|scrim\/(default|subtle)|shadow\/\d+)$/,
     /^color\/focus\/(default|invalid)$/,
-    /^color\/(button|input|field|link)\/[a-z0-9/-]+$/,
+    // Component colour tokens. Add the component here when it gets its first token.
+    /^color\/(button|input|field|link|avatar)\/[a-z0-9/-]+$/,
     /^color\/[a-z]+\/(0|50|[1-9]00|950|1000)$/,
     /^alpha\/(interactive\/(base|neutral)\/(solid|subtle|transparent)\/(bg|border|text|icon)\/(default|hover|active|selected|disabled)|content\/(base|inverse)\/(bg|border|text|icon)\/(strong|default|muted|faint)|environment\/(surface|border|scrim|shadow)\/[a-z0-9]+|focus\/(default|invalid))$/,
     /^(space|spacing|radius|border-width|dimension|opacity|duration|easing|ease|layer|z-index|font|font-weight|text|shadow|inset-shadow|typography)(\/|$)/,

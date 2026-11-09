@@ -3647,6 +3647,16 @@
     "light": "var(--color-content-danger-text-strong)",
     "dark": "var(--color-content-danger-text-strong)"
   },
+  "color-avatar-ring-default": {
+    "type": "color",
+    "light": "var(--color-environment-surface-default)",
+    "dark": "var(--color-environment-surface-default)"
+  },
+  "color-avatar-ring-canvas": {
+    "type": "color",
+    "light": "var(--color-environment-surface-canvas)",
+    "dark": "var(--color-environment-surface-canvas)"
+  },
   "font-ui": {
     "type": "fontFamily",
     "light": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
@@ -3949,6 +3959,11 @@
     "type": "dimension",
     "light": "var(--space-xs)",
     "dark": "var(--space-xs)"
+  },
+  "space-avatar-ring": {
+    "type": "dimension",
+    "light": "var(--border-width-md)",
+    "dark": "var(--border-width-md)"
   },
   "font-weight-normal": {
     "type": "fontWeight",

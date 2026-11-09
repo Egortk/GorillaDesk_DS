@@ -88,6 +88,17 @@
         },
         "$value": "{space.xs}"
       }
+    },
+    "avatar": {
+      "ring": {
+        "$type": "dimension",
+        "$extensions": {
+          "com.figma": {
+            "collection": "components/size"
+          }
+        },
+        "$value": "{border-width.md}"
+      }
     }
   }
 }

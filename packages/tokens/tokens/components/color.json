@@ -608,6 +608,28 @@
           "$value": "{color.content.danger.text.strong}"
         }
       }
+    },
+    "avatar": {
+      "ring": {
+        "default": {
+          "$type": "color",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/color"
+            }
+          },
+          "$value": "{color.environment.surface.default}"
+        },
+        "canvas": {
+          "$type": "color",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/color"
+            }
+          },
+          "$value": "{color.environment.surface.canvas}"
+        }
+      }
     }
   }
 }

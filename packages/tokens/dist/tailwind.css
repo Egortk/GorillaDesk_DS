@@ -722,6 +722,8 @@
   --color-field-helper-default: var(--color-content-neutral-text-default);
   --color-field-helper-disabled: var(--color-content-neutral-text-faint);
   --color-field-helper-invalid: var(--color-content-danger-text-strong);
+  --color-avatar-ring-default: var(--color-environment-surface-default);
+  --color-avatar-ring-canvas: var(--color-environment-surface-canvas);
   --font-ui: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-code: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   --spacing-control-md: 2rem;
@@ -845,6 +847,7 @@
   --space-input-padding-x: var(--space-xs);
   --space-input-gap: var(--space-xs);
   --space-input-label-inset: var(--space-xs);
+  --space-avatar-ring: var(--border-width-md);
   --z-index-base: 0;
   --z-index-raised: 10;
   --z-index-dropdown: 1000;
@@ -1562,6 +1565,8 @@
   --color-field-helper-default: var(--color-content-neutral-text-default);
   --color-field-helper-disabled: var(--color-content-neutral-text-faint);
   --color-field-helper-invalid: var(--color-content-danger-text-strong);
+  --color-avatar-ring-default: var(--color-environment-surface-default);
+  --color-avatar-ring-canvas: var(--color-environment-surface-canvas);
   --shadow-container: 0 0 1px 0 var(--color-environment-shadow-8), 0 0 2px 0 var(--color-environment-shadow-4), 0 0 3px 0 var(--color-environment-shadow-6);
   --shadow-elevation: 0 10px 49px 0 var(--color-environment-shadow-7), 0 8px 24px 0 var(--color-environment-shadow-3), 0 3px 8px 0 var(--color-environment-shadow-8), 0 2px 2px 0 var(--color-environment-shadow-4), 0 0 1px 0 var(--color-environment-shadow-17);
   --shadow-interactive-default: 0 0 1px 0 var(--color-environment-shadow-8), 0 1px 2px 0 var(--color-environment-shadow-4), 0 1px 3px 0 var(--color-environment-shadow-6);
@@ -2279,6 +2284,8 @@
   --color-field-helper-default: var(--color-content-neutral-text-default);
   --color-field-helper-disabled: var(--color-content-neutral-text-faint);
   --color-field-helper-invalid: var(--color-content-danger-text-strong);
+  --color-avatar-ring-default: var(--color-environment-surface-default);
+  --color-avatar-ring-canvas: var(--color-environment-surface-canvas);
   --shadow-container: 0 0 1px 0 var(--color-environment-shadow-8), 0 0 2px 0 var(--color-environment-shadow-4), 0 0 3px 0 var(--color-environment-shadow-6);
   --shadow-elevation: 0 10px 49px 0 var(--color-environment-shadow-7), 0 8px 24px 0 var(--color-environment-shadow-3), 0 3px 8px 0 var(--color-environment-shadow-8), 0 2px 2px 0 var(--color-environment-shadow-4), 0 0 1px 0 var(--color-environment-shadow-17);
   --shadow-interactive-default: 0 0 1px 0 var(--color-environment-shadow-8), 0 1px 2px 0 var(--color-environment-shadow-4), 0 1px 3px 0 var(--color-environment-shadow-6);
