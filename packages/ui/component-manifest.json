@@ -567,6 +567,61 @@
           "setBy": "AvatarGroup"
         }
       }
+    },
+    "ButtonGroup": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "03f918fe55f3576095182847f280e9b713e7f65c",
+        "nodeId": "199:18930",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "ButtonGroup",
+        "source": "packages/ui/src/components/ButtonGroup/ButtonGroup.tsx"
+      },
+      "props": {
+        "items": {
+          "prop": "children",
+          "slot": true,
+          "anyOf": [
+            "_button-group-item"
+          ],
+          "minItems": 2,
+          "note": "Each item becomes the Button or IconButton nested in it. The group sets corners, the -1px overlap, the resting shadow and z-index for focus/press with CSS."
+        }
+      }
+    },
+    "_button-group-item": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "dc5e3b7dcda7618a18740a1b43eb499115ed092e",
+        "nodeId": "199:18797",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": null,
+        "name": null,
+        "exported": false,
+        "note": "Not a code component: render the nested Button / IconButton directly inside ButtonGroup."
+      },
+      "props": {
+        "kind": {
+          "prop": null,
+          "note": "button -> Button, icon -> IconButton (read the nested exposed instance for its props)."
+        },
+        "position": {
+          "prop": null,
+          "note": "Derived by ButtonGroup CSS (first-child / last-child)."
+        },
+        "nested": {
+          "note": "Nested Button/IconButton props map as in their own entries. Nested state=focused draws no ring in Figma; in code the focused item gets shadow-interactive-focus and z-10."
+        }
+      }
     }
   }
 }
