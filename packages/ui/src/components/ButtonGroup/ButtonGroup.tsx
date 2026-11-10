@@ -13,12 +13,12 @@ export interface ButtonGroupProps {
 
 /**
  * Joins related actions into one control. Buttons share their borders (−1 px overlap), only the outer corners are
- * rounded, and the resting shadow is drawn once for the whole group. For choosing one option use a segmented control.
+ * rounded, and the resting shadow is drawn once for the whole group (none when an item is a borderless variant). For choosing one option use a segmented control.
  */
 export function ButtonGroup({ children, className, ...aria }: ButtonGroupProps) {
   return (
     <ButtonGroupContext.Provider value>
-      <div role="group" {...aria} className={cx('isolate inline-flex items-center rounded-md shadow-interactive-default', className)}>
+      <div role="group" {...aria} className={cx('isolate inline-flex items-center rounded-md shadow-interactive-default has-[>[data-borderless]]:shadow-none', className)}>
         {children}
       </div>
     </ButtonGroupContext.Provider>

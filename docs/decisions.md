@@ -5,6 +5,7 @@ Entries dated 2026-11-05 to 2026-11-07 were reconstructed from the setup session
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-11-10 | A ButtonGroup with a borderless item (`default-subtle`, `subsidiary-subtle`, `danger-subtle`) has no resting shadow. Such items carry `data-borderless`; the group uses `has-[>[data-borderless]]:shadow-none`. | Designer's decision: the shadow drew a faint outline around buttons that have no border at rest. |
 | 2026-11-10 | Button / IconButton read `ButtonGroupContext` (from ButtonGroup) and switch their corners and shadow to the item look; there is no item component in code and no `position` prop. Corners and shadow moved out of `BUTTON_BASE` / the variant classes into `useButtonFrame`. | Overriding from the group with `*:` selectors loses to the buttons' own state classes (higher specificity), so hover/press shadows would leak into the group. The context keeps one source of the button look. |
 | 2026-11-10 | ButtonGroup items are an internal wrapper `_button-group-item` (kind × position, 6 variants) around an exposed Button/IconButton; only corners are overridden. | A `position` axis on Button would make 528 variants; a copied Button drifts from the original. The wrapper follows every Button change. |
 | 2026-11-10 | In a group the resting shadow sits on the group, not on each button. | Each button's shadow darkened the previous button by ~7 % over 2 px at every seam (measured on a 6× render). |

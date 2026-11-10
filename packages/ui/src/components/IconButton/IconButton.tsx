@@ -24,9 +24,9 @@ const SIZE: Record<ButtonSize, string> = {
 /** Triggers an action using an icon without a visible label. */
 export function IconButton({ icon, variant = 'default', size = 'md', isPending, className, ...props }: IconButtonProps) {
   const look = buttonLook(variant);
-  const frame = useButtonFrame(look);
+  const { className: frame, ...frameAttrs } = useButtonFrame(look);
   return (
-    <RACButton {...props} isPending={isPending} className={cx(BUTTON_BASE, SIZE[size], look.root, frame, className)}>
+    <RACButton {...props} {...frameAttrs} isPending={isPending} className={cx(BUTTON_BASE, SIZE[size], look.root, frame, className)}>
       <span aria-hidden className={cx(ICON_SLOT, look.icon, 'group-data-pending:opacity-0')}>
         {icon}
       </span>

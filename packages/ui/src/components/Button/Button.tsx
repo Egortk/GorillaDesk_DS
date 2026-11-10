@@ -28,10 +28,10 @@ const SIZE: Record<ButtonSize, { root: string; label: string }> = {
 /** Triggers an action on the current screen or flow. */
 export function Button({ variant = 'default', size = 'md', children, startIcon, endIcon, isPending, className, ...props }: ButtonProps) {
   const look = buttonLook(variant);
-  const frame = useButtonFrame(look);
+  const { className: frame, ...frameAttrs } = useButtonFrame(look);
   const hide = 'group-data-pending:opacity-0';
   return (
-    <RACButton {...props} isPending={isPending} className={cx(BUTTON_BASE, SIZE[size].root, look.root, frame, className)}>
+    <RACButton {...props} {...frameAttrs} isPending={isPending} className={cx(BUTTON_BASE, SIZE[size].root, look.root, frame, className)}>
       {startIcon && <span aria-hidden className={cx(ICON_SLOT, look.icon, hide)}>{startIcon}</span>}
       <span className={cx('flex items-center', SIZE[size].label, hide)}>{children}</span>
       {endIcon && <span aria-hidden className={cx(ICON_SLOT, look.icon, hide)}>{endIcon}</span>}

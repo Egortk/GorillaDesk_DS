@@ -62,7 +62,7 @@ Button group and input group join items by overlapping borders, not by a coloure
 - Focus is not drawn in the group: nested `state=focused` shows no ring there. This is intentional.
 
 **In code**
-- There is no item component: `ButtonGroup` renders plain `Button` / `IconButton` children and tells them through `ButtonGroupContext` that they are items. An item drops its own corners and shadow and gets `first:rounded-s-md last:rounded-e-md`, `not-first:ms-(--space-overlap-md)`, `z-1` when hovered or pressed and `z-10` plus `shadow-interactive-focus` when focused. The group draws `shadow-interactive-default` once and is `isolate`, so the item z-indexes stay inside it.
+- There is no item component: `ButtonGroup` renders plain `Button` / `IconButton` children and tells them through `ButtonGroupContext` that they are items. An item drops its own corners and shadow and gets `first:rounded-s-md last:rounded-e-md`, `not-first:ms-(--space-overlap-md)`, `z-1` when hovered or pressed and `z-10` plus `shadow-interactive-focus` when focused. The group draws `shadow-interactive-default` once and is `isolate`, so the item z-indexes stay inside it. If any item is a borderless variant (`default-subtle`, `subsidiary-subtle`, `danger-subtle`, marked `data-borderless`), the group has no shadow.
 - Items must be direct children of the group (`first:` / `last:` / `not-first:` are DOM positions). Wrappers that render no element, such as a tooltip trigger, are fine.
 - A group that selects one option (Day / Week / Month) is a segmented control (`ToggleButtonGroup`), not ButtonGroup.
 

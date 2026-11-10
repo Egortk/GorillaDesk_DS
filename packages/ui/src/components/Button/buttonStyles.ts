@@ -42,6 +42,8 @@ interface Look {
   root: string;
   /** Shadows when the button stands alone. */
   shadow: string;
+  /** Has a border and resting shadow (false for default-subtle, subsidiary-subtle, danger-subtle). */
+  framed: boolean;
   /** Icon slots (colour follows the root state through `group`). */
   icon: string;
   /** Spinner while pending. */
@@ -75,6 +77,7 @@ const DEFAULT: Look = {
     DEFAULT_TEXT,
   ),
   shadow: SHADOW_INTERACTIVE,
+  framed: true,
   icon: DEFAULT_ICON,
   spinner: 'text-button-default-solid-icon-default',
 };
@@ -91,6 +94,7 @@ const DEFAULT_SUBTLE: Look = {
     'data-hovered:not-data-focus-visible:shadow-interactive-hover data-pressed:not-data-focus-visible:shadow-none data-pending:not-data-focus-visible:shadow-none',
     SHADOW_FOCUS,
   ),
+  framed: false,
   icon: DEFAULT_ICON,
   spinner: 'text-button-default-solid-icon-default',
 };
@@ -107,6 +111,7 @@ export function buttonLook(variant: ButtonVariant): Look {
       stateful('text', i, t, 'text'),
     ),
     shadow: framed ? SHADOW_INTERACTIVE : SHADOW_FOCUS,
+    framed,
     icon: stateful('text', i, t, 'icon', 'group'),
     spinner: rest('text', i, t, 'icon'),
   };
@@ -127,9 +132,13 @@ export const ButtonGroupContext = createContext(false);
 const GROUP_ITEM =
   'rounded-none first:rounded-s-md last:rounded-e-md not-first:ms-(--space-overlap-md) data-hovered:z-1 data-pressed:z-1 data-focus-visible:z-10';
 
-/** Corners and shadows: standalone, or as an item of ButtonGroup. */
-export function useButtonFrame(look: Look): string {
-  return useContext(ButtonGroupContext) ? cx(GROUP_ITEM, SHADOW_FOCUS) : cx('rounded-md', look.shadow);
+/**
+ * Corners and shadows: standalone, or as an item of ButtonGroup. Items of borderless variants are marked
+ * `data-borderless`; ButtonGroup then drops its resting shadow (designer decision 2026-11-10).
+ */
+export function useButtonFrame(look: Look): { className: string; 'data-borderless'?: true } {
+  if (!useContext(ButtonGroupContext)) return { className: cx('rounded-md', look.shadow) };
+  return { className: cx(GROUP_ITEM, SHADOW_FOCUS), ...(look.framed ? {} : { 'data-borderless': true }) };
 }
 
 /** Spinner box per button size: md → 24 px, sm → 20 px. */
