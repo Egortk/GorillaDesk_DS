@@ -8,7 +8,7 @@ A component set marked **Ready for dev** in Figma is finished and may be impleme
 
 When a ready component changes, Figma marks it **Changed**. Use Dev Mode → *Compare changes* to see the diff, update code and the manifest, then the designer marks it ready again.
 
-Ready for dev today (2026-11-09): Button, IconButton, Spinner, Badge, DismissButton, Lozenge, Tag, Input, `_addon` (internal part of Input), CustomerAvatar, UserAvatar, BranchAvatar, AvatarGroup, `_avatarCounter` (internal part of AvatarGroup), Checkbox, `_checkbox-indicator`, `_checkbox-icon` (internal parts of Checkbox), CheckboxGroup.
+Ready for dev today (2026-11-10): Button, IconButton, Spinner, Badge, DismissButton, Lozenge, Tag, Input, `_addon` (internal part of Input), CustomerAvatar, UserAvatar, BranchAvatar, AvatarGroup, `_avatarCounter` (internal part of AvatarGroup), UserChip, Checkbox, `_checkbox-indicator`, `_checkbox-icon` (internal parts of Checkbox), CheckboxGroup.
 Not ready: Button Group.
 
 All ready sets are implemented in `packages/ui/src/components` (status `draft` in the manifest until the definition of done passes; open items in `docs/known-issues.md`).
@@ -102,3 +102,4 @@ Code: <Component prop="value">…</Component>
 | **AvatarGroup** | `187:12378`, 5 sizes | Avatars overlap by `space/avatar-group/overlap/*` (start margin on every item but the first); every avatar takes the group size and gets the ring (`space/avatar/ring`, colour from `background`). `max` adds the counter (`_avatarCounter` `70:6166`, internal): `+N`, `N` in size xs. |
 | **Checkbox** | `230:20309`, 27 variants | `value` → `isSelected` / `isIndeterminate`; `read-only` → `isReadOnly`. Box `_checkbox-indicator` (`230:20214`, internal, reused by multi-select ListBox items); glyphs `_checkbox-icon` (`230:20155`). Unchecked hover/press shows a faint check preview. Click area 24 px. |
 | **CheckboxGroup** | `243:20790` | Slot of Checkboxes, `space/md` apart. No visible label (aria-label required). One `errorMessage` for the group. |
+| **UserChip** | `209:19449`, 4 variants | `kind`: `pill` (filled) / `plain` (no background); `size` `sm` / `xs`. Not interactive; `removable` → DismissButton circle, in code `onRemove`. Lozenge only in `sm`. Name truncates with an ellipsis. Separate from Tag. |

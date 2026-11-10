@@ -728,6 +728,51 @@
           "note": "Stacked with space/md. No visible label: aria-label or aria-labelledby is required. errorMessage (code only) shows one error under the group while isInvalid; isDisabled / isReadOnly / isInvalid apply to every item."
         }
       }
+    },
+    "UserChip": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "abf29a7c90b68929a6471d901085277481a9f0e2",
+        "nodeId": "209:19449",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "UserChip",
+        "source": "packages/ui/src/components/UserChip/UserChip.tsx"
+      },
+      "props": {
+        "kind": {
+          "prop": "kind",
+          "note": "pill = filled background, plain = no background. Renamed from kind=label on 2026-11-10."
+        },
+        "size": {
+          "prop": "size"
+        },
+        "label": {
+          "prop": "children",
+          "note": "Single line; truncates with an ellipsis when it does not fit."
+        },
+        "removable": {
+          "prop": "onRemove",
+          "note": "true = pass onRemove; renders DismissButton (circle). Its accessible name is removeLabel (default \"Remove {label}\")."
+        },
+        "hasLozenge": {
+          "prop": null,
+          "controls": "lozenge"
+        },
+        "lozenge": {
+          "prop": "lozenge",
+          "enabledBy": "hasLozenge",
+          "note": "Lozenge element after the name. Figma has it in size=sm only; size=xs ignores it."
+        },
+        "UserAvatar": {
+          "prop": "avatarSrc",
+          "note": "Exposed UserAvatar instance; the chip sets its size. avatarSrc goes to UserAvatar src (SystemAvatar fallback)."
+        }
+      }
     }
   }
 }

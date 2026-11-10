@@ -16,3 +16,4 @@ export { Lozenge, type LozengeProps, type LozengeSize } from './components/Lozen
 export { Spinner, type SpinnerProps, type SpinnerSize, type SpinnerVariant } from './components/Spinner/Spinner';
 export { Tag, type TagProps, type TagSize } from './components/Tag/Tag';
 export { UserAvatar, type UserAvatarProps } from './components/Avatar/UserAvatar';
+export { UserChip, type UserChipKind, type UserChipProps, type UserChipSize } from './components/UserChip/UserChip';
