@@ -8,8 +8,7 @@ A component set marked **Ready for dev** in Figma is finished and may be impleme
 
 When a ready component changes, Figma marks it **Changed**. Use Dev Mode → *Compare changes* to see the diff, update code and the manifest, then the designer marks it ready again.
 
-Ready for dev today (2026-11-09): Button, IconButton, Spinner, Badge, DismissButton, Lozenge, Tag, Input, `_addon` (internal part of Input), CustomerAvatar, UserAvatar, BranchAvatar, AvatarGroup, `_avatarCounter` (internal part of AvatarGroup).
-Not ready: Button Group.
+Ready for dev today (2026-11-10): Button, IconButton, Spinner, Badge, DismissButton, Lozenge, Tag, Input, `_addon` (internal part of Input), CustomerAvatar, UserAvatar, BranchAvatar, AvatarGroup, `_avatarCounter` (internal part of AvatarGroup), ButtonGroup, `_button-group-item` (internal part of ButtonGroup).
 
 All ready sets are implemented in `packages/ui/src/components` (status `draft` in the manifest until the definition of done passes; open items in `docs/known-issues.md`).
 
@@ -55,12 +54,21 @@ Exception: an unused `gap` on a frame with a single child is set to 0 and ignore
 - The icon library currently binds its own stroke widths to variables from an old library (`stroke/stroke/*`). Ignore those values; see `docs/known-issues.md`.
 
 ### Groups
-Button group and input group join items by overlapping borders, not by a coloured gap:
-- container: no fill, no border, no clip; gap `space/overlap/md` (−1 px);
-- items keep their own border; outer corners come from the first and last item (`radius/md`), inner corners are 0;
-- in code: `ms-(--space-overlap-md)` on every item but the first, `first:rounded-s-md last:rounded-e-md`, and `relative z-10` on the focused, pressed or invalid item so its full border shows.
+Button group and input group join items by overlapping borders, not by a coloured gap.
 
-Solid (filled) groups may need a stronger divider than their own border. If so, add a 1 px divider element coloured by a component token `color/button-group/divider/{intent}` (fill scope). Not decided yet.
+**ButtonGroup in Figma**
+- `ButtonGroup` has one slot, `items` (min 2, only `_button-group-item` allowed), gap `space/overlap/md` (−1 px), no fill, no clip. The resting shadow `shadow/interactive-default` sits on the slot, once for the whole group.
+- `_button-group-item` (internal, 6 variants: `kind` button | icon × `position` first | middle | last) wraps an exposed Button or IconButton instance. Only the corners are overridden (`radius/md` on the outer side) and the nested button's effects are switched off, so shadows do not overlap at the seams.
+- Focus is not drawn in the group: nested `state=focused` shows no ring there. This is intentional.
+
+**In code**
+- There is no item component: `ButtonGroup` renders plain `Button` / `IconButton` children and tells them through `ButtonGroupContext` that they are items. An item drops its own corners and shadow and gets `first:rounded-s-md last:rounded-e-md`, `not-first:ms-(--space-overlap-md)`, `z-1` when hovered or pressed and `z-10` plus `shadow-interactive-focus` when focused. The group draws `shadow-interactive-default` once and is `isolate`, so the item z-indexes stay inside it.
+- Items must be direct children of the group (`first:` / `last:` / `not-first:` are DOM positions). Wrappers that render no element, such as a tooltip trigger, are fine.
+- A group that selects one option (Day / Week / Month) is a segmented control (`ToggleButtonGroup`), not ButtonGroup.
+
+Input group follows the same overlap rule (items keep their own border; first and last carry the outer corners).
+
+Solid (filled) groups use the buttons' own border as the divider. If a stronger divider is needed, add a 1 px divider element coloured by a component token `color/button-group/divider/{intent}` (fill scope). Not decided yet.
 
 ### Descriptions
 The Components file has a **Read me** page (first page) with these conventions for designers and Dev Mode.
@@ -95,6 +103,7 @@ Code: <Component prop="value">…</Component>
 | **Lozenge** | `44:8566`, 32 variants | Read-only status label. No states. |
 | **Tag** | `50:10801`, 192 of 320 combinations | `interactive=false` has only `state=default` (intentional). `removable` → shows DismissButton; in code `onRemove`. Open: does `size=sm` support an icon (see known issues). |
 | **Input** | `104:149`, 32 variants | `variant`: `box` (standalone) or `inline` (table cell, input-group item: no radius, no shadow). `filled` is a Figma-only axis: in code it follows the value. Addons come from `_addon`. |
+| **ButtonGroup** | `199:18930` | Slot `items` of `_button-group-item` (`199:18797`). Shadow on the group, not on items. Focus drawn only in code. |
 | `_addon` (internal) | `104:31`, 8 variants | `variant` `box`/`inline`, `position` `start`/`end`, `state` `default`/`invalid`. Has a border only on the side facing the field. |
 | **CustomerAvatar** | `70:6001`, 5 sizes | Initials from `name` on `secondary` solid; size `xs` shows one letter. |
 | **UserAvatar** | `70:6008`, 5 sizes | Photo `src`; without it, or when it fails, SystemAvatar `variant=default` (PNG exported from Figma, inlined in the bundle). |

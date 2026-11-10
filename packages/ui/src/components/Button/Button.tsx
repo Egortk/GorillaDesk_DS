@@ -3,7 +3,7 @@ import { Button as RACButton, type ButtonProps as RACButtonProps } from 'react-a
 import { cx } from '../../lib/cx';
 import { ICON_SLOT } from '../../lib/styles';
 import { SpinnerArc } from '../Spinner/Spinner';
-import { BUTTON_BASE, buttonLook, SPINNER_SIZE, type ButtonSize, type ButtonVariant } from './buttonStyles';
+import { BUTTON_BASE, buttonLook, SPINNER_SIZE, useButtonFrame, type ButtonSize, type ButtonVariant } from './buttonStyles';
 
 export type { ButtonSize, ButtonVariant };
 
@@ -28,9 +28,10 @@ const SIZE: Record<ButtonSize, { root: string; label: string }> = {
 /** Triggers an action on the current screen or flow. */
 export function Button({ variant = 'default', size = 'md', children, startIcon, endIcon, isPending, className, ...props }: ButtonProps) {
   const look = buttonLook(variant);
+  const frame = useButtonFrame(look);
   const hide = 'group-data-pending:opacity-0';
   return (
-    <RACButton {...props} isPending={isPending} className={cx(BUTTON_BASE, SIZE[size].root, look.root, className)}>
+    <RACButton {...props} isPending={isPending} className={cx(BUTTON_BASE, SIZE[size].root, look.root, frame, className)}>
       {startIcon && <span aria-hidden className={cx(ICON_SLOT, look.icon, hide)}>{startIcon}</span>}
       <span className={cx('flex items-center', SIZE[size].label, hide)}>{children}</span>
       {endIcon && <span aria-hidden className={cx(ICON_SLOT, look.icon, hide)}>{endIcon}</span>}

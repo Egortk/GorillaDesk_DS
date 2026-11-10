@@ -13,7 +13,9 @@ Things that look wrong on purpose, or are wrong and already known. Check here be
 | Badge | `variant=dot` is 6 × 6 px; no size token that small (`spacing/icon/2xs` = 12 px), and no obvious place for one in the size grammar. Code uses Tailwind `size-1.5`. Badge border is a centre stroke in Figma; code draws it inside (≤ 0.5 px difference). | Raw size in one place. | Designer: left as is for now (2026-11-07). |
 | Icon library | Icon layers bind stroke widths to `stroke/stroke/regular` and `stroke/stroke/secondary`, and `more-verticale` uses fill style `LIGHT/neutral/neutral-70`, all from an old library not available in Components. The `dissmiss` icon name has a typo. | No visual effect today; Dev Mode shows old names. | Fix in the icon library (rebind or remove). |
 | Input | In `focused` / `invalid-focused` the caret sits 10 px after the text, and after the placeholder in empty fields. | Mockup only; the browser draws the caret. | Designer. |
-| Button group | Solid groups: the divider is the button's own border (subtle). A stronger divider needs a `color/button-group/divider/{intent}` token. | Visual decision. | Designer. |
+| ButtonGroup | Groups of borderless variants (`default-subtle`, `subsidiary-subtle`, `danger-subtle`) still get the group's resting shadow, so a faint outline shows around buttons that have no border at rest. Figma allows any variant in the item. | Visible in the Variants story. | Designer: limit the item to framed variants, or decide the group drops its shadow for these. |
+| ButtonGroup | `ButtonGroup` height is bound to `spacing/control/md` in Figma, so a group of `size=sm` buttons is 8 px too tall there. Code has no fixed height. | Figma only. | Designer: set the group to hug. |
+| ButtonGroup | Solid groups: the divider is the button's own border (subtle). A stronger divider needs a `color/button-group/divider/{intent}` token. | Visual decision. | Designer. |
 | Tokens | `duration/*`, `ease/*`, `z-index/*` are starting values. `font/code` equals the UI font. | Review before release. | Designer + developers. |
 | Tokens | Data-visualisation palette not defined yet. | Charts have no tokens. | Planned. |
 | Figma | Tokens-TW (`2OtOKYGduLamfGuLCWL4MA`) is an outdated copy. | Confusion. | Delete or archive. |
@@ -22,6 +24,8 @@ Things that look wrong on purpose, or are wrong and already known. Check here be
 | BranchAvatar | Figma places the logo image with a small inset (26 × 19 in a 32 circle); code draws `src` with `object-contain` over the whole circle. A wide logo without its own padding can touch the circle edge. | Depends on the logo file. | Decide if the logo needs an inset token, or logos keep their own padding (the Figma sample does). |
 
 ## Not bugs
+
+- **ButtonGroup** in Figma shows no focus ring when a nested button is set to `state=focused`. Intentional: see `docs/decisions.md` (2026-11-10).
 
 - **Tag** `size=xs` has no icon slot; only `size=sm` takes an icon (designer decision 2026-11-07). In code `icon` is ignored at xs.
 - **Spinner** `spin` layers have black strokes without a token. The stroke is the arc's geometry inside a boolean shape; the colour comes from the boolean fill. Removing it makes the spinner disappear.

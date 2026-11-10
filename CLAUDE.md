@@ -44,7 +44,7 @@ Node 22 (`.nvmrc`; run `nvm use` first). Packages live under `packages/` (npm wo
 6. **Dark theme** = `data-theme="dark"` on any element; `data-theme="light"` switches a subtree back. Never use `prefers-color-scheme` for theming.
 7. **Component props match Figma properties 1:1** (camelCase), except the documented exceptions in the manifest. Boolean slot toggles are `has*` in Figma and become the presence of the slot prop in code.
 8. **Interaction states are CSS, not props.** `hover`, `active`, `focused` come from React Aria data attributes / pseudo-classes. `disabled`, `loading`, `readonly`, `invalid` are props (`isDisabled`, `isPending`, `isReadOnly`, `isInvalid`).
-9. **Groups (button group, input group)** join borders with a −1 px overlap (`space/overlap/md`), not with a gap over a coloured background. The focused or invalid item is raised with `z-index`.
+9. **Groups (button group, input group)** join borders with a −1 px overlap (`space/overlap/md`), not with a gap over a coloured background. The focused or invalid item is raised with `z-index`. In ButtonGroup the resting shadow is on the group, not on the buttons.
 10. **Do not touch generated output** (`packages/tokens/tokens`, `packages/tokens/dist`). Change Figma, then run `npm run tokens -w @gorilladesk/tokens`.
 
 ## Commands
