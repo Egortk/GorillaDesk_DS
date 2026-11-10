@@ -567,6 +567,167 @@
           "setBy": "AvatarGroup"
         }
       }
+    },
+    "Checkbox": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "0e98d0d8562515b4486654cf4674563778c891fb",
+        "nodeId": "230:20309",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "Checkbox",
+        "source": "packages/ui/src/components/Checkbox/Checkbox.tsx"
+      },
+      "props": {
+        "hasLabel": {
+          "prop": null,
+          "controls": "label"
+        },
+        "label": {
+          "prop": "children",
+          "enabledBy": "hasLabel",
+          "note": "Without children pass aria-label."
+        },
+        "hasDescription": {
+          "prop": null,
+          "controls": "description"
+        },
+        "description": {
+          "prop": "description",
+          "enabledBy": "hasDescription",
+          "note": "Linked with aria-describedby, kept out of the accessible name."
+        },
+        "hasError": {
+          "prop": null,
+          "controls": "errorMessage"
+        },
+        "errorMessage": {
+          "prop": "errorMessage",
+          "enabledBy": "hasError",
+          "note": "Shown only while isInvalid. Inside a CheckboxGroup that shows one error, leave it out."
+        },
+        "value": {
+          "map": {
+            "unchecked": null,
+            "checked": {
+              "prop": "isSelected",
+              "value": true
+            },
+            "indeterminate": {
+              "prop": "isIndeterminate",
+              "value": true
+            }
+          },
+          "note": "Figma `value` is not the React Aria `value` (the option id in a group)."
+        },
+        "state": {
+          "map": {
+            "default": null,
+            "hover": null,
+            "active": null,
+            "focused": null,
+            "disabled": {
+              "prop": "isDisabled",
+              "value": true
+            },
+            "read-only": {
+              "prop": "isReadOnly",
+              "value": true
+            },
+            "invalid": {
+              "prop": "isInvalid",
+              "value": true
+            },
+            "invalid-hover": {
+              "prop": "isInvalid",
+              "value": true
+            },
+            "invalid-focused": {
+              "prop": "isInvalid",
+              "value": true
+            }
+          },
+          "note": "Figma `read-only` = Input `readonly`; both are isReadOnly."
+        }
+      }
+    },
+    "_checkbox-indicator": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "2ec550b18c1a456f6cbd89d5bbcc0f1a30278f39",
+        "nodeId": "230:20214",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "CheckboxIndicator",
+        "source": "packages/ui/src/components/Checkbox/Checkbox.tsx",
+        "exported": false
+      },
+      "props": {
+        "state": {
+          "prop": null,
+          "setBy": "Checkbox",
+          "note": "Prop-driven mode (normal / invalid / disabled / read-only) plus CSS for hover, active, focused from the parent's data attributes."
+        },
+        "value": {
+          "prop": "value",
+          "setBy": "Checkbox"
+        }
+      }
+    },
+    "_checkbox-icon": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "5613d00a288f841cf26813b4cafd2dd9f54c7c72",
+        "nodeId": "230:20155",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "CheckboxIndicator glyph",
+        "source": "packages/ui/src/components/Checkbox/Checkbox.tsx",
+        "exported": false
+      },
+      "props": {
+        "variant": {
+          "prop": null,
+          "setBy": "CheckboxIndicator",
+          "note": "check / indeterminate SVG paths exported from Figma; drawn with currentColor. Figma also has an unused variant=invalid (a copy of check), not implemented."
+        }
+      }
+    },
+    "CheckboxGroup": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "a58f5b443159198a6aee6e7e323fc18aa0ed161c",
+        "nodeId": "243:20790",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "CheckboxGroup",
+        "source": "packages/ui/src/components/CheckboxGroup/CheckboxGroup.tsx"
+      },
+      "props": {
+        "group": {
+          "prop": "children",
+          "slot": true,
+          "anyOf": [
+            "Checkbox"
+          ],
+          "minItems": 2,
+          "note": "Stacked with space/md. No visible label: aria-label or aria-labelledby is required. errorMessage (code only) shows one error under the group while isInvalid; isDisabled / isReadOnly / isInvalid apply to every item."
+        }
+      }
     }
   }
 }
