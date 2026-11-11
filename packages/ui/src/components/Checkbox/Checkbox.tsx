@@ -13,8 +13,8 @@ export interface CheckboxProps extends Omit<RACCheckboxProps, 'children' | 'clas
 }
 
 /** Prop-driven part of the Figma `state`. hover / active / focused are CSS on top of it (React Aria data attributes). */
-type Mode = 'normal' | 'invalid' | 'disabled' | 'read-only';
-type Value = 'unchecked' | 'checked' | 'indeterminate';
+export type Mode = 'normal' | 'invalid' | 'disabled' | 'read-only';
+export type Value = 'unchecked' | 'checked' | 'indeterminate';
 
 const modeOf = (p: CheckboxRenderProps): Mode => (p.isDisabled ? 'disabled' : p.isReadOnly ? 'read-only' : p.isInvalid ? 'invalid' : 'normal');
 const valueOf = (p: CheckboxRenderProps): Value => (p.isIndeterminate ? 'indeterminate' : p.isSelected ? 'checked' : 'unchecked');
@@ -87,23 +87,43 @@ const CHECK =
   'M11.5402 5.54019C11.794 5.28635 12.2063 5.28635 12.4601 5.54019C12.7138 5.79404 12.7139 6.20633 12.4601 6.46011L7.46011 11.4601C7.20633 11.7139 6.79404 11.7138 6.54019 11.4601L3.54019 8.46011C3.28635 8.20627 3.28635 7.79403 3.54019 7.54019C3.79403 7.28635 4.20627 7.28635 4.46011 7.54019L7.00015 10.0802L11.5402 5.54019Z';
 const DASH = 'M11 7C11.5523 7 12 7.44772 12 8C12 8.55228 11.5523 9 11 9H5C4.44772 9 4 8.55228 4 8C4 7.44772 4.44772 7 5 7H11Z';
 
+// Inside a ListBoxItem the row is the control: hover and keyboard focus (data-focused, virtual focus) look the same,
+// an unchecked box does not react, and there is no focus ring on the box. Figma ListBoxItem nests these variants.
+const LH = 'group-data-hovered:not-group-data-pressed:';
+const LF = 'group-data-focused:not-group-data-pressed:';
+const LIST: Record<'normal' | 'disabled', Record<Value, string>> = {
+  normal: {
+    unchecked: 'bg-input-bg-default inset-ring-input-border-default shadow-interactive-default',
+    checked: `bg-interactive-primary-solid-bg-default inset-ring-interactive-primary-solid-border-default shadow-interactive-default text-interactive-primary-solid-icon-default ${LH}bg-interactive-primary-solid-bg-hover ${LH}inset-ring-interactive-primary-solid-border-hover ${LH}shadow-interactive-hover ${LH}text-interactive-primary-solid-icon-hover ${LF}bg-interactive-primary-solid-bg-hover ${LF}inset-ring-interactive-primary-solid-border-hover ${LF}shadow-interactive-hover ${LF}text-interactive-primary-solid-icon-hover group-data-pressed:bg-interactive-primary-solid-bg-active group-data-pressed:inset-ring-interactive-primary-solid-border-active group-data-pressed:shadow-none group-data-pressed:text-interactive-primary-solid-icon-active`,
+    indeterminate: '',
+  },
+  disabled: {
+    unchecked: 'bg-input-bg-disabled inset-ring-input-border-disabled',
+    checked: 'bg-interactive-primary-solid-bg-disabled inset-ring-interactive-primary-solid-border-disabled text-interactive-primary-solid-icon-disabled',
+    indeterminate: '',
+  },
+};
+LIST.normal.indeterminate = LIST.normal.checked;
+LIST.disabled.indeterminate = LIST.disabled.checked;
+
 /**
- * Internal (Figma `_checkbox-indicator`): the 16 px box. Visual only; also for ListBox items in multiple selection.
+ * Internal (Figma `_checkbox-indicator`): the 16 px box. Visual only.
  * Put it inside an element with class "group" that carries the React Aria data attributes.
- * The click area is extended to 24 px with a pseudo-element, without changing layout.
+ * context="checkbox": the click area is extended to 24 px with a pseudo-element, without changing layout.
+ * context="list": inside a ListBoxItem (multiple selection); follows the row's hover / focus / press.
  */
-export function CheckboxIndicator({ value, mode }: { value: Value; mode: Mode }) {
+export function CheckboxIndicator({ value, mode, context = 'checkbox' }: { value: Value; mode: Mode; context?: 'checkbox' | 'list' }) {
+  const list = context === 'list';
+  const listMode = mode === 'disabled' ? 'disabled' : 'normal';
   return (
     <span
       aria-hidden
       className={cx(
         'relative flex size-control-2xs shrink-0 items-center justify-center rounded-md inset-ring-(length:--border-width-md)',
-        'before:absolute before:-inset-(--space-xs)',
-        BOX[mode][value],
-        SHADOW[mode],
+        list ? LIST[listMode][value] : cx('before:absolute before:-inset-(--space-xs)', BOX[mode][value], SHADOW[mode]),
       )}
     >
-      <svg viewBox="0 0 16 16" fill="currentColor" className={cx('size-icon-xs', GLYPH[mode][value])}>
+      <svg viewBox="0 0 16 16" fill="currentColor" className={cx('size-icon-xs', list ? value === 'unchecked' && 'invisible' : GLYPH[mode][value])}>
         <path d={value === 'indeterminate' ? DASH : CHECK} />
       </svg>
     </span>

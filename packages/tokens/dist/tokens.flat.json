@@ -3657,6 +3657,48 @@
     "light": "var(--color-environment-surface-canvas)",
     "dark": "var(--color-environment-surface-canvas)"
   },
+  "color-list-item-bg-default-hover": {
+    "type": "color",
+    "light": "var(--color-interactive-subsidiary-transparent-bg-hover)",
+    "dark": "var(--color-interactive-subsidiary-transparent-bg-hover)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
+  "color-list-item-bg-default-active": {
+    "type": "color",
+    "light": "var(--color-interactive-subsidiary-transparent-bg-active)",
+    "dark": "var(--color-interactive-subsidiary-transparent-bg-active)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
+  "color-list-item-bg-default-disabled": {
+    "type": "color",
+    "light": "var(--color-interactive-subsidiary-transparent-bg-disabled)",
+    "dark": "var(--color-interactive-subsidiary-transparent-bg-disabled)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
+  "color-list-item-bg-selected-hover": {
+    "type": "color",
+    "light": "var(--color-interactive-primary-transparent-bg-hover)",
+    "dark": "var(--color-interactive-primary-transparent-bg-hover)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
+  "color-list-item-bg-selected-active": {
+    "type": "color",
+    "light": "var(--color-interactive-primary-transparent-bg-active)",
+    "dark": "var(--color-interactive-primary-transparent-bg-active)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
+  "color-list-item-bg-selected-disabled": {
+    "type": "color",
+    "light": "var(--color-interactive-primary-transparent-bg-disabled)",
+    "dark": "var(--color-interactive-primary-transparent-bg-disabled)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
+  "color-list-item-bg-selected-default": {
+    "type": "color",
+    "light": "var(--color-interactive-primary-transparent-bg-default)",
+    "dark": "var(--color-interactive-primary-transparent-bg-default)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
   "font-ui": {
     "type": "fontFamily",
     "light": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
@@ -3807,6 +3849,12 @@
     "type": "dimension",
     "light": "9999px",
     "dark": "9999px"
+  },
+  "radius-list-item": {
+    "type": "dimension",
+    "light": "var(--radius-md)",
+    "dark": "var(--radius-md)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
   },
   "border-width-lg": {
     "type": "dimension",
@@ -4019,6 +4067,24 @@
     "type": "dimension",
     "light": "var(--space-overlap-stack-xs)",
     "dark": "var(--space-overlap-stack-xs)"
+  },
+  "space-list-item-gap": {
+    "type": "dimension",
+    "light": "var(--space-xs)",
+    "dark": "var(--space-xs)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
+  "space-list-item-padding-x": {
+    "type": "dimension",
+    "light": "var(--space-xs)",
+    "dark": "var(--space-xs)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
+  "space-list-item-padding-y": {
+    "type": "dimension",
+    "light": "var(--space-xs)",
+    "dark": "var(--space-xs)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
   },
   "font-weight-normal": {
     "type": "fontWeight",

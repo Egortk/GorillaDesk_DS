@@ -713,6 +713,13 @@
   --color-field-helper-invalid: var(--color-content-danger-text-strong);
   --color-avatar-ring-default: var(--color-environment-surface-default);
   --color-avatar-ring-canvas: var(--color-environment-surface-canvas);
+  --color-list-item-bg-default-hover: var(--color-interactive-subsidiary-transparent-bg-hover);
+  --color-list-item-bg-default-active: var(--color-interactive-subsidiary-transparent-bg-active);
+  --color-list-item-bg-default-disabled: var(--color-interactive-subsidiary-transparent-bg-disabled);
+  --color-list-item-bg-selected-hover: var(--color-interactive-primary-transparent-bg-hover);
+  --color-list-item-bg-selected-active: var(--color-interactive-primary-transparent-bg-active);
+  --color-list-item-bg-selected-disabled: var(--color-interactive-primary-transparent-bg-disabled);
+  --color-list-item-bg-selected-default: var(--color-interactive-primary-transparent-bg-default);
   --font-ui: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-code: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   --duration-instant: 0ms;
@@ -742,6 +749,7 @@
   --radius-2xl: 0.75rem;
   --radius-3xl: 1rem;
   --radius-full: 9999px;
+  --radius-list-item: var(--radius-md);
   --border-width-lg: 2px;
   --border-width-md: 1px;
   --border-width-none: 0;
@@ -783,6 +791,9 @@
   --space-avatar-group-overlap-md: var(--space-overlap-stack-md);
   --space-avatar-group-overlap-sm: var(--space-overlap-stack-sm);
   --space-avatar-group-overlap-xs: var(--space-overlap-stack-xs);
+  --space-list-item-gap: var(--space-xs);
+  --space-list-item-padding-x: var(--space-xs);
+  --space-list-item-padding-y: var(--space-xs);
   --font-weight-normal: 400;
   --font-weight-light: 300;
   --font-weight-medium: 500;
@@ -1562,6 +1573,13 @@
   --color-field-helper-invalid: var(--color-content-danger-text-strong);
   --color-avatar-ring-default: var(--color-environment-surface-default);
   --color-avatar-ring-canvas: var(--color-environment-surface-canvas);
+  --color-list-item-bg-default-hover: var(--color-interactive-subsidiary-transparent-bg-hover);
+  --color-list-item-bg-default-active: var(--color-interactive-subsidiary-transparent-bg-active);
+  --color-list-item-bg-default-disabled: var(--color-interactive-subsidiary-transparent-bg-disabled);
+  --color-list-item-bg-selected-hover: var(--color-interactive-primary-transparent-bg-hover);
+  --color-list-item-bg-selected-active: var(--color-interactive-primary-transparent-bg-active);
+  --color-list-item-bg-selected-disabled: var(--color-interactive-primary-transparent-bg-disabled);
+  --color-list-item-bg-selected-default: var(--color-interactive-primary-transparent-bg-default);
   --shadow-container: 0 0 1px 0 var(--color-environment-shadow-8), 0 0 2px 0 var(--color-environment-shadow-4), 0 0 3px 0 var(--color-environment-shadow-6);
   --shadow-elevation: 0 10px 49px 0 var(--color-environment-shadow-7), 0 8px 24px 0 var(--color-environment-shadow-3), 0 3px 8px 0 var(--color-environment-shadow-8), 0 2px 2px 0 var(--color-environment-shadow-4), 0 0 1px 0 var(--color-environment-shadow-17);
   --shadow-interactive-default: 0 0 1px 0 var(--color-environment-shadow-8), 0 1px 2px 0 var(--color-environment-shadow-4), 0 1px 3px 0 var(--color-environment-shadow-6);

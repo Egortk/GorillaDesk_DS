@@ -148,6 +148,50 @@
           "$value": "{space.overlap.stack.xs}"
         }
       }
+    },
+    "list-item": {
+      "gap": {
+        "$type": "dimension",
+        "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "components/size"
+          }
+        },
+        "$value": "{space.xs}"
+      },
+      "padding-x": {
+        "$type": "dimension",
+        "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "components/size"
+          }
+        },
+        "$value": "{space.xs}"
+      },
+      "padding-y": {
+        "$type": "dimension",
+        "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "components/size"
+          }
+        },
+        "$value": "{space.xs}"
+      }
+    }
+  },
+  "radius": {
+    "list-item": {
+      "$type": "dimension",
+      "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+      "$extensions": {
+        "com.figma": {
+          "collection": "components/size"
+        }
+      },
+      "$value": "{radius.md}"
     }
   }
 }
