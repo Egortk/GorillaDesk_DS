@@ -567,6 +567,701 @@
           "setBy": "AvatarGroup"
         }
       }
+    },
+    "Checkbox": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "0e98d0d8562515b4486654cf4674563778c891fb",
+        "nodeId": "230:20309",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "Checkbox",
+        "source": "packages/ui/src/components/Checkbox/Checkbox.tsx"
+      },
+      "props": {
+        "hasLabel": {
+          "prop": null,
+          "controls": "label"
+        },
+        "label": {
+          "prop": "children",
+          "enabledBy": "hasLabel",
+          "note": "Without children pass aria-label."
+        },
+        "hasDescription": {
+          "prop": null,
+          "controls": "description"
+        },
+        "description": {
+          "prop": "description",
+          "enabledBy": "hasDescription",
+          "note": "Linked with aria-describedby, kept out of the accessible name."
+        },
+        "hasError": {
+          "prop": null,
+          "controls": "errorMessage"
+        },
+        "errorMessage": {
+          "prop": "errorMessage",
+          "enabledBy": "hasError",
+          "note": "Shown only while isInvalid. Inside a CheckboxGroup that shows one error, leave it out."
+        },
+        "value": {
+          "map": {
+            "unchecked": null,
+            "checked": {
+              "prop": "isSelected",
+              "value": true
+            },
+            "indeterminate": {
+              "prop": "isIndeterminate",
+              "value": true
+            }
+          },
+          "note": "Figma `value` is not the React Aria `value` (the option id in a group)."
+        },
+        "state": {
+          "map": {
+            "default": null,
+            "hover": null,
+            "active": null,
+            "focused": null,
+            "disabled": {
+              "prop": "isDisabled",
+              "value": true
+            },
+            "read-only": {
+              "prop": "isReadOnly",
+              "value": true
+            },
+            "invalid": {
+              "prop": "isInvalid",
+              "value": true
+            },
+            "invalid-hover": {
+              "prop": "isInvalid",
+              "value": true
+            },
+            "invalid-focused": {
+              "prop": "isInvalid",
+              "value": true
+            }
+          },
+          "note": "Figma `read-only` = Input `readonly`; both are isReadOnly."
+        }
+      }
+    },
+    "_checkbox-indicator": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "2ec550b18c1a456f6cbd89d5bbcc0f1a30278f39",
+        "nodeId": "230:20214",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "CheckboxIndicator",
+        "source": "packages/ui/src/components/Checkbox/Checkbox.tsx",
+        "exported": false
+      },
+      "props": {
+        "state": {
+          "prop": null,
+          "setBy": "Checkbox",
+          "note": "Prop-driven mode (normal / invalid / disabled / read-only) plus CSS for hover, active, focused from the parent's data attributes."
+        },
+        "value": {
+          "prop": "value",
+          "setBy": "Checkbox"
+        },
+        "context": {
+          "prop": null,
+          "note": "Code only: context=\"list\" inside ListBoxItem (follows the row, no focus ring, unchecked does not react)."
+        }
+      }
+    },
+    "_checkbox-icon": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "5613d00a288f841cf26813b4cafd2dd9f54c7c72",
+        "nodeId": "230:20155",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "CheckboxIndicator glyph",
+        "source": "packages/ui/src/components/Checkbox/Checkbox.tsx",
+        "exported": false
+      },
+      "props": {
+        "variant": {
+          "prop": null,
+          "setBy": "CheckboxIndicator",
+          "note": "check / indeterminate SVG paths exported from Figma; drawn with currentColor. Figma also has an unused variant=invalid (a copy of check), not implemented."
+        }
+      }
+    },
+    "CheckboxGroup": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "a58f5b443159198a6aee6e7e323fc18aa0ed161c",
+        "nodeId": "243:20790",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "CheckboxGroup",
+        "source": "packages/ui/src/components/CheckboxGroup/CheckboxGroup.tsx"
+      },
+      "props": {
+        "group": {
+          "prop": "children",
+          "slot": true,
+          "anyOf": [
+            "Checkbox"
+          ],
+          "minItems": 2,
+          "note": "Stacked with space/md. No visible label: aria-label or aria-labelledby is required. errorMessage (code only) shows one error under the group while isInvalid; isDisabled / isReadOnly / isInvalid apply to every item."
+        }
+      }
+    },
+    "UserChip": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "abf29a7c90b68929a6471d901085277481a9f0e2",
+        "nodeId": "209:19449",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "UserChip",
+        "source": "packages/ui/src/components/UserChip/UserChip.tsx"
+      },
+      "props": {
+        "kind": {
+          "prop": "kind",
+          "note": "pill = filled background, plain = no background. Renamed from kind=label on 2026-11-10."
+        },
+        "size": {
+          "prop": "size"
+        },
+        "label": {
+          "prop": "children",
+          "note": "Single line; truncates with an ellipsis when it does not fit."
+        },
+        "removable": {
+          "prop": "onRemove",
+          "note": "true = pass onRemove; renders DismissButton (circle). Its accessible name is removeLabel (default \"Remove {label}\")."
+        },
+        "hasLozenge": {
+          "prop": null,
+          "controls": "lozenge"
+        },
+        "lozenge": {
+          "prop": "lozenge",
+          "enabledBy": "hasLozenge",
+          "note": "Lozenge element after the name. Figma has it in size=sm only; size=xs ignores it."
+        },
+        "UserAvatar": {
+          "prop": "avatarSrc",
+          "note": "Exposed UserAvatar instance; the chip sets its size. avatarSrc goes to UserAvatar src (SystemAvatar fallback)."
+        }
+      }
+    },
+    "Popover": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "e409857b32f04cee0f01b3efb62a44a65cfa8d9d",
+        "nodeId": "261:22150",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "Popover",
+        "source": "packages/ui/src/components/Popover/Popover.tsx"
+      },
+      "props": {
+        "content": {
+          "prop": "children",
+          "note": "Slot, any content. No padding of its own. Width ≥ trigger (--trigger-width); height limited by the viewport, content scrolls. offset 4 px (code only)."
+        }
+      }
+    },
+    "ListBox": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "name": "List",
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "41f3a870fda0fc1acfac3ad288884c5920498392",
+        "nodeId": "265:344",
+        "devStatus": "NOT_SET (created 2026-11-10, designer to mark Ready for dev)"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "ListBox",
+        "source": "packages/ui/src/components/ListBox/ListBox.tsx"
+      },
+      "props": {
+        "items": {
+          "prop": "children",
+          "note": "Slot of ListBoxItem (code ListBox) or MenuItem (code Menu). Dynamic lists: items + render function."
+        },
+        "selectionMode": {
+          "prop": "selectionMode",
+          "note": "Code only (Figma shows it on ListBoxItem)."
+        }
+      },
+      "note": "Figma List (renamed from ListBox 2026-11-11) is one container for both row kinds. With ListBoxItem rows it is <ListBox>; with MenuItem rows it is <Menu> (not built yet, shares these styles). Documented exception to 1:1 naming."
+    },
+    "ListBoxItem": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "37a9828ce4520280fc4513137387a2a2608a9ddb",
+        "nodeId": "250:21312",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "ListBoxItem",
+        "source": "packages/ui/src/components/ListBox/ListBoxItem.tsx"
+      },
+      "props": {
+        "state": {
+          "map": {
+            "default": null,
+            "hover": {
+              "prop": null,
+              "note": "CSS: data-hovered or data-focused (virtual focus looks like hover)."
+            },
+            "active": {
+              "prop": null,
+              "note": "CSS: data-pressed."
+            },
+            "disabled": {
+              "prop": "isDisabled",
+              "value": true,
+              "note": "Or disabledKeys on the parent."
+            }
+          }
+        },
+        "selected": {
+          "prop": null,
+          "note": "Render prop isSelected, from the parent's selection (value / selectedKeys)."
+        },
+        "selectionMode": {
+          "prop": null,
+          "setBy": "ListBox / Select",
+          "note": "single → check mark when selected; multiple → CheckboxIndicator; none → no selection cell."
+        },
+        "hasLeading": {
+          "prop": null,
+          "controls": "leading"
+        },
+        "_leading": {
+          "prop": "leading",
+          "enabledBy": "hasLeading",
+          "note": "Exposed instance: icon (24 px) or UserAvatar size=sm."
+        },
+        "_list-label": {
+          "prop": "children",
+          "note": "Exposed instance. content=text → string children (+ description); content=tag | userChip → a Tag or UserChip element, textValue required."
+        },
+        "hasTrailing": {
+          "prop": null,
+          "controls": "trailing"
+        },
+        "trailing": {
+          "prop": "trailing",
+          "enabledBy": "hasTrailing",
+          "note": "Slot, non-interactive content only."
+        },
+        "hasBadge": {
+          "prop": null,
+          "controls": "badge"
+        },
+        "badge": {
+          "prop": "badge",
+          "enabledBy": "hasBadge",
+          "note": "A Badge element."
+        }
+      }
+    },
+    "_list-label": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "7b922a4fccfc40f96936513d7aae07abdd923d57",
+        "nodeId": "249:21205",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "ListBoxItem",
+        "source": "packages/ui/src/components/ListBox/ListBoxItem.tsx",
+        "exported": false
+      },
+      "props": {
+        "label": {
+          "prop": "children",
+          "setBy": "ListBoxItem",
+          "note": "One line, ellipsis."
+        },
+        "hasDescription": {
+          "prop": null,
+          "controls": "description"
+        },
+        "description": {
+          "prop": "description",
+          "enabledBy": "hasDescription",
+          "setBy": "ListBoxItem"
+        },
+        "content": {
+          "prop": null,
+          "note": "Follows the children type: string → text; Tag / UserChip element → tag / userChip."
+        }
+      }
+    },
+    "_selection": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "c5e0d43215fc29503bbe99868a0ca8c1dd659e9f",
+        "nodeId": "249:21277",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "Selection",
+        "source": "packages/ui/src/components/ListBox/ListBoxItem.tsx",
+        "exported": false
+      },
+      "props": {
+        "selectionMode": {
+          "prop": null,
+          "setBy": "ListBoxItem render props"
+        }
+      }
+    },
+    "_item-select-icon": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "55b452a779f104cda52265efe7d4b9ec76d61a20",
+        "nodeId": "249:21260",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "Selection",
+        "source": "packages/ui/src/components/ListBox/ListBoxItem.tsx",
+        "exported": false
+      },
+      "props": {
+        "state": {
+          "prop": null,
+          "note": "CSS from the row (group-data-hovered / focused / pressed); disabled from render props."
+        },
+        "selected": {
+          "prop": null,
+          "note": "Rendered only when selected."
+        }
+      }
+    },
+    "_leading": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "b9e413d76b1e8aaafe74ab9c24d07ae714587f92",
+        "nodeId": "249:21280",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "ListBoxItem",
+        "source": "packages/ui/src/components/ListBox/ListBoxItem.tsx",
+        "exported": false
+      },
+      "props": {
+        "variant": {
+          "prop": null,
+          "note": "Follows the leading element: icon or UserAvatar."
+        },
+        "icon": {
+          "prop": "leading",
+          "setBy": "ListBoxItem"
+        }
+      }
+    },
+    "Select": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "7824e3191204f349184802c9ace5735a8040e9ce",
+        "nodeId": "169:7063",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "Select",
+        "source": "packages/ui/src/components/Select/Select.tsx"
+      },
+      "props": {
+        "variant": {
+          "prop": "variant"
+        },
+        "state": {
+          "map": {
+            "default": null,
+            "hover": null,
+            "focused": {
+              "prop": null,
+              "note": "CSS: data-focus-visible on the trigger."
+            },
+            "open": {
+              "prop": null,
+              "note": "Render prop isOpen (or isOpen / defaultOpen)."
+            },
+            "disabled": {
+              "prop": "isDisabled",
+              "value": true
+            },
+            "readonly": {
+              "prop": "isReadOnly",
+              "value": true,
+              "note": "Code-side: keeps the first value and never opens (React Aria Select has no read-only)."
+            },
+            "invalid": {
+              "prop": "isInvalid",
+              "value": true
+            },
+            "invalid-hover": {
+              "prop": "isInvalid",
+              "value": true
+            },
+            "invalid-focused": {
+              "prop": "isInvalid",
+              "value": true
+            }
+          }
+        },
+        "hasIcon": {
+          "prop": null,
+          "controls": "icon"
+        },
+        "icon": {
+          "prop": "icon",
+          "enabledBy": "hasIcon"
+        },
+        "value": {
+          "prop": null,
+          "note": "Slot filled from the selection: placeholder / one value (_select-value), several values → renderValue per option (default Tag; UserChip for people), _more on inline. Options: ListBoxItem children (or items + render function)."
+        }
+      }
+    },
+    "_select-value": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "68035054052c2dc24a1dc96eba08d35ffb80cc40",
+        "nodeId": "220:19523",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "Select",
+        "source": "packages/ui/src/components/Select/Select.tsx",
+        "exported": false
+      },
+      "props": {
+        "variant": {
+          "prop": null,
+          "note": "placeholder when nothing is selected."
+        },
+        "placeholder": {
+          "prop": "placeholder",
+          "setBy": "Select"
+        },
+        "value": {
+          "prop": null,
+          "note": "selectedText of the selection."
+        }
+      }
+    },
+    "_more": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "b95865010b6d295db57aafd9bc6900ed6a999837",
+        "nodeId": "220:19726",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "More",
+        "source": "packages/ui/src/components/Select/Select.tsx",
+        "exported": false
+      },
+      "props": {
+        "variant": {
+          "prop": "moreKind",
+          "setBy": "Select"
+        },
+        "size": {
+          "prop": null,
+          "note": "sm in Select (32 px field)."
+        }
+      }
+    },
+    "_select-arrow": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "21c68a9288b1928897f27effa81f6e98378a82fd",
+        "nodeId": "225:92",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "Arrow",
+        "source": "packages/ui/src/components/Select/Select.tsx",
+        "exported": false
+      },
+      "props": {
+        "open": {
+          "prop": null,
+          "note": "Follows isOpen (rotate-180)."
+        }
+      }
+    },
+    "ListHeader": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "name": "ListHeader",
+        "nodeId": "273:23181",
+        "devStatus": "NOT_SET (designer to mark Ready for dev)"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "ListHeader",
+        "source": "packages/ui/src/components/ListBox/ListHeader.tsx (not built yet)"
+      },
+      "props": {
+        "label": {
+          "prop": "children",
+          "note": "One line, truncates. Figma text is uppercase (text case), code uses `uppercase`."
+        }
+      },
+      "note": "React Aria Header inside ListBoxSection / MenuSection. Side padding space/list-item/padding-x, top space/lg (dropped for the first section), bottom space/xs. Text body-xs, content/neutral/text/muted."
+    },
+    "ListSeparator": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "name": "ListSeparator",
+        "nodeId": "273:23180",
+        "devStatus": "NOT_SET (designer to mark Ready for dev)"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "ListSeparator",
+        "source": "packages/ui/src/components/ListBox/ListSeparator.tsx (not built yet)"
+      },
+      "props": {},
+      "note": "React Aria Separator. Top border border-width/md, content/neutral/border/muted; padding-y space/xs. Edge to edge of the Popover: overhangs the List side padding with -mx-(--space-xs). Figma does this with an absolute \"line\" layer at x=-4 (constraints Left & right) and a 1px \"spacer\" in flow."
+    },
+    "MenuItem": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "name": "MenuItem",
+        "nodeId": "273:22246",
+        "devStatus": "NOT_SET (designer to mark Ready for dev)"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "MenuItem",
+        "source": "packages/ui/src/components/Menu/MenuItem.tsx (not built yet)"
+      },
+      "props": {
+        "variant": {
+          "prop": "intent",
+          "note": "default | danger"
+        },
+        "hasSubmenu": {
+          "prop": null,
+          "note": "Exception: not a prop. Wrap in SubmenuTrigger; the chevron renders automatically."
+        },
+        "trailing": {
+          "prop": "trailing",
+          "note": "Any non-interactive content."
+        },
+        "hasBadge": {
+          "prop": "badge",
+          "note": "Presence of the slot prop."
+        },
+        "hasLeading": {
+          "prop": "leading",
+          "note": "Presence of the slot prop."
+        }
+      },
+      "note": "Shares list-item tokens with ListBoxItem; danger bg color/list-item/bg/danger/* (tokens not synced to code yet)."
+    },
+    "SearchField": {
+      "status": "ready",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "name": "SearchField",
+        "nodeId": "283:24095",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "SearchField",
+        "source": "packages/ui/src/components/SearchField/SearchField.tsx"
+      },
+      "props": {
+        "variant": {
+          "prop": "variant",
+          "note": "box | inline | embedded (embedded: first item in a Popover above the list, used with React Aria Autocomplete; no fill, bottom border content/neutral/border/muted, no radius, shadow or focus ring; padding-x space/search-field/embedded/padding-x so the icon lines up with row icons)"
+        },
+        "placeholder": {
+          "prop": "placeholder"
+        },
+        "value": {
+          "prop": "value",
+          "note": "or defaultValue"
+        },
+        "filled": {
+          "prop": null,
+          "note": "Derived from the value; the clear button shows when filled."
+        },
+        "state": {
+          "prop": null,
+          "note": "hover / focused are CSS; disabled -> isDisabled."
+        }
+      },
+      "note": "React Aria SearchField. Fixed search icon (Assets margnifire-search). Clear = DismissButton circle xs, aria-label \"Clear search\", shown when filled and enabled; Escape also clears. Field styles shared with Input via src/lib/input.ts."
     }
   }
 }

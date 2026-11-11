@@ -508,6 +508,21 @@ S;space/overlap/stack/sm;F;@dimension/-6;Negative gap that joins the borders of 
 S;space/overlap/stack/md;F;@dimension/-8;Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative.
 S;space/overlap/stack/lg;F;@dimension/-10;Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative.
 S;space/overlap/stack/xl;F;@dimension/-12;Negative gap that joins the borders of neighbouring items (input group, button group). Always equals minus border-width/md. In code it is a child margin, not gap: CSS gap cannot be negative.
+CS;space/list-item/gap;F;@space/xs;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CS;space/list-item/padding-x;F;@space/xs;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CS;space/list-item/padding-y;F;@space/xs;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CS;radius/list-item;F;@radius/md;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CC;color/list-item/bg/default/hover;C;@color/interactive/subsidiary/transparent/bg/hover;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CC;color/list-item/bg/default/active;C;@color/interactive/subsidiary/transparent/bg/active;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CC;color/list-item/bg/default/disabled;C;@color/interactive/subsidiary/transparent/bg/disabled;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CC;color/list-item/bg/selected/hover;C;@color/interactive/primary/transparent/bg/hover;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CC;color/list-item/bg/selected/active;C;@color/interactive/primary/transparent/bg/active;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CC;color/list-item/bg/selected/disabled;C;@color/interactive/primary/transparent/bg/disabled;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CC;color/list-item/bg/selected/default;C;@color/interactive/primary/transparent/bg/default;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CC;color/list-item/bg/danger/hover;C;@color/interactive/danger/transparent/bg/hover;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CC;color/list-item/bg/danger/active;C;@color/interactive/danger/transparent/bg/active;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CC;color/list-item/bg/danger/disabled;C;@color/interactive/danger/transparent/bg/disabled;Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).
+CS;space/search-field/embedded/padding-x;F;@space/md;SearchField variant=embedded (search at the top of a Popover menu). Equals the List padding plus the row padding, so the search icon lines up with the row icons.
 E;shadow/container;d,0,0,1,0,@color/environment/shadow/8,|d,0,0,2,0,@color/environment/shadow/4,|d,0,0,3,0,@color/environment/shadow/6,
 E;shadow/elevation;d,0,10,49,0,@color/environment/shadow/7,|d,0,8,24,0,@color/environment/shadow/3,|d,0,3,8,0,@color/environment/shadow/8,|d,0,2,2,0,@color/environment/shadow/4,|d,0,0,1,0,@color/environment/shadow/17,
 E;shadow/interactive-default;d,0,0,1,0,@color/environment/shadow/8,|d,0,1,2,0,@color/environment/shadow/4,|d,0,1,3,0,@color/environment/shadow/6,

@@ -630,6 +630,116 @@
           "$value": "{color.environment.surface.canvas}"
         }
       }
+    },
+    "list-item": {
+      "bg": {
+        "default": {
+          "hover": {
+            "$type": "color",
+            "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+            "$extensions": {
+              "com.figma": {
+                "collection": "components/color"
+              }
+            },
+            "$value": "{color.interactive.subsidiary.transparent.bg.hover}"
+          },
+          "active": {
+            "$type": "color",
+            "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+            "$extensions": {
+              "com.figma": {
+                "collection": "components/color"
+              }
+            },
+            "$value": "{color.interactive.subsidiary.transparent.bg.active}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+            "$extensions": {
+              "com.figma": {
+                "collection": "components/color"
+              }
+            },
+            "$value": "{color.interactive.subsidiary.transparent.bg.disabled}"
+          }
+        },
+        "selected": {
+          "hover": {
+            "$type": "color",
+            "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+            "$extensions": {
+              "com.figma": {
+                "collection": "components/color"
+              }
+            },
+            "$value": "{color.interactive.primary.transparent.bg.hover}"
+          },
+          "active": {
+            "$type": "color",
+            "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+            "$extensions": {
+              "com.figma": {
+                "collection": "components/color"
+              }
+            },
+            "$value": "{color.interactive.primary.transparent.bg.active}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+            "$extensions": {
+              "com.figma": {
+                "collection": "components/color"
+              }
+            },
+            "$value": "{color.interactive.primary.transparent.bg.disabled}"
+          },
+          "default": {
+            "$type": "color",
+            "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+            "$extensions": {
+              "com.figma": {
+                "collection": "components/color"
+              }
+            },
+            "$value": "{color.interactive.primary.transparent.bg.default}"
+          }
+        },
+        "danger": {
+          "hover": {
+            "$type": "color",
+            "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+            "$extensions": {
+              "com.figma": {
+                "collection": "components/color"
+              }
+            },
+            "$value": "{color.interactive.danger.transparent.bg.hover}"
+          },
+          "active": {
+            "$type": "color",
+            "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+            "$extensions": {
+              "com.figma": {
+                "collection": "components/color"
+              }
+            },
+            "$value": "{color.interactive.danger.transparent.bg.active}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+            "$extensions": {
+              "com.figma": {
+                "collection": "components/color"
+              }
+            },
+            "$value": "{color.interactive.danger.transparent.bg.disabled}"
+          }
+        }
+      }
     }
   }
 }

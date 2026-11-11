@@ -148,6 +148,64 @@
           "$value": "{space.overlap.stack.xs}"
         }
       }
+    },
+    "list-item": {
+      "gap": {
+        "$type": "dimension",
+        "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "components/size"
+          }
+        },
+        "$value": "{space.xs}"
+      },
+      "padding-x": {
+        "$type": "dimension",
+        "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "components/size"
+          }
+        },
+        "$value": "{space.xs}"
+      },
+      "padding-y": {
+        "$type": "dimension",
+        "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+        "$extensions": {
+          "com.figma": {
+            "collection": "components/size"
+          }
+        },
+        "$value": "{space.xs}"
+      }
+    },
+    "search-field": {
+      "embedded": {
+        "padding-x": {
+          "$type": "dimension",
+          "$description": "SearchField variant=embedded (search at the top of a Popover menu). Equals the List padding plus the row padding, so the search icon lines up with the row icons.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.md}"
+        }
+      }
+    }
+  },
+  "radius": {
+    "list-item": {
+      "$type": "dimension",
+      "$description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus).",
+      "$extensions": {
+        "com.figma": {
+          "collection": "components/size"
+        }
+      },
+      "$value": "{radius.md}"
     }
   }
 }
