@@ -4,11 +4,23 @@ import { FIELD_FOCUS_RING, FIELD_FRAME, FIELD_ICON, FIELD_INPUT, FIELD_ROOT, FIE
 import { ICON_SLOT } from '../../lib/styles';
 import { DismissButton } from '../DismissButton/DismissButton';
 
-export type SearchFieldVariant = 'box' | 'inline';
+// embedded: the Popover surface shows through, one bottom border edge to edge, padding lines the icon up with the
+// row icons below. Focus stays in the field while arrows move through the list, so there is no ring and no hover look.
+const EMBEDDED_ROOT =
+  'group flex h-control-md w-full items-stretch border-b-(length:--border-width-md) border-content-neutral-border-muted';
+const EMBEDDED_ICON: Record<'normal' | 'disabled', string> = {
+  normal: 'text-input-icon-default group-data-focus-within:text-input-icon-focus',
+  disabled: 'text-input-icon-disabled',
+};
+
+export type SearchFieldVariant = 'box' | 'inline' | 'embedded';
 
 export interface SearchFieldProps
   extends Omit<RACSearchFieldProps, 'children' | 'className' | 'style' | 'isInvalid' | 'isReadOnly' | 'validate' | 'validationBehavior'> {
-  /** box = standalone field; inline = table cell or filter bar (no radius, no resting shadow). */
+  /**
+   * box = standalone field; inline = table cell or filter bar (no radius, no resting shadow);
+   * embedded = first item in a Popover above the list (no fill, bottom border only, no focus ring).
+   */
   variant?: SearchFieldVariant;
   placeholder?: string;
   className?: string;
@@ -29,12 +41,16 @@ function SearchIcon() {
  */
 export function SearchField({ variant = 'box', placeholder, className, ...props }: SearchFieldProps) {
   const mode: FieldMode = props.isDisabled ? 'disabled' : 'normal';
+  const embedded = variant === 'embedded';
   return (
     <RACSearchField {...props} className={cx('flex w-full', className)}>
       {({ isEmpty }) => (
-        <Group isDisabled={props.isDisabled} className={cx(FIELD_ROOT, FIELD_FRAME[mode], FIELD_FOCUS_RING[mode], fieldShape(variant, mode))}>
-          <span className="flex min-w-0 flex-1 items-center px-(--space-input-padding-x)">
-            <span aria-hidden className={cx(ICON_SLOT, FIELD_ICON[mode])}>
+        <Group
+          isDisabled={props.isDisabled}
+          className={embedded ? EMBEDDED_ROOT : cx(FIELD_ROOT, FIELD_FRAME[mode], FIELD_FOCUS_RING[mode], fieldShape(variant, mode))}
+        >
+          <span className={cx('flex min-w-0 flex-1 items-center', embedded ? 'px-(--space-search-field-embedded-padding-x)' : 'px-(--space-input-padding-x)')}>
+            <span aria-hidden className={cx(ICON_SLOT, embedded ? EMBEDDED_ICON[mode as 'normal' | 'disabled'] : FIELD_ICON[mode])}>
               <SearchIcon />
             </span>
             <RACInput placeholder={placeholder} className={cx(FIELD_INPUT, FIELD_TEXT[mode], '[&::-webkit-search-cancel-button]:hidden')} />

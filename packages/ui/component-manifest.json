@@ -1243,7 +1243,7 @@
       "props": {
         "variant": {
           "prop": "variant",
-          "note": "box | inline (embedded for menus planned)"
+          "note": "box | inline | embedded (embedded: first item in a Popover above the list, used with React Aria Autocomplete; no fill, bottom border content/neutral/border/muted, no radius, shadow or focus ring; padding-x space/search-field/embedded/padding-x so the icon lines up with row icons)"
         },
         "placeholder": {
           "prop": "placeholder"

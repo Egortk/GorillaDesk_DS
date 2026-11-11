@@ -720,6 +720,9 @@
   --color-list-item-bg-selected-active: var(--color-interactive-primary-transparent-bg-active);
   --color-list-item-bg-selected-disabled: var(--color-interactive-primary-transparent-bg-disabled);
   --color-list-item-bg-selected-default: var(--color-interactive-primary-transparent-bg-default);
+  --color-list-item-bg-danger-hover: var(--color-interactive-danger-transparent-bg-hover);
+  --color-list-item-bg-danger-active: var(--color-interactive-danger-transparent-bg-active);
+  --color-list-item-bg-danger-disabled: var(--color-interactive-danger-transparent-bg-disabled);
   --font-ui: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-code: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   --duration-instant: 0ms;
@@ -794,6 +797,7 @@
   --space-list-item-gap: var(--space-xs);
   --space-list-item-padding-x: var(--space-xs);
   --space-list-item-padding-y: var(--space-xs);
+  --space-search-field-embedded-padding-x: var(--space-md);
   --font-weight-normal: 400;
   --font-weight-light: 300;
   --font-weight-medium: 500;
@@ -1580,6 +1584,9 @@
   --color-list-item-bg-selected-active: var(--color-interactive-primary-transparent-bg-active);
   --color-list-item-bg-selected-disabled: var(--color-interactive-primary-transparent-bg-disabled);
   --color-list-item-bg-selected-default: var(--color-interactive-primary-transparent-bg-default);
+  --color-list-item-bg-danger-hover: var(--color-interactive-danger-transparent-bg-hover);
+  --color-list-item-bg-danger-active: var(--color-interactive-danger-transparent-bg-active);
+  --color-list-item-bg-danger-disabled: var(--color-interactive-danger-transparent-bg-disabled);
   --shadow-container: 0 0 1px 0 var(--color-environment-shadow-8), 0 0 2px 0 var(--color-environment-shadow-4), 0 0 3px 0 var(--color-environment-shadow-6);
   --shadow-elevation: 0 10px 49px 0 var(--color-environment-shadow-7), 0 8px 24px 0 var(--color-environment-shadow-3), 0 3px 8px 0 var(--color-environment-shadow-8), 0 2px 2px 0 var(--color-environment-shadow-4), 0 0 1px 0 var(--color-environment-shadow-17);
   --shadow-interactive-default: 0 0 1px 0 var(--color-environment-shadow-8), 0 1px 2px 0 var(--color-environment-shadow-4), 0 1px 3px 0 var(--color-environment-shadow-6);

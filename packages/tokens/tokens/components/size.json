@@ -180,6 +180,20 @@
         },
         "$value": "{space.xs}"
       }
+    },
+    "search-field": {
+      "embedded": {
+        "padding-x": {
+          "$type": "dimension",
+          "$description": "SearchField variant=embedded (search at the top of a Popover menu). Equals the List padding plus the row padding, so the search icon lines up with the row icons.",
+          "$extensions": {
+            "com.figma": {
+              "collection": "components/size"
+            }
+          },
+          "$value": "{space.md}"
+        }
+      }
     }
   },
   "radius": {

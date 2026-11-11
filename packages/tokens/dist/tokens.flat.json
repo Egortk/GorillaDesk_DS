@@ -3699,6 +3699,24 @@
     "dark": "var(--color-interactive-primary-transparent-bg-default)",
     "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
   },
+  "color-list-item-bg-danger-hover": {
+    "type": "color",
+    "light": "var(--color-interactive-danger-transparent-bg-hover)",
+    "dark": "var(--color-interactive-danger-transparent-bg-hover)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
+  "color-list-item-bg-danger-active": {
+    "type": "color",
+    "light": "var(--color-interactive-danger-transparent-bg-active)",
+    "dark": "var(--color-interactive-danger-transparent-bg-active)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
+  "color-list-item-bg-danger-disabled": {
+    "type": "color",
+    "light": "var(--color-interactive-danger-transparent-bg-disabled)",
+    "dark": "var(--color-interactive-danger-transparent-bg-disabled)",
+    "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
   "font-ui": {
     "type": "fontFamily",
     "light": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
@@ -4085,6 +4103,12 @@
     "light": "var(--space-xs)",
     "dark": "var(--space-xs)",
     "description": "Shared by list rows: ListBoxItem (Select options) and MenuItem (action menus)."
+  },
+  "space-search-field-embedded-padding-x": {
+    "type": "dimension",
+    "light": "var(--space-md)",
+    "dark": "var(--space-md)",
+    "description": "SearchField variant=embedded (search at the top of a Popover menu). Equals the List padding plus the row padding, so the search icon lines up with the row icons."
   },
   "font-weight-normal": {
     "type": "fontWeight",
