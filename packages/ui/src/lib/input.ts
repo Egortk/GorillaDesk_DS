@@ -6,9 +6,15 @@ export type FieldMode = 'normal' | 'invalid' | 'readonly' | 'disabled';
 
 // Class names are written out in full so Tailwind can find them. Hover applies only while not focused; focus wins.
 
-/** Root box: size, clipping and the border layer (::after, drawn above the content like Figma stroke INSIDE). */
-export const FIELD_ROOT =
-  'group relative flex h-control-md w-full items-stretch overflow-hidden after:pointer-events-none after:absolute after:inset-0 after:rounded-[inherit] after:inset-ring-(length:--border-width-md)';
+/**
+ * Root box without a height: clipping and the border layer (::after, drawn above the content like Figma stroke INSIDE).
+ * `data-field-frame` on this element lets InputGroup round only the outer corners of its items.
+ */
+export const FIELD_ROOT_BASE =
+  'group relative flex w-full items-stretch overflow-hidden after:pointer-events-none after:absolute after:inset-0 after:rounded-[inherit] after:inset-ring-(length:--border-width-md)';
+
+/** Single-line field root: FIELD_ROOT_BASE at control height. */
+export const FIELD_ROOT = `${FIELD_ROOT_BASE} h-control-md`;
 
 /** Background on the root, border colour on ::after. */
 export const FIELD_FRAME: Record<FieldMode, string> = {

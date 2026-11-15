@@ -54,6 +54,7 @@ export function Input({ variant = 'box', placeholder, icon, startAddon, endAddon
   return (
     <TextField {...props} className={cx('flex w-full', className)}>
       <Group
+        data-field-frame
         isDisabled={isDisabled}
         isInvalid={isInvalid}
         className={cx(FIELD_ROOT, FIELD_FRAME[mode], FIELD_FOCUS_RING[mode], fieldShape(variant, mode))}

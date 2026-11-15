@@ -22,3 +22,7 @@ export { ListBoxItem, type ListBoxItemProps } from './components/ListBox/ListBox
 export { Popover, type PopoverProps } from './components/Popover/Popover';
 export { SearchField, type SearchFieldProps, type SearchFieldVariant } from './components/SearchField/SearchField';
 export { Select, type SelectedOption, type SelectMoreKind, type SelectProps, type SelectVariant } from './components/Select/Select';
+export { AddressInput, type Address, type AddressField, type AddressInputProps } from './components/AddressInput/AddressInput';
+export { InputGroup, type InputGroupProps } from './components/InputGroup/InputGroup';
+export { PhoneInput, formatPhone, type PhoneInputProps } from './components/PhoneInput/PhoneInput';
+export { TextArea, type TextAreaProps, type TextAreaVariant } from './components/TextArea/TextArea';
