@@ -23,7 +23,7 @@ const valueOf = (p: CheckboxRenderProps): Value => (p.isIndeterminate ? 'indeter
 // Variant prefixes read the root (class "group"): hover applies only while not pressed and not focused, press only while
 // not focused; keyboard focus wins. Shadow: interactive-default at rest, -hover on hover, none while pressed, focus ring on focus.
 
-const SHADOW: Record<Mode, string> = {
+export const SHADOW: Record<Mode, string> = {
   normal: `shadow-interactive-default group-data-hovered:not-group-data-pressed:not-group-data-focus-visible:shadow-interactive-hover group-data-pressed:not-group-data-focus-visible:shadow-none group-data-focus-visible:shadow-interactive-focus`,
   invalid: `shadow-interactive-default group-data-hovered:not-group-data-pressed:not-group-data-focus-visible:shadow-interactive-hover group-data-pressed:not-group-data-focus-visible:shadow-interactive-hover group-data-focus-visible:shadow-interactive-focus-invalid`,
   disabled: '',
@@ -75,7 +75,7 @@ for (const m of Object.keys(BOX) as Mode[]) {
   GLYPH[m].indeterminate = GLYPH[m].checked;
 }
 
-const LABEL: Record<Mode, string> = {
+export const LABEL: Record<Mode, string> = {
   normal: `text-interactive-neutral-transparent-text-default group-data-hovered:not-group-data-pressed:not-group-data-focus-visible:text-interactive-neutral-transparent-text-hover group-data-pressed:not-group-data-focus-visible:text-interactive-neutral-transparent-text-active`,
   invalid: 'text-interactive-neutral-transparent-text-default',
   disabled: 'text-interactive-neutral-transparent-text-disabled',

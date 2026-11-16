@@ -733,6 +733,158 @@
         }
       }
     },
+    "Radio": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "9288c600955d600734ff224c61fa9c534a98a7c7",
+        "nodeId": "328:26122",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "Radio",
+        "source": "packages/ui/src/components/Radio/Radio.tsx"
+      },
+      "props": {
+        "hasLabel": {
+          "prop": null,
+          "controls": "label"
+        },
+        "label": {
+          "prop": "children",
+          "enabledBy": "hasLabel",
+          "note": "Without children pass aria-label."
+        },
+        "hasDescription": {
+          "prop": null,
+          "controls": "description"
+        },
+        "description": {
+          "prop": "description",
+          "enabledBy": "hasDescription",
+          "note": "Linked with aria-describedby, kept out of the accessible name."
+        },
+        "hasError": {
+          "prop": null,
+          "controls": "errorMessage"
+        },
+        "errorMessage": {
+          "prop": "errorMessage",
+          "enabledBy": "hasError",
+          "note": "Shown only while the group is invalid. Usually left out: RadioGroup shows one error."
+        },
+        "value": {
+          "map": {
+            "unchecked": null,
+            "checked": null
+          },
+          "note": "Set by the RadioGroup value (value / defaultValue on the group). The Radio's own `value` prop is the option id."
+        },
+        "state": {
+          "map": {
+            "default": null,
+            "hover": null,
+            "active": null,
+            "focused": null,
+            "disabled": {
+              "prop": "isDisabled",
+              "value": true
+            },
+            "read-only": {
+              "prop": "isReadOnly",
+              "on": "RadioGroup",
+              "value": true
+            },
+            "invalid": {
+              "prop": "isInvalid",
+              "on": "RadioGroup",
+              "value": true
+            },
+            "invalid-hover": {
+              "prop": "isInvalid",
+              "on": "RadioGroup",
+              "value": true
+            },
+            "invalid-focused": {
+              "prop": "isInvalid",
+              "on": "RadioGroup",
+              "value": true
+            }
+          },
+          "note": "isReadOnly and isInvalid exist only on the group (React Aria); isDisabled works on either."
+        }
+      }
+    },
+    "_radio-indicator": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "ccf14c66f04a155297f054df5e6481dea7bcbe96",
+        "nodeId": "328:26067",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "RadioIndicator",
+        "source": "packages/ui/src/components/Radio/Radio.tsx",
+        "exported": false
+      },
+      "props": {
+        "state": {
+          "prop": null,
+          "setBy": "Radio",
+          "note": "Prop-driven mode plus CSS for hover, active, focused from the parent's data attributes."
+        },
+        "value": {
+          "prop": "value",
+          "setBy": "Radio"
+        }
+      }
+    },
+    "_radio-dot": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "30354b983d0927f71f23ed97ec7f22bcc7d1aa6e",
+        "nodeId": "328:26061"
+      },
+      "code": {
+        "name": "RadioIndicator dot",
+        "source": "packages/ui/src/components/Radio/Radio.tsx",
+        "exported": false
+      },
+      "props": {},
+      "note": "Figma layer name _radio-dot/Default. 8 px circle drawn with currentColor."
+    },
+    "RadioGroup": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "56062eadf6ca7b7687583c6fa3c38a5a47631c71",
+        "nodeId": "328:26595",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "RadioGroup",
+        "source": "packages/ui/src/components/RadioGroup/RadioGroup.tsx"
+      },
+      "props": {
+        "group": {
+          "prop": "children",
+          "slot": true,
+          "anyOf": [
+            "Radio"
+          ],
+          "minItems": 2,
+          "note": "Stacked with space/md, vertical. No visible label: aria-label or aria-labelledby is required. errorMessage (code only) shows one error under the group while isInvalid; isDisabled / isReadOnly / isInvalid apply to every item. value / defaultValue / onChange hold the selected Radio's value."
+        }
+      }
+    },
     "UserChip": {
       "status": "draft",
       "layer": "component",
