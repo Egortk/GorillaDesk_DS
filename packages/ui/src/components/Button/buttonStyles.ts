@@ -1,4 +1,5 @@
 // Shared look of Button and IconButton (same variants, colours and states in Figma).
+import { createContext, useContext } from 'react';
 import { cx } from '../../lib/cx';
 import { rest, stateful, type Intent, type Tone } from '../../lib/palette';
 import { BORDER, SHADOW_FOCUS, SHADOW_INTERACTIVE } from '../../lib/styles';
@@ -37,8 +38,12 @@ export const BUTTON_VARIANTS: ButtonVariant[] = [
 export const BUTTON_STATES = ['default', 'hover', 'active', 'focused', 'disabled', 'loading'] as const;
 
 interface Look {
-  /** Root: background, border, text colour, shadow. */
+  /** Root: background, border, text colour. */
   root: string;
+  /** Shadows when the button stands alone. */
+  shadow: string;
+  /** Has a border and resting shadow (false for default-subtle, subsidiary-subtle, danger-subtle). */
+  framed: boolean;
   /** Icon slots (colour follows the root state through `group`). */
   icon: string;
   /** Spinner while pending. */
@@ -70,8 +75,9 @@ const DEFAULT: Look = {
     BORDER,
     'inset-ring-button-default-solid-border-default data-hovered:inset-ring-button-default-solid-border-hover data-pressed:inset-ring-button-default-solid-border-active data-disabled:inset-ring-button-default-solid-border-disabled data-pending:inset-ring-button-default-solid-border-default',
     DEFAULT_TEXT,
-    SHADOW_INTERACTIVE,
   ),
+  shadow: SHADOW_INTERACTIVE,
+  framed: true,
   icon: DEFAULT_ICON,
   spinner: 'text-button-default-solid-icon-default',
 };
@@ -83,9 +89,12 @@ const DEFAULT_SUBTLE: Look = {
     BORDER,
     'inset-ring-transparent data-focus-visible:inset-ring-button-default-solid-border-default data-hovered:inset-ring-button-default-solid-border-hover data-pending:inset-ring-button-default-solid-border-default data-pressed:inset-ring-button-default-solid-border-active',
     DEFAULT_TEXT,
+  ),
+  shadow: cx(
     'data-hovered:not-data-focus-visible:shadow-interactive-hover data-pressed:not-data-focus-visible:shadow-none data-pending:not-data-focus-visible:shadow-none',
     SHADOW_FOCUS,
   ),
+  framed: false,
   icon: DEFAULT_ICON,
   spinner: 'text-button-default-solid-icon-default',
 };
@@ -100,16 +109,37 @@ export function buttonLook(variant: ButtonVariant): Look {
       `data-pending:${rest('bg', i, t, 'bg')}`,
       framed && cx(BORDER, stateful('inset-ring', i, t, 'border'), `data-pending:${rest('inset-ring', i, t, 'border')}`),
       stateful('text', i, t, 'text'),
-      framed ? SHADOW_INTERACTIVE : SHADOW_FOCUS,
     ),
+    shadow: framed ? SHADOW_INTERACTIVE : SHADOW_FOCUS,
+    framed,
     icon: stateful('text', i, t, 'icon', 'group'),
     spinner: rest('text', i, t, 'icon'),
   };
 }
 
-/** Root classes shared by both buttons, before size. */
+/** Root classes shared by both buttons, before size. Corners and shadow come from `buttonFrame`. */
 export const BUTTON_BASE =
-  'group relative inline-flex shrink-0 cursor-pointer data-disabled:cursor-default data-pending:cursor-default items-center rounded-md whitespace-nowrap outline-none select-none';
+  'group relative inline-flex shrink-0 cursor-pointer data-disabled:cursor-default data-pending:cursor-default items-center whitespace-nowrap outline-none select-none';
+
+/** True inside ButtonGroup. */
+export const ButtonGroupContext = createContext(false);
+
+/**
+ * Button inside ButtonGroup (Figma `_button-group-item`): outer corners only on the first and last item, -1 px overlap
+ * (space/overlap/md) so neighbouring borders share one line, no own shadow (the group carries shadow/interactive-default).
+ * Hovered and pressed items sit above their neighbours so their whole border shows; the focused one above everything.
+ */
+const GROUP_ITEM =
+  'rounded-none first:rounded-s-md last:rounded-e-md not-first:ms-(--space-overlap-md) data-hovered:z-1 data-pressed:z-1 data-focus-visible:z-10';
+
+/**
+ * Corners and shadows: standalone, or as an item of ButtonGroup. Items of borderless variants are marked
+ * `data-borderless`; ButtonGroup then drops its resting shadow (designer decision 2026-11-10).
+ */
+export function useButtonFrame(look: Look): { className: string; 'data-borderless'?: true } {
+  if (!useContext(ButtonGroupContext)) return { className: cx('rounded-md', look.shadow) };
+  return { className: cx(GROUP_ITEM, SHADOW_FOCUS), ...(look.framed ? {} : { 'data-borderless': true }) };
+}
 
 /** Spinner box per button size: md → 24 px, sm → 20 px. */
 export const SPINNER_SIZE = { md: 'sm', sm: 'xs' } as const;
