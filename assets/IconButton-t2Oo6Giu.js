@@ -1,0 +1,11 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";import{t as n}from"./cx-BOo3OvTL.js";import{a as r,n as i}from"./styles-DlkLNiWT.js";import{n as a,r as o}from"./Button-CnyGtV9l.js";import{n as s,r as c}from"./Spinner-BzkLNieR.js";import{a as l,c as u,o as d,s as f,t as p}from"./buttonStyles-D_HOzWT3.js";function m({icon:e,variant:t=`default`,size:r=`md`,isPending:o,className:c,...f}){let m=d(t),{className:_,...v}=u(m);return(0,h.jsxs)(a,{...f,...v,isPending:o,className:n(p,g[r],m.root,_,c),children:[(0,h.jsx)(`span`,{"aria-hidden":!0,className:n(i,m.icon,`group-data-pending:opacity-0`),children:e}),o&&(0,h.jsx)(`span`,{className:`absolute inset-0 flex items-center justify-center`,children:(0,h.jsx)(s,{size:l[r],className:m.spinner})})]})}var h,g;function _(){return(_=e((()=>{o(),r(),f(),c(),h=t(),g={md:`size-control-md justify-center`,sm:`size-control-sm justify-center`},m.__docgenInfo={description:`Triggers an action using an icon without a visible label.`,methods:[],displayName:`IconButton`,props:{icon:{required:!0,tsType:{name:`ReactNode`},description:`24 px icon, coloured with currentColor.`},variant:{required:!1,tsType:{name:`union`,raw:`| 'default'
+| 'default-subtle'
+| 'primary'
+| 'primary-subtle'
+| 'secondary'
+| 'secondary-subtle'
+| 'subsidiary-subtle'
+| 'accent'
+| 'success'
+| 'danger'
+| 'danger-subtle'`,elements:[{name:`literal`,value:`'default'`},{name:`literal`,value:`'default-subtle'`},{name:`literal`,value:`'primary'`},{name:`literal`,value:`'primary-subtle'`},{name:`literal`,value:`'secondary'`},{name:`literal`,value:`'secondary-subtle'`},{name:`literal`,value:`'subsidiary-subtle'`},{name:`literal`,value:`'accent'`},{name:`literal`,value:`'success'`},{name:`literal`,value:`'danger'`},{name:`literal`,value:`'danger-subtle'`}]},description:``,defaultValue:{value:`'default'`,computed:!1}},size:{required:!1,tsType:{name:`union`,raw:`'md' | 'sm'`,elements:[{name:`literal`,value:`'md'`},{name:`literal`,value:`'sm'`}]},description:`md = 32 × 32 px, sm = 24 × 24 px.`,defaultValue:{value:`'md'`,computed:!1}},"aria-label":{required:!0,tsType:{name:`string`},description:`Required: the button has no visible text.`},className:{required:!1,tsType:{name:`string`},description:``}},composes:[`Omit`]}})))()}export{_ as n,m as t};

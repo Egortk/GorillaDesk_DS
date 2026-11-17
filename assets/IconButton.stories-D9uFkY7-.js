@@ -1,0 +1,8 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";import{a as n,n as r,o as i,r as a,s as o}from"./helpers-CqeQ1S3I.js";import{n as s,r as c,s as l}from"./buttonStyles-D_HOzWT3.js";import{n as u,t as d}from"./IconButton-t2Oo6Giu.js";var f,p,m,h,g;function _(){return(_=e((()=>{o(),l(),u(),f=t(),p={title:`Components/IconButton`,component:d,args:{icon:`plus`,variant:`default`,size:`md`,"aria-label":`Add`,isDisabled:!1,isPending:!1},argTypes:{variant:{control:`select`,options:c},icon:i}},m={},h={render:()=>(0,f.jsx)(a,{rows:c,cols:s.flatMap(e=>[`${e} / md`,`${e} / sm`]),render:(e,t)=>{let[i,a]=t.split(` / `);return(0,f.jsx)(r,{state:i===`disabled`||i===`loading`?`default`:i,children:(0,f.jsx)(d,{icon:(0,f.jsx)(n,{}),"aria-label":`Add`,variant:e,size:a,isDisabled:i===`disabled`,isPending:i===`loading`})})}})},g=[`Playground`,`States`],m.parameters={...m.parameters,docs:{...m.parameters?.docs,source:{originalSource:`{}`,...m.parameters?.docs?.source}}},h.parameters={...h.parameters,docs:{...h.parameters?.docs,source:{originalSource:`{
+  render: () => <Matrix rows={VARIANTS} cols={STATES.flatMap(s => [\`\${s} / md\`, \`\${s} / sm\`])} render={(variant, col) => {
+    const [state, size] = col.split(' / ') as [(typeof STATES)[number], 'md' | 'sm'];
+    return <Force state={state === 'disabled' || state === 'loading' ? 'default' : state}>
+            <IconButton icon={<PlusIcon />} aria-label="Add" variant={variant} size={size} isDisabled={state === 'disabled'} isPending={state === 'loading'} />
+          </Force>;
+  }} />
+}`,...h.parameters?.docs?.source}}}})))()}_();export{m as Playground,h as States,g as __namedExportsOrder,p as default};
