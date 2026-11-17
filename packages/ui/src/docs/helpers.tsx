@@ -18,8 +18,16 @@ const ATTRS: Record<ForcedState, string[]> = {
 export function Force({ state, target = ':scope > *', children }: { state: ForcedState; target?: string; children: ReactNode }) {
   const ref = useRef<HTMLSpanElement>(null);
   useLayoutEffect(() => {
-    const el = ref.current?.querySelector(target);
-    for (const attr of ATTRS[state]) el?.setAttribute(attr, 'true');
+    // Collection components (ListBox) render and re-mount their items over the first frames: keep applying for a while.
+    let frame = 0;
+    let tries = 0;
+    const apply = () => {
+      const el = ref.current?.querySelector(target);
+      if (el) for (const attr of ATTRS[state]) el.setAttribute(attr, 'true');
+      if (tries++ < 30) frame = requestAnimationFrame(apply);
+    };
+    apply();
+    return () => cancelAnimationFrame(frame);
   });
   return (
     <span ref={ref} className="contents">
