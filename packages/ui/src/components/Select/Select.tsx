@@ -194,6 +194,7 @@ export function Select<T extends object, M extends SelectionMode = 'single'>({
         return (
           <>
             <Button
+              data-field-frame
               className={cx(
                 'group relative flex min-h-control-md w-full items-center px-(--space-input-padding-x) text-start outline-none inset-ring-(length:--border-width-md)',
                 mode === 'disabled' ? 'cursor-default' : 'cursor-pointer',

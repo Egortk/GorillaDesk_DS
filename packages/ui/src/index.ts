@@ -9,6 +9,8 @@ export { Button, type ButtonProps, type ButtonSize, type ButtonVariant } from '.
 export { ButtonGroup, type ButtonGroupProps } from './components/ButtonGroup/ButtonGroup';
 export { Checkbox, type CheckboxProps } from './components/Checkbox/Checkbox';
 export { CheckboxGroup, type CheckboxGroupProps } from './components/CheckboxGroup/CheckboxGroup';
+export { Radio, type RadioProps } from './components/Radio/Radio';
+export { RadioGroup, type RadioGroupProps } from './components/RadioGroup/RadioGroup';
 export { CustomerAvatar, type CustomerAvatarProps } from './components/Avatar/CustomerAvatar';
 export { DismissButton, type DismissButtonProps, type DismissButtonShape, type DismissButtonSize } from './components/DismissButton/DismissButton';
 export { IconButton, type IconButtonProps } from './components/IconButton/IconButton';
@@ -23,3 +25,7 @@ export { ListBoxItem, type ListBoxItemProps } from './components/ListBox/ListBox
 export { Popover, type PopoverProps } from './components/Popover/Popover';
 export { SearchField, type SearchFieldProps, type SearchFieldVariant } from './components/SearchField/SearchField';
 export { Select, type SelectedOption, type SelectMoreKind, type SelectProps, type SelectVariant } from './components/Select/Select';
+export { AddressInput, type Address, type AddressField, type AddressInputProps } from './components/AddressInput/AddressInput';
+export { InputGroup, type InputGroupProps } from './components/InputGroup/InputGroup';
+export { PhoneInput, formatPhone, type PhoneInputProps } from './components/PhoneInput/PhoneInput';
+export { TextArea, type TextAreaProps, type TextAreaVariant } from './components/TextArea/TextArea';

@@ -788,6 +788,158 @@
         }
       }
     },
+    "Radio": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "9288c600955d600734ff224c61fa9c534a98a7c7",
+        "nodeId": "328:26122",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "Radio",
+        "source": "packages/ui/src/components/Radio/Radio.tsx"
+      },
+      "props": {
+        "hasLabel": {
+          "prop": null,
+          "controls": "label"
+        },
+        "label": {
+          "prop": "children",
+          "enabledBy": "hasLabel",
+          "note": "Without children pass aria-label."
+        },
+        "hasDescription": {
+          "prop": null,
+          "controls": "description"
+        },
+        "description": {
+          "prop": "description",
+          "enabledBy": "hasDescription",
+          "note": "Linked with aria-describedby, kept out of the accessible name."
+        },
+        "hasError": {
+          "prop": null,
+          "controls": "errorMessage"
+        },
+        "errorMessage": {
+          "prop": "errorMessage",
+          "enabledBy": "hasError",
+          "note": "Shown only while the group is invalid. Usually left out: RadioGroup shows one error."
+        },
+        "value": {
+          "map": {
+            "unchecked": null,
+            "checked": null
+          },
+          "note": "Set by the RadioGroup value (value / defaultValue on the group). The Radio's own `value` prop is the option id."
+        },
+        "state": {
+          "map": {
+            "default": null,
+            "hover": null,
+            "active": null,
+            "focused": null,
+            "disabled": {
+              "prop": "isDisabled",
+              "value": true
+            },
+            "read-only": {
+              "prop": "isReadOnly",
+              "on": "RadioGroup",
+              "value": true
+            },
+            "invalid": {
+              "prop": "isInvalid",
+              "on": "RadioGroup",
+              "value": true
+            },
+            "invalid-hover": {
+              "prop": "isInvalid",
+              "on": "RadioGroup",
+              "value": true
+            },
+            "invalid-focused": {
+              "prop": "isInvalid",
+              "on": "RadioGroup",
+              "value": true
+            }
+          },
+          "note": "isReadOnly and isInvalid exist only on the group (React Aria); isDisabled works on either."
+        }
+      }
+    },
+    "_radio-indicator": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "ccf14c66f04a155297f054df5e6481dea7bcbe96",
+        "nodeId": "328:26067",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "name": "RadioIndicator",
+        "source": "packages/ui/src/components/Radio/Radio.tsx",
+        "exported": false
+      },
+      "props": {
+        "state": {
+          "prop": null,
+          "setBy": "Radio",
+          "note": "Prop-driven mode plus CSS for hover, active, focused from the parent's data attributes."
+        },
+        "value": {
+          "prop": "value",
+          "setBy": "Radio"
+        }
+      }
+    },
+    "_radio-dot": {
+      "status": "draft",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "30354b983d0927f71f23ed97ec7f22bcc7d1aa6e",
+        "nodeId": "328:26061"
+      },
+      "code": {
+        "name": "RadioIndicator dot",
+        "source": "packages/ui/src/components/Radio/Radio.tsx",
+        "exported": false
+      },
+      "props": {},
+      "note": "Figma layer name _radio-dot/Default. 8 px circle drawn with currentColor."
+    },
+    "RadioGroup": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "key": "56062eadf6ca7b7687583c6fa3c38a5a47631c71",
+        "nodeId": "328:26595",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "RadioGroup",
+        "source": "packages/ui/src/components/RadioGroup/RadioGroup.tsx"
+      },
+      "props": {
+        "group": {
+          "prop": "children",
+          "slot": true,
+          "anyOf": [
+            "Radio"
+          ],
+          "minItems": 2,
+          "note": "Stacked with space/md, vertical. No visible label: aria-label or aria-labelledby is required. errorMessage (code only) shows one error under the group while isInvalid; isDisabled / isReadOnly / isInvalid apply to every item. value / defaultValue / onChange hold the selected Radio's value."
+        }
+      }
+    },
     "UserChip": {
       "status": "draft",
       "layer": "component",
@@ -1317,6 +1469,175 @@
         }
       },
       "note": "React Aria SearchField. Fixed search icon (Assets margnifire-search). Clear = DismissButton circle xs, aria-label \"Clear search\", shown when filled and enabled; Escape also clears. Field styles shared with Input via src/lib/input.ts."
+    },
+    "TextArea": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "name": "Text Area",
+        "key": "d5a356fbeacbb0955893cd5e6a7ab9422ac95d1e",
+        "nodeId": "299:25012",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "TextArea",
+        "source": "packages/ui/src/components/TextArea/TextArea.tsx"
+      },
+      "props": {
+        "variant": {
+          "prop": "variant"
+        },
+        "value": {
+          "prop": "value"
+        },
+        "hasPlaceholder": {
+          "prop": null,
+          "controls": "placeholder"
+        },
+        "placeholder": {
+          "prop": "placeholder",
+          "enabledBy": "hasPlaceholder"
+        },
+        "filled": {
+          "prop": null,
+          "note": "Figma-only axis: in code it follows whether value is empty."
+        },
+        "state": {
+          "map": {
+            "default": null,
+            "hover": null,
+            "focused": null,
+            "disabled": {
+              "prop": "isDisabled",
+              "value": true
+            },
+            "readonly": {
+              "prop": "isReadOnly",
+              "value": true
+            },
+            "invalid": {
+              "prop": "isInvalid",
+              "value": true
+            },
+            "invalid-hover": {
+              "prop": "isInvalid",
+              "value": true
+            },
+            "invalid-focused": {
+              "prop": "isInvalid",
+              "value": true
+            }
+          }
+        }
+      },
+      "extraProps": {
+        "rows": {
+          "note": "Minimum visible lines (default 6 = 112 px); the Figma height 110 is an example."
+        }
+      },
+      "note": "React Aria TextField + TextArea. Field styles from src/lib/input.ts. Resize: CSS resize-y only in variant=box while editable (normal / invalid); the browser draws the grip (Figma _resize-handle)."
+    },
+    "_resize-handle": {
+      "status": "ready",
+      "layer": "internal",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "name": "_resize-handle",
+        "key": "63427c35839db076b043f9b5fc9d8f736228617e",
+        "nodeId": "321:25915",
+        "devStatus": "NOT_SET (internal; no code component)"
+      },
+      "code": {
+        "import": null,
+        "name": null,
+        "source": null
+      },
+      "note": "Not a component in code: TextArea sets resize: vertical and the browser draws the grip, so its colour follows the browser, not color/input/icon/default."
+    },
+    "InputGroup": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "name": "Group Input",
+        "key": "49b6e44fef4719acbeb1b86bbeab23ac91dd28a2",
+        "nodeId": "317:25910",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "InputGroup",
+        "source": "packages/ui/src/components/InputGroup/InputGroup.tsx"
+      },
+      "props": {
+        "items": {
+          "prop": "children",
+          "note": "Slot: Input / Select / SearchField with variant=\"inline\"."
+        }
+      },
+      "note": "Figma name 'Group Input' → code InputGroup. Items overlap by space/overlap/md (margin), outer corners via [data-field-frame] on the first / last item, focused (then invalid) item raised with z-index/raised. Skips React Aria's <template> sibling of Select."
+    },
+    "AddressInput": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "name": "Address",
+        "key": "df76912097da098ddb167a10e9eb40829c550b9b",
+        "nodeId": "317:25911",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "AddressInput",
+        "source": "packages/ui/src/components/AddressInput/AddressInput.tsx"
+      },
+      "props": {},
+      "extraProps": {
+        "value": {
+          "note": "{ street1, street2, city, state, zip }"
+        },
+        "onChange": {},
+        "invalidFields": {
+          "note": "Per-field error (Figma: exposed nested Text Input state)."
+        },
+        "isDisabled": {},
+        "isReadOnly": {}
+      },
+      "note": "No Figma properties; fields are exposed nested instances street-1, street-2, city, state, zip. Placeholders are the Figma ones; accessible names Street 1, Street 2, City, State, Zip."
+    },
+    "PhoneInput": {
+      "status": "draft",
+      "layer": "component",
+      "figma": {
+        "fileKey": "ZGgeVYWW1borOyeuljsfS4",
+        "name": "Phone Number",
+        "key": "e49efc46d2c154296aece26e7f828685c5590d1c",
+        "nodeId": "317:25912",
+        "devStatus": "READY_FOR_DEV"
+      },
+      "code": {
+        "import": "@gorilladesk/ui",
+        "name": "PhoneInput",
+        "source": "packages/ui/src/components/PhoneInput/PhoneInput.tsx"
+      },
+      "props": {},
+      "extraProps": {
+        "value": {
+          "note": "Digits only, up to 10; shown as (000) 000 - 0000."
+        },
+        "type": {
+          "note": "Number type from `types` (default Mobile, Home, Work, Other)."
+        },
+        "onChange": {},
+        "onTypeChange": {},
+        "isDisabled": {},
+        "isReadOnly": {},
+        "isInvalid": {}
+      },
+      "note": "InputGroup of Input type=tel (number) and Select (type), exposed nested instances number / type. Both items share the width (Figma 179 / 140 is not a rule). US format only for now."
     }
   }
 }

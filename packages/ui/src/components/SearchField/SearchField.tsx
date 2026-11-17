@@ -46,6 +46,7 @@ export function SearchField({ variant = 'box', placeholder, className, ...props 
     <RACSearchField {...props} className={cx('flex w-full', className)}>
       {({ isEmpty }) => (
         <Group
+          data-field-frame
           isDisabled={props.isDisabled}
           className={embedded ? EMBEDDED_ROOT : cx(FIELD_ROOT, FIELD_FRAME[mode], FIELD_FOCUS_RING[mode], fieldShape(variant, mode))}
         >
