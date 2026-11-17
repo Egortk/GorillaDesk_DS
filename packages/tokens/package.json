@@ -1,6 +1,6 @@
 {
   "name": "@gorilladesk/tokens",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "GorillaDesk design tokens: Figma export -> DTCG 2025.10 -> CSS variables and Tailwind v4 theme",
   "repository": {
     "type": "git",
